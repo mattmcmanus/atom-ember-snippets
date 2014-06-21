@@ -1,6 +1,6 @@
 {
   "name": "ember-snippets",
-  "version": "0.6.2",
+  "version": "0.6.3",
   "description": "Ember.js ES6 Snippets for Atom",
   "repository": "https://github.com/seifsallam/atom-ember-snippets",
   "license": "MIT",
