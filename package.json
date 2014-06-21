@@ -1,6 +1,5 @@
 {
   "name": "ember-snippets",
-  "main": "./index",
   "version": "0.6.0",
   "description": "Ember.js ES6 Snippets for Atom",
   "repository": "https://github.com/seifsallam/atom-ember-snippets",
