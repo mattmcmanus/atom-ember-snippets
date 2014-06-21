@@ -1,14 +1,18 @@
 {
   "name": "ember-snippets",
-  "main": "./lib/ember-snippets",
-  "version": "0.0.0",
-  "description": "A short description of your package",
-  "activationEvents": ["ember-snippets:toggle"],
-  "repository": "https://github.com/atom/ember-snippets",
+  "main": "./index",
+  "version": "0.0.1",
+  "description": "Snippets for Ember.js with ES6",
+  "repository": "https://github.com/seifsallam/atom-ember-snippets",
   "license": "MIT",
   "engines": {
     "atom": ">0.50.0"
   },
   "dependencies": {
-  }
+  },
+  "readmeFilename": "README.md",
+  "bugs": {
+    "url": "https://github.com/seifsallam/atom-ember-snippets/issues"
+  },
+  "homepage": "https://github.com/seifsallam/atom-ember-snippets",
 }
