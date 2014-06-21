@@ -1,7 +1,7 @@
 {
   "name": "ember-snippets",
   "main": "./index",
-  "version": "0.4.0",
+  "version": "0.5.0",
   "description": "Snippets for Ember.js with ES6",
   "repository": "https://github.com/seifsallam/atom-ember-snippets",
   "license": "MIT",
