@@ -1,0 +1,153 @@
+# Ember snippet
+#
+# Examples
+#
+#  `ember<tab>`
+#
+
+'.source.js':
+
+  #
+  # Modules
+  #
+
+  'Ember Route':
+    'prefix': 'ember-route'
+    'body': """
+      import Ember from 'ember';
+
+      /**
+       * ${1:[description]}
+       * @type {Ember.Route}
+       */
+      export default Ember.Route.extend({
+        model: function() {
+          ${2:// body}
+        },
+      });
+    """
+
+  'Ember Object Controller':
+    'prefix': 'ember-object-controller'
+    'body': """
+      import Ember from 'ember';
+
+      /**
+       * ${1:[description]}
+       * @type {Ember.ObjectController}
+       */
+      export default Ember.ObjectController.extend({
+        ${2:// body}
+      });
+    """
+
+  'Ember Array Controller':
+    'prefix': 'ember-array-controller'
+    'body': """
+      import Ember from 'ember';
+
+      /**
+       * ${1:[description]}
+       * @type {Ember.ArrayController}
+       */
+      export default Ember.ArrayController.extend({
+        ${2:// body}
+      });
+    """
+
+  'Ember Model':
+    'prefix': 'ember-model'
+    'body': """
+      import DS from 'DS';
+
+      /**
+       * ${1:[description]}
+       * @type {Ember.Model}
+       */
+      export default DS.Model.extend({
+        ${2:// body}
+      });
+    """
+
+  'Ember Generic Extend':
+    'prefix': 'ember-extend'
+    'body': """
+      import Ember from 'ember';
+
+      /**
+       * ${1:[description]}
+       * @type {Ember.{2:Class}}
+       */
+      export default Ember.${2:Class}.extend({
+        ${3:// body}
+      });
+    """
+
+  'Ember Helper':
+    'prefix': 'ember-helper'
+    'body': """
+      import Ember from 'ember';
+
+      export default Ember.Handlebars.makeBoundHelper(function() {
+        ${1:// body}
+      });
+    """
+
+  'Ember Initializer':
+    'prefix': 'ember-initializer'
+    'body': """
+      export default {
+        name: '${1:name}',
+        initialize: function() {
+          ${2:// body}
+        }
+      };
+    """
+
+  'Ember Utility':
+    'prefix': 'ember-utility'
+    'body': """
+      export default function ${1:myUtility}() {
+        ${2:// body}
+      };
+    """
+
+  #
+  # Properties
+  #
+
+  'Ember Computed Property':
+    'prefix': 'ember-computed-property'
+    'body': """
+      ${1:fooCount}: function() {
+        ${3:// body}
+      }.property('${2:property}'),
+    """
+
+  'Ember Observer':
+    'prefix': 'ember-computed-property'
+    'body': """
+      ${1:fooChanged}: function() {
+        ${3:// body}
+      }.observes('${2:property}'),
+    """
+
+  'Ember Actions':
+    'prefix': 'ember-actions'
+    'body': """
+      actions: {
+        ${1:// body}
+      }
+    """
+
+  #
+  # Functions
+  #
+
+  'Ember Find':
+    'prefix': 'ember-store-find'
+    'body': "this.store.find('${1:model}');"
+
+  'Ember Find by id':
+    'prefix': 'ember-store-find-id'
+    'body': "this.store.find('${1:model}', params.${1:model}_id);"
