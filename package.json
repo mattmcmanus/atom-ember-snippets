@@ -1,15 +1,14 @@
 {
   "name": "ember-snippets",
   "main": "./index",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "Snippets for Ember.js with ES6",
   "repository": "https://github.com/seifsallam/atom-ember-snippets",
   "license": "MIT",
   "engines": {
     "atom": ">0.50.0"
   },
-  "dependencies": {
-  },
+  "dependencies": {},
   "readmeFilename": "README.md",
   "bugs": {
     "url": "https://github.com/seifsallam/atom-ember-snippets/issues"
