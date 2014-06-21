@@ -1,6 +1,6 @@
 ## Ember Snippets
 
-Ember.js snippets for ES6 (ex: ember-cli, ember-app-kit)
+Ember.js ES6 snippets for Atom editor (ex: ember-cli, ember-app-kit)
 
 #### Installation
 
