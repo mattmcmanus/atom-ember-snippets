@@ -12,79 +12,69 @@
   #
 
   'Ember Route':
-    'prefix': 'ember-route'
+    'prefix': 'route'
     'body': """
       import Ember from 'ember';
 
-      /**
-       * ${1:[description]}
-       * @type {Ember.Route}
-       */
       export default Ember.Route.extend({
         model: function() {
-          ${2:// body}
+          ${1:// body}
         },
       });
     """
 
   'Ember Object Controller':
-    'prefix': 'ember-object-controller'
+    'prefix': 'controller'
     'body': """
       import Ember from 'ember';
 
-      /**
-       * ${1:[description]}
-       * @type {Ember.ObjectController}
-       */
       export default Ember.ObjectController.extend({
-        ${2:// body}
+        ${1:// body}
       });
     """
 
   'Ember Array Controller':
-    'prefix': 'ember-array-controller'
+    'prefix': 'arr-controller'
     'body': """
       import Ember from 'ember';
 
-      /**
-       * ${1:[description]}
-       * @type {Ember.ArrayController}
-       */
       export default Ember.ArrayController.extend({
-        ${2:// body}
+        ${1:// body}
       });
     """
 
-  'Ember Model':
-    'prefix': 'ember-model'
+  'Ember Component':
+    'prefix': 'component'
     'body': """
-      import DS from 'DS';
+      import Ember from 'ember';
 
-      /**
-       * ${1:[description]}
-       * @type {Ember.Model}
-       */
-      export default DS.Model.extend({
-        ${2:// body}
+      export default Ember.Component.extend({
+        ${1:// body}
+      });
+    """
+
+  'Ember Mixin':
+    'prefix': 'mixin'
+    'body': """
+      import Ember from 'ember';
+
+      export default Ember.Mixin.create({
+        ${1:// body}
       });
     """
 
   'Ember Generic Extend':
-    'prefix': 'ember-extend'
+    'prefix': 'extend'
     'body': """
       import Ember from 'ember';
 
-      /**
-       * ${1:[description]}
-       * @type {Ember.{2:Class}}
-       */
-      export default Ember.${2:Class}.extend({
-        ${3:// body}
+      export default Ember.${1:Class}.extend({
+        ${2:// body}
       });
     """
 
   'Ember Helper':
-    'prefix': 'ember-helper'
+    'prefix': 'helper'
     'body': """
       import Ember from 'ember';
 
@@ -93,8 +83,78 @@
       });
     """
 
+  'Ember View':
+    'prefix': 'view'
+    'body': """
+      import Ember from 'ember';
+
+      var Object = Ember.View.extend({
+        ${1:// body}
+      });
+    """
+
+  'Ember Model':
+    'prefix': 'model'
+    'body': """
+      import DS from 'DS';
+
+      export default DS.Model.extend({
+        ${1:// body}
+      });
+    """
+
+  'Ember REST Adapter':
+    'prefix': 'adapter'
+    'body': """
+      import DS from 'DS';
+
+      export default DS.RESTAdapter.extend({
+        ${1:// body}
+      });
+    """
+
+  'Ember Active Model Adapter':
+    'prefix': 'active-adapter'
+    'body': """
+      import DS from 'DS';
+
+      export default DS.ActiveModelAdapter.extend({
+        ${1:// body}
+      });
+    """
+
+  'Ember REST Serializer':
+    'prefix': 'serializer'
+    'body': """
+      import DS from 'DS';
+
+      export default DS.RESTSerializer.extend({
+        ${1:// body}
+      });
+    """
+
+  'Ember Active Model Serializer':
+    'prefix': 'active-serializer'
+    'body': """
+      import DS from 'DS';
+
+      export default DS.ActiveModelSerializer.extend({
+        ${1:// body}
+      });
+    """
+
+  'Ember Transform Serializer':
+    'prefix': 'transform'
+    'body': """
+      import DS from 'DS';
+
+      export default DS.Transforms.extend({
+        ${1:// body}
+      });
+    """
+
   'Ember Initializer':
-    'prefix': 'ember-initializer'
+    'prefix': 'initializer'
     'body': """
       export default {
         name: '${1:name}',
@@ -105,7 +165,7 @@
     """
 
   'Ember Utility':
-    'prefix': 'ember-utility'
+    'prefix': 'utility'
     'body': """
       export default function ${1:myUtility}() {
         ${2:// body}
@@ -117,7 +177,7 @@
   #
 
   'Ember Computed Property':
-    'prefix': 'ember-computed-property'
+    'prefix': 'property'
     'body': """
       ${1:fooCount}: function() {
         ${3:// body}
@@ -125,7 +185,7 @@
     """
 
   'Ember Observer':
-    'prefix': 'ember-computed-property'
+    'prefix': 'observes'
     'body': """
       ${1:fooChanged}: function() {
         ${3:// body}
@@ -133,7 +193,7 @@
     """
 
   'Ember Actions':
-    'prefix': 'ember-actions'
+    'prefix': 'actions'
     'body': """
       actions: {
         ${1:// body}
@@ -145,9 +205,29 @@
   #
 
   'Ember Find':
-    'prefix': 'ember-store-find'
+    'prefix': 'find'
     'body': "this.store.find('${1:model}');"
 
   'Ember Find by id':
-    'prefix': 'ember-store-find-id'
+    'prefix': 'find-id'
     'body': "this.store.find('${1:model}', params.${1:model}_id);"
+
+  'Ember Logger Debug':
+    'prefix': 'logger-debug'
+    'body': "Ember.Logger.debug('${1:message}');"
+
+  'Ember Logger Log':
+    'prefix': 'logger-log'
+    'body': "Ember.Logger.log('${1:message}');"
+
+  'Ember Logger Info':
+    'prefix': 'logger-info'
+    'body': "Ember.Logger.info('${1:message}');"
+
+  'Ember Logger Warn':
+    'prefix': 'logger-warn'
+    'body': "Ember.Logger.warn('${1:message}');"
+
+  'Ember Logger Error':
+    'prefix': 'logger-error'
+    'body': "Ember.Logger.error('${1:message}');"
