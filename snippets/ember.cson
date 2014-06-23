@@ -43,6 +43,16 @@
       });
     """
 
+  'Ember View':
+    'prefix': 'view'
+    'body': """
+      import Ember from 'ember';
+
+      export default Ember.View.extend({
+        ${1:// body}
+      });
+    """
+
   'Ember Component':
     'prefix': 'component'
     'body': """
@@ -63,13 +73,13 @@
       });
     """
 
-  'Ember Generic Extend':
-    'prefix': 'extend'
+  'Ember Object':
+    'prefix': 'object'
     'body': """
       import Ember from 'ember';
 
-      export default Ember.${1:Class}.extend({
-        ${2:// body}
+      export default Ember.Object.extend({
+        ${1:// body}
       });
     """
 
@@ -79,16 +89,6 @@
       import Ember from 'ember';
 
       export default Ember.Handlebars.makeBoundHelper(function() {
-        ${1:// body}
-      });
-    """
-
-  'Ember View':
-    'prefix': 'view'
-    'body': """
-      import Ember from 'ember';
-
-      var Object = Ember.View.extend({
         ${1:// body}
       });
     """

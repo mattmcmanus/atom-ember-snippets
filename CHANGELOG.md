@@ -1,6 +1,10 @@
+## 0.3.0
+* Add Object snippet
+* Fix view snippet
+
 ## 0.2.0
 * Use shorter names. e.x.`route` instead of `ember-route`
-* Add snippet keywork triggers
+* Add snippet keyword triggers
 * Add more module snippets (Components, Views, Mixins, Adapters, Serializers, Transforms)
 * Add `Ember.Logger` in functions
 * Remove doc-comments from generated snippets

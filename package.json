@@ -7,7 +7,9 @@
   "engines": {
     "atom": ">0.50.0"
   },
-  "dependencies": {},
+  "dependencies": {
+    "ember-cli-bourbon": "0.0.1"
+  },
   "readmeFilename": "README.md",
   "bugs": {
     "url": "https://github.com/seifsallam/atom-ember-snippets/issues"
