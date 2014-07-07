@@ -1,3 +1,6 @@
+## 0.3.
+* Fix ember-data snippets importing `DS` instead `ember-data`
+
 ## 0.3.0
 * Add Object snippet
 * Fix view snippet

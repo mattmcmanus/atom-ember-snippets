@@ -96,7 +96,7 @@
   'Ember Model':
     'prefix': 'model'
     'body': """
-      import DS from 'DS';
+      import DS from 'ember-data';
 
       export default DS.Model.extend({
         ${1:// body}
@@ -106,7 +106,7 @@
   'Ember REST Adapter':
     'prefix': 'adapter'
     'body': """
-      import DS from 'DS';
+      import DS from 'ember-data';
 
       export default DS.RESTAdapter.extend({
         ${1:// body}
@@ -116,7 +116,7 @@
   'Ember Active Model Adapter':
     'prefix': 'active-adapter'
     'body': """
-      import DS from 'DS';
+      import DS from 'ember-data';
 
       export default DS.ActiveModelAdapter.extend({
         ${1:// body}
@@ -126,7 +126,7 @@
   'Ember REST Serializer':
     'prefix': 'serializer'
     'body': """
-      import DS from 'DS';
+      import DS from 'ember-data';
 
       export default DS.RESTSerializer.extend({
         ${1:// body}
@@ -136,7 +136,7 @@
   'Ember Active Model Serializer':
     'prefix': 'active-serializer'
     'body': """
-      import DS from 'DS';
+      import DS from 'ember-data';
 
       export default DS.ActiveModelSerializer.extend({
         ${1:// body}
@@ -146,7 +146,7 @@
   'Ember Transform Serializer':
     'prefix': 'transform'
     'body': """
-      import DS from 'DS';
+      import DS from 'ember-data';
 
       export default DS.Transforms.extend({
         ${1:// body}
