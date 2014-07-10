@@ -1,0 +1,38 @@
+# Ember Properties snippets
+#
+# Examples
+#
+#  `ember<tab>`
+#
+
+'.source.js':
+
+  'Ember Computed Property':
+    'prefix': 'property'
+    'body': """
+      ${1:fooCount}: function() {
+        ${3:// body}
+      }.property('${2:property}'),
+    """
+
+  'Ember Observer':
+    'prefix': 'observes'
+    'body': """
+      ${1:fooChanged}: function() {
+        ${3:// body}
+      }.observes('${2:property}'),
+    """
+
+  'Ember Actions':
+    'prefix': 'actions'
+    'body': """
+      actions: {
+        ${1:// body}
+      }
+    """
+
+  'Ember Computed Alias':
+    'prefix': 'alias'
+    'body': """
+      ${1:foo}: Ember.computed.alias('${2:property}'),
+    """

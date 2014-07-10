@@ -1,8 +1,13 @@
+## 1.0.0
+* Add `Ember.computed.alias` snippet
+* Split snippets into different files
+* Fix package version number
+
 ## 0.3.1
 * Fix ember-data snippets importing `DS` instead `ember-data`
 
 ## 0.3.0
-* Add Object snippet
+* Add `Ember.Object` snippet
 * Fix view snippet
 
 ## 0.2.0

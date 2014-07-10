@@ -1,4 +1,4 @@
-# Ember snippets
+# Ember Modules snippets
 #
 # Examples
 #
@@ -6,10 +6,6 @@
 #
 
 '.source.js':
-
-  #
-  # Modules
-  #
 
   'Ember Route':
     'prefix': 'route'
@@ -171,63 +167,3 @@
         ${2:// body}
       };
     """
-
-  #
-  # Properties
-  #
-
-  'Ember Computed Property':
-    'prefix': 'property'
-    'body': """
-      ${1:fooCount}: function() {
-        ${3:// body}
-      }.property('${2:property}'),
-    """
-
-  'Ember Observer':
-    'prefix': 'observes'
-    'body': """
-      ${1:fooChanged}: function() {
-        ${3:// body}
-      }.observes('${2:property}'),
-    """
-
-  'Ember Actions':
-    'prefix': 'actions'
-    'body': """
-      actions: {
-        ${1:// body}
-      }
-    """
-
-  #
-  # Functions
-  #
-
-  'Ember Find':
-    'prefix': 'find'
-    'body': "this.store.find('${1:model}');"
-
-  'Ember Find by id':
-    'prefix': 'find-id'
-    'body': "this.store.find('${1:model}', params.${1:model}_id);"
-
-  'Ember Logger Debug':
-    'prefix': 'logger-debug'
-    'body': "Ember.Logger.debug('${1:message}');"
-
-  'Ember Logger Log':
-    'prefix': 'logger-log'
-    'body': "Ember.Logger.log('${1:message}');"
-
-  'Ember Logger Info':
-    'prefix': 'logger-info'
-    'body': "Ember.Logger.info('${1:message}');"
-
-  'Ember Logger Warn':
-    'prefix': 'logger-warn'
-    'body': "Ember.Logger.warn('${1:message}');"
-
-  'Ember Logger Error':
-    'prefix': 'logger-error'
-    'body': "Ember.Logger.error('${1:message}');"

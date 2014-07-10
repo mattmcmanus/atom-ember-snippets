@@ -24,11 +24,14 @@ Then reload your Atom.
 - `component` ⇥
 - `controller` ⇥
 - `helper` ⇥
+- `initializer` ⇥
 - `mixin` ⇥
 - `model` ⇥
+- `object` ⇥
 - `route` ⇥
 - `serializer` ⇥
 - `transform` ⇥
+- `utility` ⇥
 - `view` ⇥
 
 Example output for `controller` ⇥
@@ -48,6 +51,7 @@ Used inside Ember objects
 - `property` ⇥
 - `observes` ⇥
 - `actions` ⇥
+- `alias` ⇥
 
 Example output for `observes` ⇥
 
