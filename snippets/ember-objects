@@ -1,0 +1,219 @@
+
+'.source.coffee':
+
+  'Ember Route':
+    'prefix': 'em.rou'
+    'body':
+      """
+        _export = Ember.Route.extend(
+          model: ->
+            ${1:#@store.find("name_of_a_model")}
+        )
+
+      """
+
+
+
+
+  'Ember Object Controller':
+    'prefix': 'em.obj'
+    'body':
+      """
+        _export = Ember.ObjectController.extend(
+          ${1:#body}
+        )
+      """
+
+
+
+
+  'Ember Array Controller':
+    'prefix': 'em.arr'
+    'body':
+      """
+        _export = Ember.ArrayController.extend(
+          ${1:itemController: 'name_of_an_objectController'}
+          ${2:sortProperties: ['','']}
+          ${3:sortAscending: false}
+          ${4:actions:
+            ${5:name}: ->
+              ${6:#logic...}
+            ${7:name2}: ->
+              ${8:#logic2...}
+            }
+        )
+      """
+
+
+
+
+  'Ember View':
+    'prefix': 'em.vie'
+    'body':
+      """
+        _export = Ember.View.extend(
+          tagName: ${1:"div"}
+          ${2:classNames: ['','']}
+          ${3:classNameBindings: ['','']}
+          ${4:eventManager: Ember.Object.create(
+            mouseEnter: (event, view) ->
+              #logic...
+              return
+            click:      (event, view) ->
+              #logic...
+              return
+            }
+        )
+
+      """
+
+
+
+
+  'Ember Component':
+    'prefix': 'em.com'
+    'body':
+      """
+        _export = Ember.Component.extend(
+          ${1:#body}
+        )
+
+      """
+
+
+
+
+  'Ember Mixin':
+    'prefix': 'em.mix'
+    'body':
+    """
+      _export = Ember.Mixin.create(
+        ${1:#body}
+      )
+
+    """
+
+
+
+
+  'Ember Object':
+    'prefix': 'em.obj'
+    'body': """
+      _export = Ember.Object.extend(
+        ${1:#body}
+      )
+
+    """
+
+
+
+
+  'Ember Helper':
+    'prefix': 'em.hel'
+    'body': """
+      _export = Ember.Handlebars.makeBoundHelper(->
+        ${1:#body}
+      )
+
+    """
+
+
+
+
+  'Ember Model':
+    'prefix': 'ds.mod'
+    'body':
+    """
+      _export = DS.Model.extend(
+        ${1:title}: DS.attr(${2:"string"})
+        ${3:title: DS.attr("boolean")}
+        ${4:title: DS.attr("number")}
+        ${5:title: DS.belongsTo('someModel',async: true)}
+        ${6:title: DS.hasMany('someModel'  ,async: true)}
+
+      )
+    """
+
+
+
+
+  'Ember REST Serializer':
+    'prefix': 'ds.resS'
+    'body':
+      """
+        _export = DS.RESTSerializer.extend(
+          ${1:#body}
+        )
+      """
+
+
+
+
+  'Ember Active Model Serializer':
+    'prefix': 'ds.actS'
+    'body':
+      """
+        _export = DS.ActiveModelSerializer.extend(
+          ${1:#body}
+        )
+      """
+
+
+
+
+  'Ember Transform Serializer':
+    'prefix': 'ds.tra'
+    'body':
+      """
+        _export = DS.Transforms.extend(
+          deserialize: (jsonFromServer) ->
+            jsonToApp = ${1:#logic...}
+            jsonToApp
+
+          serialize: (jsonFromAppToServer) ->
+            go2server = ${2:#logic...}
+            go2server
+        )
+      """
+
+
+
+  'Ember Initializer':
+    'prefix': 'em.ini'
+    'body':
+      """
+        _export = Ember.Application.initializer
+          name: "put_name_of_this_initializer_here"
+          ${1:after   : [
+            "name_of_other_initializers_to_run_first"
+            "name_of_other_initializers_to_run_first"
+          ]}
+
+          initialize: (container, application) ->
+            ${2:#logic...}
+            return
+
+          ${3:before  : [
+            "name_of_other_initializers_to_run_later"
+            "name_of_other_initializers_to_run_later"
+          ]}
+
+      """
+
+
+
+  'Fixture Reopen':
+    'prefix': 're.fix'
+    'body':  """
+    _export.reopenClass FIXTURES: [
+      {
+        id: 1
+        title: "learn ember"
+        isCompleted: true
+        author: [10,15,20]      #hasMany
+        author: 12              #bolongTo
+      }
+      {
+
+      }
+    ] """
