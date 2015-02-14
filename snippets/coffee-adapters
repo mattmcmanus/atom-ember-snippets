@@ -1,0 +1,28 @@
+'.source.coffee':
+
+  'Ember fixtureAdapter':
+    'prefix': 'ds.fixA'
+    'body':
+      """
+        export = DS.FixtureAdapter.extend()
+      """
+
+
+  'Ember REST Adapter':
+    'prefix': 'ds.resA'
+    'body':
+      """
+        _export = DS.RESTAdapter.extend(
+          ${1:#body}
+        )
+      """
+
+
+  'Ember Active Model Adapter':
+    'prefix': 'ds.actA'
+    'body':
+      """
+        _export = DS.ActiveModelAdapter.extend(
+          ${1:#body}
+        )
+      """
