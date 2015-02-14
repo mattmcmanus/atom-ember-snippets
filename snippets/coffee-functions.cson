@@ -1,0 +1,67 @@
+# Ember Functions snippets
+#
+# Examples
+#
+#  `ember<tab>`
+#
+
+'.source.coffee':
+
+
+  'Ember Find by id':
+    'prefix': 'sto.fin'
+    'body': "@store.find('${1:model}', params.${1:model}_id)"
+
+
+  'Create Record in Store':
+    'prefix': 'sto.cre'
+    'body':
+      """
+        ${1:foo} = @store.createRecord('${2:modelType}',
+          ${3:property} : ${4:property}
+        )
+        ${1:foo}.save()
+      """
+
+  'delete Record in Store':
+    'prefix': 'sto.del'
+    'body':
+      """
+        @store.deleteRecord('${1:modelInstance}')
+      """
+
+  'fetch Record to Store':
+    'prefix': 'sto.fet'
+    'body':
+      """
+        @store.fetch('modelType', params.post_id)
+      """
+
+  'modelFor':
+    'prefix': 'modFor'
+    'body':
+      """
+        @.modelFor('${1:theNameOfParentRoute}').filterBy(${2:properyName})
+      """
+
+
+
+  'Ember Logger Debug':
+    'prefix': 'log.deb'
+    'body': "Ember.Logger.debug('${1:message}')"
+
+  'Ember Logger Log':
+    'prefix': 'log.log'
+    'body': "Ember.Logger.log('${1:message}')"
+
+  'Ember Logger Info':
+    'prefix': 'log.inf'
+    'body': "Ember.Logger.info('${1:message}')"
+
+  'Ember Logger Warn':
+    'prefix': 'log.war'
+    'body': "Ember.Logger.warn('${1:message}')"
+
+  'Ember Logger Error':
+    'prefix': 'log.err'
+    'body': "Ember.Logger.error('${1:message}')"
