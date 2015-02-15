@@ -14,7 +14,6 @@
 
 
 
-
   'Ember Object Controller':
     'prefix': 'em.obj'
     'body':
@@ -22,10 +21,8 @@
         _export = Ember.ObjectController.extend(
           ${1:#body}
         )
+
       """
-
-
-
 
   'Ember Array Controller':
     'prefix': 'em.arr'
@@ -43,6 +40,8 @@
             }
         )
       """
+
+
 
 
 
@@ -70,6 +69,8 @@
 
 
 
+
+
   'Ember Component':
     'prefix': 'em.com'
     'body':
@@ -83,39 +84,49 @@
 
 
 
+
+
   'Ember Mixin':
     'prefix': 'em.mix'
     'body':
-    """
-      _export = Ember.Mixin.create(
-        ${1:#body}
-      )
+      """
+        _export = Ember.Mixin.create(
+          ${1:#body}
+        )
 
-    """
+      """
+
+
 
 
 
 
   'Ember Object':
     'prefix': 'em.obj'
-    'body': """
-      _export = Ember.Object.extend(
-        ${1:#body}
-      )
+    'body':
+      """
+        _export = Ember.Object.extend(
+          ${1:#body}
+        )
 
-    """
+      """
+
+
 
 
 
 
   'Ember Helper':
     'prefix': 'em.hel'
-    'body': """
-      _export = Ember.Handlebars.makeBoundHelper(->
-        ${1:#body}
-      )
+    'body':
+      """
+        _export = Ember.Handlebars.makeBoundHelper( ->
+          ${1:#body}
+        )
 
-    """
+      """
+
+
 
 
 
@@ -123,16 +134,16 @@
   'Ember Model':
     'prefix': 'ds.mod'
     'body':
-    """
-      _export = DS.Model.extend(
-        ${1:title}: DS.attr(${2:"string"})
-        ${3:title: DS.attr("boolean")}
-        ${4:title: DS.attr("number")}
-        ${5:title: DS.belongsTo('someModel',async: true)}
-        ${6:title: DS.hasMany('someModel'  ,async: true)}
+      """
+        _export = DS.Model.extend(
+          ${1:title}: DS.attr(${2:"string"})
+          ${3:title: DS.attr("boolean")}
+          ${4:title: DS.attr("number")}
+          ${5:title: DS.belongsTo('someModel',async: true)}
+          ${6:title: DS.hasMany('someModel'  ,async: true)}
 
-      )
-    """
+        )
+      """
 
 
 
@@ -145,6 +156,8 @@
           ${1:#body}
         )
       """
+
+
 
 
 
@@ -202,18 +215,29 @@
 
 
 
-  'Fixture Reopen':
-    'prefix': 're.fix'
-    'body':  """
-    _export.reopenClass FIXTURES: [
-      {
-        id: 1
-        title: "learn ember"
-        isCompleted: true
-        author: [10,15,20]      #hasMany
-        author: 12              #bolongTo
-      }
-      {
+  'Ember Utility':
+    'prefix': 'utility'
+    'body':
+      """
+        _export = ${1:myUtility} ->
+          ${2:#body}
 
-      }
-    ] """
+      """
+
+  'Fixture Reopen':
+    'prefix': 'reo.fix'
+    'body':
+      """
+        _export.reopenClass FIXTURES: [
+          {
+            id: 1
+            title: "learn ember"
+            isCompleted: true
+            author: [10,15,20]      #hasMany
+            author: 12              #bolongTo
+          }
+          {
+
+          }
+        ]
+      """
