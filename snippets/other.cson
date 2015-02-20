@@ -1,0 +1,108 @@
+'.source.coffee':
+
+
+
+
+  'then':
+    'prefix': 'then'
+    'body':
+      """.then( (data) ->
+            ${1:#logic}
+        )
+      """
+
+
+
+  'set':
+    'prefix': 'set'
+    'body':
+      """set('${1:key}','${2:val}')"""
+
+
+
+
+  'get':
+    'prefix': 'get'
+    'body':
+      """get('${1:model}').${2}"""
+
+
+
+
+  'save':
+    'prefix': 'save'
+    'body':
+      """save()
+      ${1} """
+
+
+
+  'create a Record':
+    'prefix': 'creR'
+    'body':
+      """
+        creatRecord()
+        ${1}
+      """
+
+
+
+
+  'delete a Record':
+    'prefix': 'delR'
+    'body': "deleteRecord()${1}"
+
+
+
+
+
+  'controllerFor':
+    'prefix': 'conF'
+    'body':  "controllerFor('${1}')${2}"
+
+
+
+
+
+  'modelFor':
+    'prefix': 'modF'
+    'body':  "modelFor('${1}')${2}"
+
+
+
+
+  'send':
+    'prefix': 'sen'
+    'body':  "send('${1}',${2})"
+
+
+
+
+  'transitionTo_1':
+    'prefix': 'tra'
+    'body':  "transitionTo('${1:route_name}')${2}"
+
+
+
+
+  'transitionTo_2':
+    'prefix': 'traT'
+    'body':  "transitionTo('${1:route_name}')${2}"
+
+
+
+
+  'resource':
+    'prefix': '@res'
+    'body':
+      """
+        @resource('${1:name}', path:'${2:/some/item_id}'), ->
+          ${3}
+      """
+
+
+
+
+  'route':
+    'prefix': '@rou'
+    'body':  "@route('${1:name}', path:'${2:/some/item_id}')"
