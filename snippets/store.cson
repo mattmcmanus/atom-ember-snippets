@@ -1,0 +1,124 @@
+'.source.coffee':
+
+
+
+
+
+  'Ember Snippets: store':
+    'prefix': 'store--help'
+    'body':
+      """
+      ${1:
+        #  ____________________________________________________________________
+        # | use shorthand ->   or long version    ->   to generate these       |
+        # |  -----------  ->   ----------------   ->   ------------------      |
+        # |   sto.cre     ->  store.createRecord  ->   store.createRecord(...  |
+        # |   sto.del     ->  store.deleteRecord  ->   store.deleteRecord(...  |
+        # |   sto.fet     ->  store.fetch         ->   store.fetch(...         |
+        # |   sto.fil     ->  store.filter        ->   store.filter(...        |
+        # |   sto.pus     ->  store.push          ->   store.push(...          |
+        # |   sto.pusM    ->  store.pushMany      ->   store.pushMany(...      |
+        # |   sto.all     ->  store.all           ->   store.all(...           |
+        # |   sto.get     ->  store.getById       ->   store.getById(...       |
+        # |   sto.fin     ->  store.find          ->   store.find(...          |
+        # |____________________________________________________________________|
+      }
+      """
+
+
+
+
+  '1 Create Record in Store':
+    'prefix': 'store.createRecord'
+    'body':
+       """
+        store.createRecord('${1:property}',
+
+          ${1:key} : ${2:value}
+        )
+
+        ${3}
+      """
+
+
+
+
+  '2 Delete Record in Store':
+    'prefix': 'store.deleteRecord'
+    'body':
+       """
+        store.deleteRecord(${1:data},
+        ${2}
+      """
+
+
+
+
+  '3 Fetch Record in Store':
+    'prefix': 'store.fetch'
+    'body':
+      """
+        store.fetch('${1:model_name}',${2:params.id},false)
+      """
+
+
+
+
+  '4 Fetch Record in Store':
+    'prefix': 'store.filter'
+    'body':
+      """
+        store.filter('${1:model_name}', (item) ->
+          #logic...
+          #return boolean
+        )
+      """
+
+
+
+
+  '5 Push One Record to Store':
+    'prefix': 'store.push'
+    'body':
+      """
+        store.push('${1:model_name}', ${2:arr_of_objs})
+      """
+
+
+
+
+  '6 Push Many Records to Store':
+    'prefix': 'store.pushMany'
+    'body':
+      """
+        store.pushMany('${1:model_name}', ${2:arr_of_objs})
+      """
+
+
+
+
+  '7 all Records from Store':
+    'prefix': 'store.all'
+    'body':
+      """
+        store.all('${1:model_name}') # (only local)
+      """
+
+
+
+
+  '8 find Records from Store':
+    'prefix': 'store.getById'
+    'body':
+      """
+        store.getById('${1:model_name}', ${2:id} )   ${3:# only local}
+      """
+
+
+
+  '9 find Records from Store':
+    'prefix': 'store.find'
+    'body':
+      """
+        store.find('${1:model_name}'${2:, id})   ${3:#find records (local & remote)}
+      """
