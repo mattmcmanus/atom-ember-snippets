@@ -33,85 +33,62 @@
 
   'Ember computed greater than':
     'prefix': 'computed.gt'
-    'body':
-      """
-        Ember.computed.gt('${1:property}', ${2:0}) ${3:# (returns a boolean)}
-      """
+    'body': "Ember.computed.gt('${1:property}', ${2:0}) ${3:# (returns a boolean)}"
 
 
 
 
   'Ember computed less than':
     'prefix': 'computed.lt'
-    'body':
-      """
-        Ember.computed.lt('${1:property}', ${2:0}) ${3:# (returns a boolean)}
-      """
+    'body': "Ember.computed.lt('${1:property}', ${2:0}) ${3:# (returns a boolean)}"
 
 
 
 
   'Ember computed alias or ':
     'prefix': 'computed.or'
-    'body':
-      """
-        Ember.computed.or('${1:property_1}', '${2:property_2}')  ${3:# (returns a boolean)}
-      """
+    'body': "Ember.computed.or('${1:property_1}', '${2:property_2}')  ${3:# (returns a boolean)}"
 
 
 
 
   'Ember computed alias and':
     'prefix': 'computed.and'
-    'body':
-      """
-        Ember.computed.and('${1:property_1}', '${2:property_2}')  ${3:# (returns a boolean)}
-      """
+    'body': "Ember.computed.and('${1:property_1}', '${2:property_2}')  ${3:# (returns a boolean)}"
 
 
 
 
   'Ember computed alias Max':
     'prefix': 'computed.max'
-    'body':
-      """
-        Ember.computed.max('${1:property_1}') ${2:# (returns a number)}
-      """
+    'body': "Ember.computed.max('${1:property_1}') ${2:# (returns a number)}"
 
 
 
 
   'Ember computed alias Min':
     'prefix': 'computed.min'
-    'body':
-      """
-        Ember.computed.min('${1:property_1}') ${2:# (returns a number)}
-      """
+    'body': "Ember.computed.min('${1:property_1}') ${2:# (returns a number)}"
 
 
 
 
   'Ember computed alias map':
     'prefix': 'computed.map'
-    'body':
-      """
-        Ember.computed.map('${1:array_property}', (item, index) ->
+    'body': " Ember.computed.map('${1:array_property}', (item, index) ->
           ${2:#example logic
           altered_item = item + "some_string"
           return altered_item }
 
         ${3:# outputs a new array}
-      """
+      "
 
 
 
 
   'Ember computed alias mapBy':
     'prefix': 'computed.mapBy'
-    'body':
-      """
-        Ember.computed.mapBy('${1:array_of_objs}','${2:obj_key}')  ${3:# outputs a simple array[] of items}
-      """
+    'body': " Ember.computed.mapBy('${1:array_of_objs}','${2:obj_key}')  ${3:# outputs a simple array[] of items} "
 
 
 
@@ -130,17 +107,11 @@
 
   'Ember computed alias filterBy':
     'prefix': 'computed.filterBy'
-    'body':
-      """
-        Ember.computed.filterBy('${1:array_of_objs}','${2:obj_key}', ${3:value})  ${4:#returns filtered array[]}
-      """
+    'body': "Ember.computed.filterBy('${1:array_of_objs}','${2:obj_key}', ${3:value})  ${4:#returns filtered array[]}"
 
 
 
 
   'Ember computed alias empty':
     'prefix': 'computed.empty'
-    'body':
-      """
-        Ember.computed.empty('${1:propery}')  ${2:#returns boolean}
-      """
+    'body': "Ember.computed.empty('${1:propery}')  ${2:#returns boolean}"
