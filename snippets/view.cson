@@ -1,0 +1,102 @@
+'.source.coffee':
+
+
+  'available in view':
+    'prefix': 'view--help'
+    'body':
+      """
+      ${1:
+        # you can use these snippets within a
+        # Em.view.extend(
+        #   example : tN<tab>
+        #   _____________________________________________
+        #  | type or long version ->  press tab to see:  |
+        #  |----- -> -----------  ->  ------------------ |
+        #  | tN   ->  tagN        ->  tagNames:          |
+        #  | aB   ->  attributeB  ->  attributeBindings: |
+        #  | cN   ->  classN      ->  classNames:        |
+        #  | cNB  ->  classNB     ->  classNameBindings: |
+        #  | eM   ->  eventM      ->  eventManager:      |
+        #  |_____________________________________________|
+        #
+        #   *press <Backspace> to remove this quick guide.
+
+            }
+      """
+
+  '0 Ember View':
+    'prefix': 'view'
+    'body':
+      """
+        _export = Ember.View.extend(
+          ${1:# to see more available snippets by Expanding :
+
+          # view-help${2}  (or view-h)
+          }
+        )
+      """
+
+  '1 Ember event Manager':
+    'prefix': 'eventM'
+    'body':
+      """
+        eventManager: Ember.Object.create(
+          ${1:event} :
+            ${2:#logic...}
+        )
+      """
+
+
+
+
+  '2 Ember tag Names':
+    'prefix': 'tagN'
+    'body':
+      """
+        tagNames: '${1:div}'
+        ${2}
+      """
+
+
+
+
+  '3 view attribute Bindings':
+    'prefix': 'attributeB'
+    'body':
+      """
+        attributeBindings: ['${1}']
+        ${2}
+      """
+
+
+
+
+  '4 Ember class Names':
+    'prefix': 'classN'
+    'body':
+      """
+        classNames: ['${1:class-1}','${2:class-2}']
+        ${2}
+      """
+
+
+
+
+  '5 view class Name Bindings':
+    'prefix': 'classNB'
+    'body':
+      """
+        classNameBindings: ['${1}','${2}']
+        ${1} :
+        ${2} :
+      """
+
+
+
+
+  '6 isVisible':
+    'prefix': 'isV'
+    'body':
+      """
+        isVisible: ${1:null}
+      """
