@@ -33,7 +33,7 @@
     'prefix': 'import-ds'
     'body':
       """
-        `import DS    from 'ember-data';`
+        `import DS from 'ember-data';`
         ${1}
       """
 
