@@ -9,13 +9,13 @@
         # you can use these snippets within a
         # Em.view.extend(
         #  example : aM<tab>
-        #   _______________________________________________________
-        #  | type or    long version    ->    press tab to see:    |
-        #  | ---- ->  ----------------  ->  ---------------------  |
-        #  | aM   ->  afterModel        ->  afterModel : ...       |
-        #  | bM   ->  beforeModel       ->  beforeModel : ...      |
-        #  | cN   ->  setupController   ->  setupController : ...  |
-        #  |_______________________________________________________|
+        #   ________________________________________________________
+        #  | type  or    long version    ->    press tab to see:    |
+        #  | ----  ->  ----------------  ->  ---------------------  |
+        #  |  aM   ->  afterModel        ->  afterModel : ...       |
+        #  |  bM   ->  beforeModel       ->  beforeModel : ...      |
+        #  |  cN   ->  setupController   ->  setupController : ...  |
+        #  |________________________________________________________|
         #
         #   *press <Backspace> to remove this quick guide.
       }
@@ -28,12 +28,11 @@
       """
         _export = Ember.Route.extend(
           ${1:# see more snippets by Expanding :
-
-            # model--help${1}  (or model-h)
+              #   model--help  (or model-h)
             }
 
         model: ->
-
+          ${2}
         )
       """
 
@@ -49,7 +48,7 @@
     'prefix': 'beforeModel'
     'body':
       """
-        beforeModel : (transition) ->
+        beforeModel: (transition) ->
           ${1:#logic...}
       """
 
@@ -57,6 +56,6 @@
     'prefix': 'setupController'
     'body':
       """
-        setupController : (transition) ->
+        setupController: (transition) ->
           ${1:#logic...}
       """
