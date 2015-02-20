@@ -1,0 +1,62 @@
+'.source.coffee':
+
+
+  'available in route':
+    'prefix': 'route--help'
+    'body':
+      """
+      ${1:
+        # you can use these snippets within a
+        # Em.view.extend(
+        #  example : aM<tab>
+        #   _______________________________________________________
+        #  | type or    long version    ->    press tab to see:    |
+        #  | ---- ->  ----------------  ->  ---------------------  |
+        #  | aM   ->  afterModel        ->  afterModel : ...       |
+        #  | bM   ->  beforeModel       ->  beforeModel : ...      |
+        #  | cN   ->  setupController   ->  setupController : ...  |
+        #  |_______________________________________________________|
+        #
+        #   *press <Backspace> to remove this quick guide.
+      }
+      """
+
+
+  'Ember Route':
+    'prefix': 'route'
+    'body':
+      """
+        _export = Ember.Route.extend(
+          ${1:# see more snippets by Expanding :
+
+            # model--help${1}  (or model-h)
+            }
+
+        model: ->
+
+        )
+      """
+
+  'Route afterModel':
+    'prefix': 'afterModel'
+    'body':
+      """
+        afterModel: (${1:model}, transition) ->
+          ${2:#logic...}
+      """
+
+  'Route beforeModel':
+    'prefix': 'beforeModel'
+    'body':
+      """
+        beforeModel : (transition) ->
+          ${1:#logic...}
+      """
+
+  'Route setupController':
+    'prefix': 'setupController'
+    'body':
+      """
+        setupController : (transition) ->
+          ${1:#logic...}
+      """
