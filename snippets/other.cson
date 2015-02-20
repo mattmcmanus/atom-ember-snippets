@@ -24,7 +24,7 @@
   'get':
     'prefix': 'get'
     'body':
-      """get('${1:model}').${2}"""
+      """get('${1:key}').${2}"""
 
 
 
