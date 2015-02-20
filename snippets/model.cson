@@ -13,9 +13,9 @@
         #    __________________________________________________________
         #   | type shorthand -> or long version ->  press tab to see:   |
         #   |  -----------   ->  -------------  ->   ------------------ |
-        #   |      att       ->   ds.attr       ->   DS.attr(...        |
-        #   |      bel       ->   ds.belongsTo  ->   DS.belongsTo(...   |
-        #   |      has       ->   ds.hasMany    ->   DS.hasMany(...     |
+        #   |      att       ->    attr         ->   DS.attr(...        |
+        #   |      bel       ->    belongsTo    ->   DS.belongsTo(...   |
+        #   |      has       ->    hasMany      ->   DS.hasMany(...     |
         #   |___________________________________________________________|
         # )
         #           *press <Backspace> to remove this quick guide.
