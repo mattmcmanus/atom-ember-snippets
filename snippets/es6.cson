@@ -1,0 +1,74 @@
+'.source.coffee':
+
+  'Ember Snippets for es6 syntax':
+    'prefix': 'es6--help'
+    'body':
+      """
+      ${1:
+        # snippets to generate --ES6 syntax--
+        # example: imp-ds<press tab>
+        #  ___________________________________________________________
+        # | type short (or)  long version    ->   then press <tab>    |
+        # | ----------  ->  ---------------  -> ----------------------|
+        # |  imp-ds     ->   import-ds       ->  `import DS...      ` |
+        # |  imp-emb    ->   import-ember    ->  `import Ember...   ` |
+        # |  exp-def    ->   export-default  ->  `export default... ` |
+        # |  es6        ->   es6             ->  - full set -         |
+        # |___________________________________________________________|
+        }
+      """
+
+  'ES6 import Ember':
+    'prefix': 'import-ember'
+    'body':
+      """
+        `import Ember from "ember";`
+        ${1}
+      """
+
+
+
+
+  'ES6 import DS':
+    'prefix': 'import-ds'
+    'body':
+      """
+        `import DS    from 'ember-data';`
+        ${1}
+      """
+
+
+
+
+  'ES6 export syntax':
+    'prefix': 'export-default'
+    'body':
+      """
+
+
+        ${2}
+
+
+
+        `export default ${1:_export};`
+      """
+
+
+
+
+  'ES6 import and export':
+    'prefix': 'es6'
+    'body':
+      """
+        ${1:`import Ember from 'ember';`}
+        ${2:`import DS    from 'ember-data';`}
+
+
+
+        ${3}
+
+
+
+        `export default _export;`
+
+      """
