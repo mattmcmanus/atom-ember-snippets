@@ -42,24 +42,19 @@
 
 
   'Ember Model attributes':
-    'prefix': 'ds.attr'
-    'body':
-      """
-        ${1}: DS.attr(  "string"  )
-        ${2}: DS.attr(  "boolean" )
-        ${3}: DS.attr(  "number"  )
-      """
+    'prefix': 'attr'
+    'body': "   ${1}: DS.attr(  "string"  )     # or "number" , "boolean" , "date"  "
 
 
 
 
   'Ember Model Relation: belongsTo ':
-    'prefix': 'ds.belongsTo'
+    'prefix': 'belongsTo'
     'body': "${1} : DS.belongsTo('${2:other_Model}',async: ${3:false})"
 
 
 
 
   'Ember Model Relation: hasMany':
-    'prefix': 'ds.hasMany'
+    'prefix': 'hasMany'
     'body': "${1} : DS.hasMany('${2:other_Model}',async: ${3:false})"
