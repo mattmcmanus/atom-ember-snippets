@@ -1,0 +1,68 @@
+'.source.coffee':
+
+
+  'available in model':
+    'prefix': 'arrayController--help'
+    'body':
+      """
+      ${1:
+        # you can use these snippets in a Model function.
+        #
+        # DS.Model.extend(
+        #   example : att<tab>
+        #    _______________________________________________________________
+        #   | type shorthand -> or long version     ->  press tab to see:   |
+        #   |  -----------   ->  -------------      ->   ------------------ |
+        #   |      iC        ->   itemController    ->   itemController...  |
+        #   |      sP        ->   sortProperties    ->   sortProperties...  |
+        #   |      sA        ->   sortAscending     ->   sortAscending...   |
+        #   |_______________________________________________________________|
+        # )
+        #           *press <Backspace> to remove this quick guide.
+
+      }
+      """
+
+
+  'Ember Object Controller':
+    'prefix': 'objectController'
+    'body':
+      """
+        _export = Ember.ObjectController.extend(
+          ${1:#body}
+        )
+      """
+
+
+
+
+  'Ember Array Controller':
+    'prefix': 'arrayController'
+    'body':
+      """
+        _export = Ember.ArrayController.extend(
+
+          ${2:sortProperties: ''}
+          ${3:sortAscending: false}
+          ${4:actions:
+            ${5:name_1}: ->
+              ${6:#logic...}
+
+            ${7:name_2}: ->
+              ${8:#logic2...}
+            }
+        )
+
+      """
+
+  'itemController':
+    'prefix': 'itemController'
+    'body': "itemController : '${1:an_objController}'}"
+
+  'sortProperties':
+    'prefix': 'sortProperties'
+    'body': "sortProperties : ['${1:property}']}"
+
+  'sortAscending':
+    'prefix': 'sortAscending'
+    'body': "sortAscending : ['${1:false}']}"
