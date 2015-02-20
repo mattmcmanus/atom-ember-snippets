@@ -71,12 +71,6 @@
 
 
 
-  'send':
-    'prefix': 'sen'
-    'body':  "send('${1}',${2})"
-
-
-
 
   'transitionTo_1':
     'prefix': 'tra'
