@@ -1,0 +1,65 @@
+'.source.coffee':
+
+
+  'available in model':
+    'prefix': 'model--help'
+    'body':
+      """
+      ${1:
+        # you can use these snippets in a Model function.
+        #
+        # DS.Model.extend(
+        #   example : att<tab>
+        #    __________________________________________________________
+        #   | type shorthand -> or long version ->  press tab to see:   |
+        #   |  -----------   ->  -------------  ->   ------------------ |
+        #   |      att       ->   ds.attr       ->   DS.attr(...        |
+        #   |      bel       ->   ds.belongsTo  ->   DS.belongsTo(...   |
+        #   |      has       ->   ds.hasMany    ->   DS.hasMany(...     |
+        #   |___________________________________________________________|
+        # )
+        #           *press <Backspace> to remove this quick guide.
+      }
+      """
+
+
+
+
+  'Ember Model':
+    'prefix': 'model'
+    'body':
+      """
+        _export = DS.Model.extend(
+          ${1:# see more snippets by Expanding :
+
+            # model--help${2}
+            # or model-h for short.
+            }
+        )
+      """
+
+
+
+
+  'Ember Model attributes':
+    'prefix': 'ds.attr'
+    'body':
+      """
+        ${1}: DS.attr(  "string"  )
+        ${2}: DS.attr(  "boolean" )
+        ${3}: DS.attr(  "number"  )
+      """
+
+
+
+
+  'Ember Model Relation: belongsTo ':
+    'prefix': 'ds.belongsTo'
+    'body': "${1} : DS.belongsTo('${2:other_Model}',async: ${3:false})"
+
+
+
+
+  'Ember Model Relation: hasMany':
+    'prefix': 'ds.hasMany'
+    'body': "${1} : DS.hasMany('${2:other_Model}',async: ${3:false})"
