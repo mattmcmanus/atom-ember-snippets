@@ -6,10 +6,10 @@
     'body':
       """
       ${1:
-        # you can use these snippets in a Model function.
+        # you can use these snippets in a arrayController function.
         #
-        # DS.Model.extend(
-        #   example : att<tab>
+        # DS.arrayController.extend(
+        #   example : iC<tab>
         #    _______________________________________________________________
         #   | type shorthand -> or long version     ->  press tab to see:   |
         #   |  -----------   ->  -------------      ->   ------------------ |
@@ -41,15 +41,9 @@
     'body':
       """
         _export = Ember.ArrayController.extend(
-
-          ${2:sortProperties: ''}
-          ${3:sortAscending: false}
           ${4:actions:
             ${5:name_1}: ->
               ${6:#logic...}
-
-            ${7:name_2}: ->
-              ${8:#logic2...}
             }
         )
 
