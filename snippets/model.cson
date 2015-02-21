@@ -1,0 +1,31 @@
+'.source.coffee':
+
+
+  'DS.Model.extend(...':
+    'prefix': 'dsModel'
+    'body':
+      """
+        _export = DS.Model.extend
+          ${1}
+      """
+
+
+
+
+  'DS.attr(...':
+    'prefix': 'dsModel.attr'
+    'body': "${1}: DS.attr(  'string'  )     # or 'number' , 'boolean' , 'date'"
+
+
+
+
+  'DS.belongsTo(...':
+    'prefix': 'dsModel.belongsTo'
+    'body': "${1}: DS.belongsTo('${2:other_Model}',async: ${3:false})"
+
+
+
+
+  'DS.hasMany(...':
+    'prefix': 'dsModel.hasMany'
+    'body': "${1}: DS.hasMany('${2:other_Model}',async: ${3:false})"
