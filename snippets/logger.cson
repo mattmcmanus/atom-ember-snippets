@@ -1,0 +1,34 @@
+'.source.coffee':
+
+
+  'Em.Logger.debug(... ':
+    'prefix': 'emLogger.debug'
+    'body': "Ember.Logger.debug('${1:message}')"
+
+
+
+
+  'Em.Logger.log(...':
+    'prefix': 'emLogger.log'
+    'body': "Ember.Logger.log('${1:message}')"
+
+
+
+
+  'Em.Logger.info(...':
+    'prefix': 'emLogger.info'
+    'body': "Ember.Logger.info('${1:message}')"
+
+
+
+
+  'Em.Logger.warn(...':
+    'prefix': 'emLogger.warn'
+    'body': "Ember.Logger.warn('${1:message}')"
+
+
+
+
+  'Em.Logger.error(...':
+    'prefix': 'emLogger.error'
+    'body': "Ember.Logger.error('${1:message}')"
