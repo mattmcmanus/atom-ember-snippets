@@ -1,0 +1,40 @@
+'.source.coffee':
+
+  'Ember fixtureAdapter':
+    'prefix': 'emAdapter.fixture'
+    'body':
+      """
+        export = DS.FixtureAdapter.extend()
+      """
+
+
+  'Ember REST Adapter':
+    'prefix': 'emAdapter.rest'
+    'body':
+      """
+        _export = DS.RESTAdapter.extend(
+          ${1:#body}
+        )
+
+
+        _export.reopenClass FIXTURES: [
+          {
+            id: 1
+            ${1}: "${2}"
+          }
+          {
+            id: 2
+            ${3}: "${4}"
+          }
+        ]
+      """
+
+
+  'Ember Active Model Adapter':
+    'prefix': 'emAdapter.activeModel'
+    'body':
+      """
+        _export = DS.ActiveModelAdapter.extend(
+          ${1:#body}
+        )
+      """
