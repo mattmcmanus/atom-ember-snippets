@@ -1,0 +1,41 @@
+'.source.coffee':
+
+  'Ember.Route.extend(...':
+    'prefix': 'emRoute'
+    'body':
+      """
+        _export = Ember.Route.extend(
+        model: ->
+          ${2}
+        )
+      """
+
+
+
+  'afterModel: ...':
+    'prefix': 'emRoute.afterModel'
+    'body':
+      """
+        afterModel: (${1:model}, transition) ->
+          ${2:#logic...}
+      """
+
+
+
+  'beforeModel: ...':
+    'prefix': 'emRoute.beforeModel'
+    'body':
+      """
+        beforeModel: (transition) ->
+          ${1:#logic...}
+      """
+
+
+
+  'setupController: ...':
+    'prefix': 'emRoute.setupController'
+    'body':
+      """
+        setupController: (transition) ->
+          ${1:#logic...}
+      """
