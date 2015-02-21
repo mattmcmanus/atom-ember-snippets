@@ -1,0 +1,55 @@
+'.source.coffee':
+
+
+  'import Ember from...':
+    'prefix': 'emEs6.importEmber'
+    'body':
+      """
+        `import Ember from "ember";`
+        ${1}
+      """
+
+
+
+
+  'import DS from...':
+    'prefix': 'emEs6.importDs'
+    'body':
+      """
+        `import DS from 'ember-data';`
+        ${1}
+      """
+
+
+
+
+  'export Default...':
+    'prefix': 'emEs6.exportDefault'
+    'body':
+      """
+
+        ${2}
+
+
+        `export default ${1:_export};`
+      """
+
+
+
+
+  'both imports and export...':
+    'prefix': 'emEs6.fullset'
+    'body':
+      """
+        ${1:`import Ember from 'ember';`}
+        ${2:`import DS    from 'ember-data';`}
+
+
+
+        ${3}
+
+
+
+        `export default _export;`
+
+      """
