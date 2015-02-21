@@ -1,0 +1,46 @@
+'.source.coffee':
+
+
+  'Ember.ObjectController.extend(...':
+    'prefix': 'emObjectController'
+    'body':
+      """
+        _export = Ember.ObjectController.extend(
+          actions:
+            ${2:name}: ->
+              ${3:#logic...}
+        )
+      """
+
+
+
+
+  'Ember.ArrayController.extend(...':
+    'prefix': 'emArrayController'
+    'body':
+      """
+        _export = Ember.ArrayController.extend(
+          actions:
+            ${2:name}: ->
+              ${3:#logic...}
+
+        )
+      """
+
+
+
+
+
+  'itemController : ...':
+    'prefix': 'emArrayController.itemC'
+    'body': "itemController : '${1:an_objController}'}"
+
+
+  'sortProperties : ...':
+    'prefix': 'emArrayController.sortP'
+    'body': "sortProperties : ['${1:property}']}"
+
+
+  'sortAscending : ...':
+    'prefix': 'emArrayController.sortA'
+    'body': "sortAscending : ['${1:false}']}"
