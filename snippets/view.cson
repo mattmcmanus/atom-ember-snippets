@@ -37,7 +37,7 @@
       """
 
   '1 Ember event Manager':
-    'prefix': 'eventM'
+    'prefix': 'eventManager'
     'body':
       """
         eventManager: Ember.Object.create(
@@ -50,7 +50,7 @@
 
 
   '2 Ember tag Names':
-    'prefix': 'tagN'
+    'prefix': 'tagNames'
     'body':
       """
         tagNames: '${1:div}'
@@ -95,7 +95,7 @@
 
 
   '6 isVisible':
-    'prefix': 'isV'
+    'prefix': 'isVisible'
     'body':
       """
         isVisible: ${1:null}
