@@ -43,7 +43,7 @@
 
   'Ember Model attributes':
     'prefix': 'attr'
-    'body': """${1}: DS.attr(  "string"  )     # or "number" , "boolean" , "date"  """
+    'body': "${1}: DS.attr(  'string'  )     # or 'number' , 'boolean' , 'date'"
 
 
 
