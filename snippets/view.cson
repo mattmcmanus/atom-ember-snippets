@@ -1,0 +1,79 @@
+'.source.coffee':
+
+
+  'Ember.View.extend(...':
+    'prefix': 'emView'
+    'body':
+      """
+        _export = Ember.View.extend(
+          ${1:# to see more available snippets by Expanding :
+
+          # view-help${2}  (or view-h)
+          }
+        )
+      """
+
+  'eventManager: ':
+    'prefix': 'emView.eventM'
+    'body':
+      """
+        eventManager: Ember.Object.create(
+          ${1:event} :
+            ${2:#logic...}
+        )
+      """
+
+
+
+
+  'tagNames : "div"':
+    'prefix': 'emView.tagN'
+    'body':
+      """
+        tagNames: '${1:div}'
+        ${2}
+      """
+
+
+
+
+  'attributeBindings : [...':
+    'prefix': 'emView.attrB'
+    'body':
+      """
+        attributeBindings: ['${1}']
+        ${2}
+      """
+
+
+
+
+  'classNames : [...':
+    'prefix': 'emView.classN'
+    'body':
+      """
+        classNames: ['${1:class-1}','${2:class-2}']
+        ${2}
+      """
+
+
+
+
+  'classNameBindings : [...':
+    'prefix': 'emView.classNB'
+    'body':
+      """
+        classNameBindings: ['${1}','${2}']
+        ${1} :
+        ${2} :
+      """
+
+
+
+
+  'isVisible : null':
+    'prefix': 'emView.isVisible'
+    'body':
+      """
+        isVisible: ${1:null}
+      """
