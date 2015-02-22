@@ -12,20 +12,38 @@
 
 
 
-  'DS.attr(...':
+  'Verbose DS.attr(...':
     'prefix': 'dsModel.attr'
-    'body': "${1}: DS.attr(  'string'  )     # or 'number' , 'boolean' , 'date'"
+    'body': "${1}: DS.attr(  'string' ,  defaultValue: ${2:null}  )     # or 'number' , 'boolean' , 'date'"
+
+
+  'DS.attr(...':
+    'prefix': 'dsModel.attr-v'
+    'body': "${1}: DS.attr()"
+
+
+
+
+
+  'Verbose DS.hasMany(...':
+    'prefix': 'dsModel.hasMany'
+    'body': "${1}: DS.hasMany(  '${2:other_Model}' , inverse: '${2:some_propery}' , async: ${3:false})"
+
+
+  'DS.hasMany(...':
+    'prefix': 'dsModel.hasMany'
+    'body': "${1}: DS.hasMany('${2:other_Model}')"
+
+
 
 
 
 
   'DS.belongsTo(...':
     'prefix': 'dsModel.belongsTo'
-    'body': "${1}: DS.belongsTo('${2:other_Model}',async: ${3:false})"
+    'body': "${1}: DS.belongsTo('${1:other_Model}')"
 
 
-
-
-  'DS.hasMany(...':
-    'prefix': 'dsModel.hasMany'
-    'body': "${1}: DS.hasMany('${2:other_Model}',async: ${3:false})"
+  'Verbose DS.belongsTo(...':
+    'prefix': 'dsModel.belongsTo-v'
+    'body': "${1}: DS.belongsTo('${1:other_Model}' , inverse: '${2:some_propery}' , async: ${3:false})"
