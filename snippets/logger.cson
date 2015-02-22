@@ -1,6 +1,13 @@
 '.source.coffee':
 
 
+  'Em.Logger.assert(... ':
+    'prefix': 'emLogger.assert'
+    'body': "Ember.Logger.assert('${1:boolean}')   # Throws an Assertion failed error."
+
+
+
+
   'Em.Logger.debug(... ':
     'prefix': 'emLogger.debug'
     'body': "Ember.Logger.debug('${1:message}')"
