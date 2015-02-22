@@ -6,15 +6,59 @@
     'body':
       """
         _export = Ember.View.extend(
-          ${1:# to see more available snippets by Expanding :
-
-          # view-help${2}  (or view-h)
-          }
+          ${1}
         )
       """
 
-  'eventManager: ':
-    'prefix': 'emView.eventM'
+
+
+
+  'Ember.TextField.extend(...':
+    'prefix': 'emView.TextField'
+    'body':
+      """
+        Ember.TextField.extend
+          ${1:#logic...}
+      """
+
+
+
+
+  'Ember.TextArea.extend(...':
+    'prefix': 'emView.TextArea'
+    'body':
+      """
+        Ember.TextArea.extend
+          ${1:#logic...}
+      """
+
+
+
+
+  'Ember.Checkbox.extend(...':
+    'prefix': 'emView.Checkbox'
+    'body':
+      """
+        Ember.Checkbox.extend
+          ${1:#logic...}
+      """
+
+
+
+
+  'Ember.Select.extend(...':
+    'prefix': 'emView.Select'
+    'body':
+      """
+        Ember.Select.extend
+          ${1:#logic...}
+      """
+
+
+
+
+  'eventManager: ...':
+    'prefix': 'emView.eventManager'
     'body':
       """
         eventManager: Ember.Object.create(
@@ -26,11 +70,11 @@
 
 
 
-  'tagNames : "div"':
+  'tagName : null':
     'prefix': 'emView.tagN'
     'body':
       """
-        tagNames: '${1:div}'
+        tagName: '${1:div}'
         ${2}
       """
 
@@ -41,8 +85,8 @@
     'prefix': 'emView.attrB'
     'body':
       """
-        attributeBindings: ['${1}']
-        ${2}
+        attributeBindings: ['${1:prop}:${2:attr}']
+        ${1:prop}
       """
 
 
@@ -63,9 +107,8 @@
     'prefix': 'emView.classNB'
     'body':
       """
-        classNameBindings: ['${1}','${2}']
-        ${1} :
-        ${2} :
+        classNameBindings: ['${1:property_1:TruthyClass:FalsyClass}']
+        ${2:property_1} : ${3:true}
       """
 
 
@@ -76,4 +119,54 @@
     'body':
       """
         isVisible: ${1:null}
+      """
+
+
+
+  'Ember View Hook':
+    'prefix': 'emView.e.willInsertElement'
+    'body':
+      """
+        willInsertElement: ->
+          ${1:#logic...}
+      """
+
+
+
+  'Ember View Hook':
+    'prefix': 'emView.e.didInsertElement'
+    'body':
+      """
+        didInsertElement: ->
+          ${1:#logic...}
+      """
+
+
+
+  'Ember View Hook':
+    'prefix': 'emView.e.willDestroyElement'
+    'body':
+      """
+        willDestroyElement: ->
+          ${1:#logic...}
+      """
+
+
+
+  'Ember View Hook':
+    'prefix': 'emView.e.parentViewDidChange'
+    'body':
+      """
+        parentViewDidChange: ->
+          ${1:#logic...}
+      """
+
+
+
+  'Ember View Hook':
+    'prefix': 'emView.e.willClearRender'
+    'body':
+      """
+        willClearRender: ->
+          ${1:#logic...}
       """
