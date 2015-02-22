@@ -14,7 +14,7 @@
 
 
   'Ember.TextField.extend(...':
-    'prefix': 'em_view_TextField'
+    'prefix': 'em_view_textField'
     'body':
       """
         Ember.TextField.extend
@@ -25,7 +25,7 @@
 
 
   'Ember.TextArea.extend(...':
-    'prefix': 'em_view_TextArea'
+    'prefix': 'em_view_textArea'
     'body':
       """
         Ember.TextArea.extend
@@ -36,7 +36,7 @@
 
 
   'Ember.Checkbox.extend(...':
-    'prefix': 'em_view_Checkbox'
+    'prefix': 'em_view_checkbox'
     'body':
       """
         Ember.Checkbox.extend
