@@ -23,6 +23,17 @@
 
 
 
+  'import custom from...':
+    'prefix': 'emEs6.custom'
+    'body':
+      """
+        `import ${1:var} from './${2}';`
+        ${3}
+      """
+
+
+
+
   'export Default...':
     'prefix': 'emEs6.exportDefault'
     'body':
