@@ -1,0 +1,56 @@
+###
+  underlines are a little bit hard to type.
+  use can ignore tnem and instead of for example typing:
+  em_view_ just type emview then press tab
+  and underscores magically appear!!!
+###
+
+
+
+'.source.coffee':
+
+  'em_route_':
+    'prefix': 'emroute'
+    'body': "em_route_"
+
+  'em_view_':
+    'prefix': 'emview'
+    'body': "em_view_"
+
+  'em_computed_':
+    'prefix': 'emcomputed'
+    'body': "em_computed_"
+
+
+  'em_component_':
+    'prefix': 'emcomponent'
+    'body': "em_component_"
+
+
+  'em_arrayController_':
+    'prefix': 'emarraycontroller'
+    'body':   "em_arrayController_"
+
+  'ember_objectController_':
+    'prefix': 'emobjectcontroller'
+    'body':   "em_objectController_"
+
+  'ds_model_':
+    'prefix': 'dsmodel'
+    'body':   "ds_model_"
+
+  'em_logger_':
+    'prefix': 'emlogger'
+    'body':   "em_logger_"
+
+  'em_es6_':
+    'prefix': 'emes6'
+    'body':   "em_es6_"
+
+  'em_serializer_':
+    'prefix': 'emserializer'
+    'body':   "em_serializer_"
+
+  'em_adapter_':
+    'prefix': 'emadapter'
+    'body':   "em_adapter_"
