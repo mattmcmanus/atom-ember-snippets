@@ -2,50 +2,50 @@
 
 
   'Ember.computed.gt(...':
-    'prefix': 'emComputed.gt'
-    'body': "Ember.computed.gt('${1:property}', ${2:0}) ${3:# (returns a boolean)}"
+    'prefix': 'em_computed_gt'
+    'body': "Ember.computed.gt( '${1:property}' , ${2:0} ) ${3:# (returns a boolean)}"
 
 
 
 
   'Ember.computed.lt(...':
-    'prefix': 'emComputed.lt'
-    'body': "Ember.computed.lt('${1:property}', ${2:0}) ${3:# (returns a boolean)}"
+    'prefix': 'em_computed_lt'
+    'body': "Ember.computed.lt( '${1:property}' , ${2:0} ) ${3:# (returns a boolean)}"
 
 
 
 
   'Ember.computed.or(...':
-    'prefix': 'emComputed.or'
-    'body': "Ember.computed.or('${1:property_1}', '${2:property_2}')  ${3:# (returns a boolean)}"
+    'prefix': 'em_computed_or'
+    'body': "Ember.computed.or( '${1:property_1}' , '${2:property_2}' )  ${3:# (returns a boolean)}"
 
 
 
 
   'Ember.computed.and(...':
-    'prefix': 'emComputed.and'
-    'body': "Ember.computed.and('${1:property_1}', '${2:property_2}')  ${3:# (returns a boolean)}"
+    'prefix': 'em_computed_and'
+    'body': "Ember.computed.and( '${1:property_1}' , '${2:property_2}' )  ${3:# (returns a boolean)}"
 
 
 
 
   'Ember.computed.max(...':
-    'prefix': 'emComputed.max'
-    'body': "Ember.computed.max('${1:array_property}') ${2:# (returns the max as a number)}"
+    'prefix': 'em_computed_max'
+    'body': "Ember.computed.max( '${1:array_property}' ) ${2:# (returns the max as a number)}"
 
 
 
 
   'Ember.computed.min(...':
-    'prefix': 'emComputed.min'
-    'body': "Ember.computed.min('${1:array_property}') ${2:# (returns the min as a number)}"
+    'prefix': 'em_computed_min'
+    'body': "Ember.computed.min( '${1:array_property}' ) ${2:# (returns the min as a number)}"
 
 
 
 
   'Ember.computed.map(...':
-    'prefix': 'emComputed.map'
-    'body': """ Ember.computed.map('${1:array_property}', (item, index) ->
+    'prefix': 'em_computed_map'
+    'body': """ Ember.computed.map( '${1:array_property}', (item, index) ->
           ${2:#example logic
           altered_item = item + "some_string"
           return altered_item }
@@ -57,17 +57,17 @@
 
 
   'Ember.computed.mapBy(...':
-    'prefix': 'emComputed.mapBy'
-    'body': "Ember.computed.mapBy('${1:array_of_objs}','${2:obj_key}')  ${3:# outputs a simple array[] of items} "
+    'prefix': 'em_computed_mapBy'
+    'body': "Ember.computed.mapBy( '${1:array_of_objs}','${2:obj_key}' )  ${3:# outputs a simple array[] of items} "
 
 
 
 
   'Ember.computed.filter(...':
-    'prefix': 'emComputed.filter'
+    'prefix': 'em_computed_filter'
     'body':
       """
-        Ember.computed.filter('${1:array_property}', ( item, index, array ) ->
+        Ember.computed.filter( '${1:array_property}', ( item, index, array ) ->
           ${2:#logic.. (should return a boolean)}
       """
 
@@ -75,12 +75,27 @@
 
 
   'Ember.computed.filterBy(...':
-    'prefix': 'emComputed.filterBy'
-    'body': "Ember.computed.filterBy('${1:array_of_objs}','${2:obj_key}', ${3:value})  ${4:#returns filtered array[]}"
+    'prefix': 'em_computed_filterBy'
+    'body': "Ember.computed.filterBy( '${1:array_of_objs}','${2:obj_key}', ${3:value} )  ${4:#returns filtered array[]}"
 
 
 
 
   'Ember.computed.empty(...':
-    'prefix': 'emComputed.empty'
-    'body': "Ember.computed.empty('${1:propery}')  ${2:#returns boolean}"
+    'prefix': 'em_computed_empty'
+    'body': "Ember.computed.empty( '${1:propery}' )  ${2:#returns boolean}"
+
+
+
+
+
+  'Ember.computed.match(...':
+    'prefix': 'em_computed_match'
+    'body': "Ember.computed.match( '${1:statement}' , /^${2:regex}$/ )    (# returns a boolean)"
+
+
+
+
+  'Ember.computed.alias(...':
+    'prefix': 'em_computed_alias'
+    'body': "Ember.computed.alias( '${1:statement}' )    (# returns a boolean)"
