@@ -1,8 +1,6 @@
 '.source.coffee':
 
 
-
-
   'then':
     'prefix': 'then'
     'body':
@@ -15,16 +13,14 @@
 
   'set':
     'prefix': 'set'
-    'body':
-      """set('${1:key}','${2:val}')"""
+    'body': "set('${1:key}','${2:val}')"
 
 
 
 
   'get':
     'prefix': 'get'
-    'body':
-      """get('${1:key}').${2}"""
+    'body':"get('${1:key}').${2}"
 
 
 
@@ -37,11 +33,9 @@
 
 
 
-  'create a Record':
-    'prefix': 'creR'
-    'body':
-      """
-        creatRecord()
+  'create a Record()':
+    'prefix': 'creatRecord'
+    'body':"""creatRecord()
         ${1}
       """
 
@@ -49,7 +43,7 @@
 
 
   'delete a Record':
-    'prefix': 'delR'
+    'prefix': 'deleteRecord'
     'body': "deleteRecord()${1}"
 
 
@@ -57,46 +51,20 @@
 
 
   'controllerFor':
-    'prefix': 'conF'
-    'body':  "controllerFor('${1}')${2}"
+    'prefix': 'controllerFor'
+    'body':  "controllerFor( '${1}' )${2}"
 
 
 
 
 
   'modelFor':
-    'prefix': 'modF'
-    'body':  "modelFor('${1}')${2}"
+    'prefix': 'modelFor'
+    'body':  "modelFor( '${1}' )${2}"
 
 
 
 
-
-  'transitionTo_1':
-    'prefix': 'tra'
+  'transitionTo':
+    'prefix': 'transitionTo'
     'body':  "transitionTo('${1:route_name}')${2}"
-
-
-
-
-  'transitionTo_2':
-    'prefix': 'traT'
-    'body':  "transitionTo('${1:route_name}')${2}"
-
-
-
-
-  'resource':
-    'prefix': '@res'
-    'body':
-      """
-        @resource('${1:name}', path:'${2:/some/item_id}'), ->
-          ${3}
-      """
-
-
-
-
-  'route':
-    'prefix': '@rou'
-    'body':  "@route('${1:name}', path:'${2:/some/item_id}')"
