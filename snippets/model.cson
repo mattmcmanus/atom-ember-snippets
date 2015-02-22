@@ -2,7 +2,7 @@
 
 
   'DS.Model.extend(...':
-    'prefix': 'dsModel'
+    'prefix': 'ds_model'
     'body':
       """
         _export = DS.Model.extend
@@ -12,27 +12,30 @@
 
 
 
+
   'Verbose DS.attr(...':
-    'prefix': 'dsModel.attr'
-    'body': "${1}: DS.attr(  'string' ,  defaultValue: ${2:null}  )     # or 'number' , 'boolean' , 'date'"
+    'prefix': 'ds_model_attr-v'
+    'body': "${1}: DS.attr(  'string' ,  defaultValue:${2:null}  )     # or 'number' , 'boolean' , 'date'"
 
 
   'DS.attr(...':
-    'prefix': 'dsModel.attr-v'
+    'prefix': 'ds_model_attr'
     'body': "${1}: DS.attr()"
 
 
 
 
 
+
   'Verbose DS.hasMany(...':
-    'prefix': 'dsModel.hasMany'
-    'body': "${1}: DS.hasMany(  '${2:other_Model}' , inverse: '${2:some_propery}' , async: ${3:false})"
+    'prefix': 'ds_model_hasMany-v'
+    'body': "${1}: DS.hasMany(  '${2:other_Model}' , inverse:'${2:some_propery}' , async:${3:false} )"
 
 
   'DS.hasMany(...':
-    'prefix': 'dsModel.hasMany'
-    'body': "${1}: DS.hasMany('${2:other_Model}')"
+    'prefix': 'ds_model_hasMany'
+    'body': "${1}: DS.hasMany( '${2:other_Model}' )"
+
 
 
 
@@ -40,10 +43,10 @@
 
 
   'DS.belongsTo(...':
-    'prefix': 'dsModel.belongsTo'
-    'body': "${1}: DS.belongsTo('${1:other_Model}')"
+    'prefix': 'ds_model_belongsTo'
+    'body': "${1}: DS.belongsTo( '${1:other_Model}' )"
 
 
   'Verbose DS.belongsTo(...':
-    'prefix': 'dsModel.belongsTo-v'
-    'body': "${1}: DS.belongsTo('${1:other_Model}' , inverse: '${2:some_propery}' , async: ${3:false})"
+    'prefix': 'ds_model_belongsTo-v'
+    'body': "${1}: DS.belongsTo( '${1:other_Model}' , inverse:'${2:some_propery}' , async:${3:false} )"
