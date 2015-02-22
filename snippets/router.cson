@@ -1,0 +1,8 @@
+'.source.coffee':
+  'Nested resource':
+    'prefix': 'emRouter.@resource'
+    'body':
+      """
+        @resource( '${1:name}' , path: '${2:/some/item_id}' ) , ->
+          @route "route_name"
+      """
