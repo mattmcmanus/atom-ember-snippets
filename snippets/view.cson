@@ -14,7 +14,7 @@
 
 
   'Ember.TextField.extend(...':
-    'prefix': 'emView.TextField'
+    'prefix': 'emView_TextField'
     'body':
       """
         Ember.TextField.extend
@@ -25,7 +25,7 @@
 
 
   'Ember.TextArea.extend(...':
-    'prefix': 'emView.TextArea'
+    'prefix': 'emView_TextArea'
     'body':
       """
         Ember.TextArea.extend
@@ -36,7 +36,7 @@
 
 
   'Ember.Checkbox.extend(...':
-    'prefix': 'emView.Checkbox'
+    'prefix': 'emView_Checkbox'
     'body':
       """
         Ember.Checkbox.extend
@@ -47,7 +47,7 @@
 
 
   'Ember.Select.extend(...':
-    'prefix': 'emView.Select'
+    'prefix': 'emView_Select'
     'body':
       """
         Ember.Select.extend
@@ -58,7 +58,7 @@
 
 
   'eventManager: ...':
-    'prefix': 'emView.eventManager'
+    'prefix': 'emView_eventManager'
     'body':
       """
         eventManager: Ember.Object.create(
@@ -71,7 +71,7 @@
 
 
   'tagName : null':
-    'prefix': 'emView.tagN'
+    'prefix': 'emView_tagN'
     'body':
       """
         tagName: '${1:div}'
@@ -82,18 +82,18 @@
 
 
   'attributeBindings : [...':
-    'prefix': 'emView.attrB'
+    'prefix': 'emView_attrB'
     'body':
       """
-        attributeBindings: ['${1:prop}:${2:attr}']
-        ${1:prop}
+        attributeBindings: ['${1:prop_to}:${2:attr}']
+        ${1:prop_to}
       """
 
 
 
 
   'classNames : [...':
-    'prefix': 'emView.classN'
+    'prefix': 'emView_classN'
     'body':
       """
         classNames: ['${1:class-1}','${2:class-2}']
@@ -104,7 +104,7 @@
 
 
   'classNameBindings : [...':
-    'prefix': 'emView.classNB'
+    'prefix': 'emView_classNB'
     'body':
       """
         classNameBindings: ['${1:property_1:TruthyClass:FalsyClass}']
@@ -115,7 +115,7 @@
 
 
   'isVisible : null':
-    'prefix': 'emView.isVisible'
+    'prefix': 'emView_isVisible'
     'body':
       """
         isVisible: ${1:null}
@@ -123,8 +123,8 @@
 
 
 
-  'Ember View Hook':
-    'prefix': 'emView.e.willInsertElement'
+  'Ember willInsertElement Hook':
+    'prefix': 'emView_willInsertElement'
     'body':
       """
         willInsertElement: ->
@@ -133,8 +133,8 @@
 
 
 
-  'Ember View Hook':
-    'prefix': 'emView.e.didInsertElement'
+  'Ember didInsertElement Hook':
+    'prefix': 'emView_didInsertElement'
     'body':
       """
         didInsertElement: ->
@@ -143,8 +143,8 @@
 
 
 
-  'Ember View Hook':
-    'prefix': 'emView.e.willDestroyElement'
+  'Ember willDestroyElement Hook':
+    'prefix': 'emView_willDestroyElement'
     'body':
       """
         willDestroyElement: ->
@@ -153,8 +153,8 @@
 
 
 
-  'Ember View Hook':
-    'prefix': 'emView.e.parentViewDidChange'
+  'Ember parentViewDidChange Hook':
+    'prefix': 'emView_parentViewDidChange'
     'body':
       """
         parentViewDidChange: ->
@@ -163,8 +163,8 @@
 
 
 
-  'Ember View Hook':
-    'prefix': 'emView.e.willClearRender'
+  'Ember willClearRender Hook':
+    'prefix': 'emView_willClearRender'
     'body':
       """
         willClearRender: ->
