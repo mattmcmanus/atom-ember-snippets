@@ -2,7 +2,7 @@
 
 
   'Ember.ObjectController.extend(...':
-    'prefix': 'ObjectController'
+    'prefix': 'objectController'
     'body':
       """
         _export = Ember.ObjectController.extend(
@@ -16,7 +16,7 @@
 
 
   'Ember.ArrayController.extend(...':
-    'prefix': 'ArrayController'
+    'prefix': 'arrayController'
     'body':
       """
         _export = Ember.ArrayController.extend(
@@ -43,15 +43,33 @@
 
 
   'itemController : ...':
-    'prefix': 'ArrayController_itemController'
+    'prefix': 'arrayController_itemController'
     'body': "itemController : '${1:an_objController}'}"
 
 
   'sortProperties : ...':
-    'prefix': 'ArrayController_sortProperties'
+    'prefix': 'arrayController_sortProperties'
     'body': "sortProperties : ['${1:property}']}"
 
 
   'sortAscending : ...':
-    'prefix': 'ArrayController_sortAscending'
+    'prefix': 'arrayController_sortAscending'
+    'body': "sortAscending : ['${1:false}']}"
+
+
+
+
+
+  'itemController : ...':
+    'prefix': 'itemController'
+    'body': "itemController : '${1:an_objController}'}"
+
+
+  'sortProperties : ...':
+    'prefix': 'sortProperties'
+    'body': "sortProperties : ['${1:property}']}"
+
+
+  'sortAscending : ...':
+    'prefix': 'sortAscending'
     'body': "sortAscending : ['${1:false}']}"
