@@ -1,17 +1,17 @@
 '.source.coffee':
   'Nested resource':
-    'prefix': 'em_router_@resource'
+    'prefix': '@resource-v'
     'body':
       """
         @resource( '${1:name}' , path: '${2:/some/item_id}' ) , ->
           @route "route_name"
       """
-      
+
   'verbose route':
-    'prefix': 'em_router_@route-v'
+    'prefix': '@route-v'
     'body':  "@route('${1:name}', path:'${2:/some/item_id}')"
-    
-    
+
   'verbose @route':
     'prefix': '@route-v'
     'body':  "@route('${1:name}', path:'${2:/some/item_id}')"
+
