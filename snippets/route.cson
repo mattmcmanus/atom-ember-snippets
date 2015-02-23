@@ -5,7 +5,7 @@
     'body':
       """
         _export = Ember.Route.extend(
-        model: ->
+          model: ->
           ${2}
         )
       """
