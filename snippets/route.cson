@@ -1,7 +1,7 @@
 '.source.coffee':
 
   'Ember.Route.extend(...':
-    'prefix': 'emRoute'
+    'prefix': 'em_route'
     'body':
       """
         _export = Ember.Route.extend(
@@ -13,7 +13,7 @@
 
 
   'afterModel: ...':
-    'prefix': 'emRoute.afterModel'
+    'prefix': 'em_route_afterModel'
     'body':
       """
         afterModel: (${1:model}, transition) ->
@@ -23,7 +23,7 @@
 
 
   'beforeModel: ...':
-    'prefix': 'emRoute.beforeModel'
+    'prefix': 'em_route_beforeModel'
     'body':
       """
         beforeModel: (transition) ->
@@ -33,7 +33,7 @@
 
 
   'setupController: ...':
-    'prefix': 'emRoute.setupController'
+    'prefix': 'em_route_setupController'
     'body':
       """
         setupController: (transition) ->
