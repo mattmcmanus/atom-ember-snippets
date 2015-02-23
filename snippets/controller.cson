@@ -60,16 +60,16 @@
 
 
 
-  'itemController : ...':
+  'itemController: ...':
     'prefix': 'itemController'
     'body': "itemController : '${1:an_objController}'}"
 
 
-  'sortProperties : ...':
+  'sortProperties: ...':
     'prefix': 'sortProperties'
     'body': "sortProperties : ['${1:property}']}"
 
 
-  'sortAscending : ...':
+  'sortAscending: ...':
     'prefix': 'sortAscending'
     'body': "sortAscending : ['${1:false}']}"
