@@ -2,7 +2,7 @@
 
 
   'Ember.View.extend(...':
-    'prefix': 'em_view'
+    'prefix': 'view'
     'body':
       """
         _export = Ember.View.extend(
@@ -12,9 +12,8 @@
 
 
 
-
   'Ember.TextField.extend(...':
-    'prefix': 'em_view_textField'
+    'prefix': 'view_textField'
     'body':
       """
         Ember.TextField.extend
@@ -25,7 +24,7 @@
 
 
   'Ember.TextArea.extend(...':
-    'prefix': 'em_view_textArea'
+    'prefix': 'view_textArea'
     'body':
       """
         Ember.TextArea.extend
@@ -36,7 +35,7 @@
 
 
   'Ember.Checkbox.extend(...':
-    'prefix': 'em_view_checkbox'
+    'prefix': 'view_checkbox'
     'body':
       """
         Ember.Checkbox.extend
@@ -47,7 +46,7 @@
 
 
   'Ember.Select.extend(...':
-    'prefix': 'em_view_Select'
+    'prefix': 'view_Select'
     'body':
       """
         Ember.Select.extend
@@ -58,7 +57,7 @@
 
 
   'eventManager: ...':
-    'prefix': 'em_view_eventManager'
+    'prefix': 'view_eventManager'
     'body':
       """
         eventManager: Ember.Object.create(
@@ -71,7 +70,7 @@
 
 
   'tagName : null':
-    'prefix': 'em_view_tagN'
+    'prefix': 'view_tagName'
     'body':
       """
         tagName: '${1:div}'
@@ -82,7 +81,7 @@
 
 
   'attributeBindings : [...':
-    'prefix': 'em_view_attrB'
+    'prefix': 'view_attributeB'
     'body':
       """
         attributeBindings: ['${1:prop_to}:${2:attr}']
@@ -93,7 +92,7 @@
 
 
   'classNames : [...':
-    'prefix': 'em_view_classN'
+    'prefix': 'view_className'
     'body':
       """
         classNames: ['${1:class-1}','${2:class-2}']
@@ -104,7 +103,7 @@
 
 
   'classNameBindings : [...':
-    'prefix': 'em_view_classNB'
+    'prefix': 'view_classNameB'
     'body':
       """
         classNameBindings: ['${1:property_1:TruthyClass:FalsyClass}']
@@ -115,7 +114,7 @@
 
 
   'isVisible : null':
-    'prefix': 'em_view_isVisible'
+    'prefix': 'view_isVisible'
     'body':
       """
         isVisible: ${1:null}
@@ -124,17 +123,18 @@
 
 
   'Ember willInsertElement Hook':
-    'prefix': 'em_view_willInsertE'
+    'prefix': 'view_willInsertElement'
     'body':
       """
         willInsertElement: ->
+          @_super
           ${1:#logic...}
       """
 
 
 
   'Ember didInsertElement Hook':
-    'prefix': 'em_view_didInsertE'
+    'prefix': 'view_didInsertElement'
     'body':
       """
         didInsertElement: ->
@@ -144,7 +144,7 @@
 
 
   'Ember willDestroyElement Hook':
-    'prefix': 'em_view_willDestroyElement'
+    'prefix': 'view_willDestroyElement'
     'body':
       """
         willDestroyElement: ->
@@ -154,7 +154,7 @@
 
 
   'Ember parentViewDidChange Hook':
-    'prefix': 'em_view_parentViewDidC'
+    'prefix': 'view_parentViewDidC'
     'body':
       """
         parentViewDidChange: ->
@@ -164,7 +164,7 @@
 
 
   'Ember willClearRender Hook':
-    'prefix': 'em_view_willClearR'
+    'prefix': 'view_willClearR'
     'body':
       """
         willClearRender: ->
