@@ -1,4 +1,5 @@
 '.source.coffee':
+  
   'Verbose resource (Nested)':
     'prefix': '@resource-v'
     'body':
@@ -18,4 +19,3 @@
   'Simple @route':
     'prefix': '@route'
     'body':  "@route('${1}')"
-
