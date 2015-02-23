@@ -2,40 +2,40 @@
 
 
   'Em.Logger.assert(... ':
-    'prefix': 'em_logger_assert'
+    'prefix': 'logger_assert'
     'body': "Ember.Logger.assert('${1:boolean}')   # Throws an Assertion failed error."
 
 
 
 
   'Em.Logger.debug(... ':
-    'prefix': 'em_logger_debug'
+    'prefix': 'logger_debug'
     'body': "Ember.Logger.debug('${1:message}')"
 
 
 
 
   'Em.Logger.log(...':
-    'prefix': 'em_logger_log'
+    'prefix': 'logger_log'
     'body': "Ember.Logger.log('${1:message}')"
 
 
 
 
   'Em.Logger.info(...':
-    'prefix': 'em_logger_info'
+    'prefix': 'logger_info'
     'body': "Ember.Logger.info('${1:message}')"
 
 
 
 
   'Em.Logger.warn(...':
-    'prefix': 'em_logger_warn'
+    'prefix': 'logger_warn'
     'body': "Ember.Logger.warn('${1:message}')"
 
 
 
 
   'Em.Logger.error(...':
-    'prefix': 'em_logger_error'
+    'prefix': 'logger_error'
     'body': "Ember.Logger.error('${1:message}')"
