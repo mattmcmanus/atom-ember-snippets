@@ -81,7 +81,7 @@
 
 
   'attributeBindings : [...':
-    'prefix': 'view_attributeB'
+    'prefix': 'view_attributeBind'
     'body':
       """
         attributeBindings: ['${1:prop_to}:${2:attr}']
@@ -103,7 +103,7 @@
 
 
   'classNameBindings : [...':
-    'prefix': 'view_classNameB'
+    'prefix': 'view_classNameBindings'
     'body':
       """
         classNameBindings: ['${1:property_1:TruthyClass:FalsyClass}']
@@ -154,7 +154,7 @@
 
 
   'Ember parentViewDidChange Hook':
-    'prefix': 'view_parentViewDidC'
+    'prefix': 'view_parentViewDidChange'
     'body':
       """
         parentViewDidChange: ->
@@ -164,7 +164,7 @@
 
 
   'Ember willClearRender Hook':
-    'prefix': 'view_willClearR'
+    'prefix': 'view_willClearRender'
     'body':
       """
         willClearRender: ->
