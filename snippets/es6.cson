@@ -2,7 +2,7 @@
 
 
   'import Ember from...':
-    'prefix': 'em_es6_importEmber'
+    'prefix': 'es6_import_ember'
     'body':
       """
         `import Ember from "ember";`
@@ -13,7 +13,7 @@
 
 
   'import DS from...':
-    'prefix': 'em_es6_importDs'
+    'prefix': 'es6_import_ds'
     'body':
       """
         `import DS from 'ember-data';`
@@ -24,7 +24,7 @@
 
 
   'import custom from...':
-    'prefix': 'em_es6_custom'
+    'prefix': 'es6_custom'
     'body':
       """
         `import ${1:var} from './${2}';`
@@ -35,7 +35,7 @@
 
 
   'export Default...':
-    'prefix': 'em_es6_exportDefault'
+    'prefix': 'es6_export_default'
     'body':
       """
 
@@ -49,7 +49,7 @@
 
 
   'both imports and export...':
-    'prefix': 'em_es6_fullset'
+    'prefix': 'es6_fullset'
     'body':
       """
         ${1:`import Ember from 'ember';`}
