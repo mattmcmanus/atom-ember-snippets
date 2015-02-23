@@ -1,8 +1,16 @@
 '.source.coffee':
 
 
-  'import Ember from...':
+  'import Ember from':
     'prefix': 'es6_import_ember'
+    'body':
+      """
+        `import Ember from "ember";`
+        ${1}
+      """
+
+  'import Ember from...':
+    'prefix': 'import_ember'
     'body':
       """
         `import Ember from "ember";`
@@ -12,7 +20,7 @@
 
 
 
-  'import DS from...':
+  'import DS from':
     'prefix': 'es6_import_ds'
     'body':
       """
@@ -20,11 +28,17 @@
         ${1}
       """
 
+  'import DS from...':
+    'prefix': 'import_ds'
+    'body':
+      """
+        `import DS from 'ember-data';`
+        ${1}
+      """
 
 
-
-  'import custom from...':
-    'prefix': 'es6_custom'
+  'import custom from':
+    'prefix': 'es6_import_custom'
     'body':
       """
         `import ${1:var} from './${2}';`
@@ -32,10 +46,29 @@
       """
 
 
+  'import custom from...':
+    'prefix': 'import_custom'
+    'body':
+      """
+        `import ${1:var} from './${2}';`
+        ${3}
+      """
+
+  'export Default':
+    'prefix': 'es6_export_default'
+    'body':
+      """
+
+        ${2}
+
+
+        `export default ${1:_export};`
+      """
+
 
 
   'export Default...':
-    'prefix': 'es6_export_default'
+    'prefix': 'export_default'
     'body':
       """
 
