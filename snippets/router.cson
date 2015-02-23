@@ -1,17 +1,21 @@
 '.source.coffee':
-  'Nested resource':
+  'Verbose resource (Nested)':
     'prefix': '@resource-v'
     'body':
       """
-        @resource( '${1:name}' , path: '${2:/some/item_id}' ) , ->
-          @route "route_name"
+        @resource( '${1}' , path: '${2:/some/path/item_id}' ) , ->
+          @route '${3}'
       """
+      
+  'Simple resource':
+    'prefix': '@resource'
+    'body':"@resource( '${1}' )"
 
-  'verbose route':
+  'Verbose @route':
     'prefix': '@route-v'
-    'body':  "@route('${1:name}', path:'${2:/some/item_id}')"
+    'body':  "@route('${1}', path:'${2:/some/path}')"
 
-  'verbose @route':
-    'prefix': '@route-v'
-    'body':  "@route('${1:name}', path:'${2:/some/item_id}')"
+  'Simple @route':
+    'prefix': '@route'
+    'body':  "@route('${1}')"
 
