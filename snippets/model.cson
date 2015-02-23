@@ -48,35 +48,31 @@
 
 
 
-
-
-
-
-  '-Verbose DS.attr(...':
+  'Verbose DS.attr( ...':
     'prefix': 'attr-v'
     'body': "${1}: DS.attr(  'string' ,  defaultValue:${2:null}  )     # or 'number' , 'boolean' , 'date'"
 
 
-  '-DS.attr(...':
+  'DS.attr( ...':
     'prefix': 'attr'
     'body': "${1}: DS.attr()"
 
 
-  '-Verbose DS.hasMany(...':
+  'Verbose DS.hasMany( ...':
     'prefix': 'hasMany-v'
     'body': "${1}: DS.hasMany(  '${2:other_Model}' , inverse:'${2:some_propery}' , async:${3:false} )"
 
 
-  '-DS.hasMany(...':
+  'DS.hasMany( ...':
     'prefix': 'hasMany'
     'body': "${1}: DS.hasMany( '${2:other_Model}' )"
 
 
-  '-DS.belongsTo(...':
+  'DS.belongsTo( ...':
     'prefix': 'belongsTo'
     'body': "${1}: DS.belongsTo( '${1:other_Model}' )"
 
 
-  '-Verbose DS.belongsTo(...':
+  'Verbose DS.belongsTo( ...':
     'prefix': 'belongsTo-v'
     'body': "${1}: DS.belongsTo( '${1:other_Model}' , inverse:'${2:some_propery}' , async:${3:false} )"
