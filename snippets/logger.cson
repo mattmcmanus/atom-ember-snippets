@@ -1,41 +1,41 @@
 '.source.coffee':
 
 
-  'Em.Logger.assert(... ':
+  'Throws Assertion failed error if falsy':
     'prefix': 'logger_assert'
     'body': "Ember.Logger.assert('${1:boolean}')   # Throws an Assertion failed error."
 
 
 
 
-  'Em.Logger.debug(... ':
+  'Em.Logger.debug (Logs in blue)':
     'prefix': 'logger_debug'
-    'body': "Ember.Logger.debug('${1:message}')"
+    'body': "Ember.Logger.debug('${1:message}',${2:arg})"
 
 
 
 
-  'Em.Logger.log(...':
+  'Em.Logger.log (Logs to console)':
     'prefix': 'logger_log'
     'body': "Ember.Logger.log('${1:message}')"
 
 
 
 
-  'Em.Logger.info(...':
+  'Em.Logger.info (Logs to console)':
     'prefix': 'logger_info'
     'body': "Ember.Logger.info('${1:message}')"
 
 
 
 
-  'Em.Logger.warn(...':
+  'Em.Logger.warn (with warning icon)':
     'prefix': 'logger_warn'
     'body': "Ember.Logger.warn('${1:message}')"
 
 
 
 
-  'Em.Logger.error(...':
+  'Em.Logger.error (with error icon)':
     'prefix': 'logger_error'
     'body': "Ember.Logger.error('${1:message}')"
