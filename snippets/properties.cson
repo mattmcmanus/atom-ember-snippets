@@ -36,3 +36,34 @@
     'body': """
       ${1:foo}: Ember.computed.alias('${2:property}'),
     """
+
+'.source.coffee':
+
+  'Ember Computed Property':
+    'prefix': 'property'
+    'body': """
+      ${1:fooCount}:( ->
+        ${4:# body}
+      ).property${2:(}'${3:property}'${2:)}
+    """
+
+  'Ember Observer':
+    'prefix': 'observes'
+    'body': """
+      ${1:fooChanged}:( ->
+        ${4:# body}
+      ).observes${2:(}'${3:property}'${2:)}
+    """
+
+  'Ember Actions':
+    'prefix': 'actions'
+    'body': """
+      actions:
+        ${1:# body}
+    """
+
+  'Ember Computed Alias':
+    'prefix': 'alias'
+    'body': """
+      ${1:foo}: Ember.computed.alias${2:(}'${3:property}'${2:)}
+    """

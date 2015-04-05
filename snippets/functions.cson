@@ -34,3 +34,33 @@
   'Ember Logger Error':
     'prefix': 'logger-error'
     'body': "Ember.Logger.error('${1:message}');"
+
+'.source.coffee':
+
+  'Ember Find':
+    'prefix': 'find'
+    'body': "this.store.find${1:(}'${2:model}'${1:)}"
+
+  'Ember Find by id':
+    'prefix': 'find-id'
+    'body': "this.store.find${1:(}'${2:model}', params.${2:model}_id${1:)}"
+
+  'Ember Logger Debug':
+    'prefix': 'logger-debug'
+    'body': "Ember.Logger.debug${1:(}\"${1:message}\"${1:)}"
+
+  'Ember Logger Log':
+    'prefix': 'logger-log'
+    'body': "Ember.Logger.log${1:(}\"${2:message}\"${1:)}"
+
+  'Ember Logger Info':
+    'prefix': 'logger-info'
+    'body': "Ember.Logger.info${1:(}\"${2:message}\"${1:)}"
+
+  'Ember Logger Warn':
+    'prefix': 'logger-warn'
+    'body': "Ember.Logger.warn${1:(}\"${2:message}\"${1:)}"
+
+  'Ember Logger Error':
+    'prefix': 'logger-error'
+    'body': "Ember.Logger.error${1:(}\"${2:message}\"${1:)}"

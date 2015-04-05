@@ -167,3 +167,153 @@
         ${2:// body}
       };
     """
+
+'.source.coffee':
+
+  'Ember Route':
+    'prefix': 'route'
+    'body': """
+      ${1:name}Route = Ember.Route.extend
+        model: ->
+          ${2:# body}
+
+      `export default ${1}Route`
+    """
+
+  'Ember Controller':
+    'prefix': 'controller'
+    'body': """
+      ${1:name}Controller = Ember.Controller.extend
+        ${2:# body}
+
+      `export default ${1}Controller`
+    """
+
+  'Ember Array Controller':
+    'prefix': 'arr-controller'
+    'body': """
+      ${1:name}Controller = Ember.ArrayController.extend
+        ${2:# body}
+
+      `export default ${1}Controller`
+    """
+
+  'Ember View':
+    'prefix': 'view'
+    'body': """
+      ${1:name}View = Ember.View.extend
+        ${2:# body}
+
+      `export default ${1}View`
+    """
+
+  'Ember Component':
+    'prefix': 'component'
+    'body': """
+      ${1:name}Component = Ember.Component.extend
+        ${2:# body}
+
+      `export default ${1}Component`
+    """
+
+  'Ember Mixin':
+    'prefix': 'mixin'
+    'body': """
+      ${1:name}Mixin = Ember.Mixin.create
+        ${2:# body}
+
+      `export default ${1}Mixin`
+    """
+
+  'Ember Object':
+    'prefix': 'object'
+    'body': """
+      ${1:name} = Ember.Object.extend
+        ${2:# body}
+
+      `export default ${1}`
+    """
+
+  'Ember Helper':
+    'prefix': 'helper'
+    'body': """
+      ${1}Helper = Ember.Handlebars.makeBoundHelper ->
+        ${2:# body}
+
+      `export default ${1}Helper`
+    """
+
+  'Ember Model':
+    'prefix': 'model'
+    'body': """
+      ${1:name} = DS.Model.extend
+        ${2:# body}
+
+      `export default ${1}`
+    """
+
+  'Ember REST Adapter':
+    'prefix': 'adapter'
+    'body': """
+      ${1}Adapter = DS.RESTAdapter.extend
+        ${2:# body}
+
+      `export default ${1}Adapter`
+    """
+
+  'Ember Active Model Adapter':
+    'prefix': 'active-adapter'
+    'body': """
+      ${1}Adapter = DS.ActiveModelAdapter.extend
+        ${2:# body}
+
+      `export default ${1}Adapter`
+    """
+
+  'Ember REST Serializer':
+    'prefix': 'serializer'
+    'body': """
+      ${1:name}Serializer = DS.RESTSerializer.extend
+        ${2:# body}
+
+      `export default ${1}Serializer`
+    """
+
+  'Ember Active Model Serializer':
+    'prefix': 'active-serializer'
+    'body': """
+
+      ${1:name}Serializer = DS.ActiveModelSerializer.extend
+        ${2:# body}
+
+      `export default ${1}Serializer`
+    """
+
+  'Ember Transform Serializer':
+    'prefix': 'transform'
+    'body': """
+      ${1:name}Transformer = DS.Transforms.extend
+        ${2:# body}
+
+      `export default ${1}Transformer`
+    """
+
+  'Ember Initializer':
+    'prefix': 'initializer'
+    'body': """
+      ${1:name}Initializer =
+        name: '${1:name}'
+        initialize: ->
+          ${2:# body}
+
+      `export default ${1}Initializer`
+    """
+
+  'Ember Utility':
+    'prefix': 'utility'
+    'body': """
+      ${1:myUtility} = ->
+        ${2:# body}
+
+      `export default ${1:myUtility}`
+    """
