@@ -67,7 +67,7 @@ Example output for `observer` ⇥
 
 JavaScript:
 ```js
-fooChanged: Ember.observer('foo') {
+fooChanged: Ember.observer('foo', function() {
 	// body
 }),
 ```
