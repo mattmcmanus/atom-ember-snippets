@@ -42,17 +42,16 @@
   'Ember Computed Property':
     'prefix': 'property'
     'body': """
-      ${1:fooCount}:( ->
+      ${1:fooCount}: Ember.computed ${2:'}${3:property}${2:'} ->
         ${4:# body}
-      ).property${2:(}'${3:property}'${2:)}
     """
 
   'Ember Observer':
     'prefix': 'observes'
     'body': """
-      ${1:fooChanged}:( ->
+      ${1:fooChanged}: Ember.observer${2:(}'${3:property}', ->
         ${4:# body}
-      ).observes${2:(}'${3:property}'${2:)}
+      ${2:)}
     """
 
   'Ember Actions':

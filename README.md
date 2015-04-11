@@ -73,9 +73,8 @@ fooChanged: function() {
 
 CoffeeScript:
 ```coffee
-fooChanged:( ->
+fooChanged: Ember.observer 'foo', ->
 	# body
-).observes 'foo'
 ```
 
 
