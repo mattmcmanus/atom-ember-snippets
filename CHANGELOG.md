@@ -1,5 +1,9 @@
-## 1.0.1
-* Duplicate snippets for CoffeeScript files
+## 1.1.1
+* Use new computed property and observer syntax
+* Replace Ember.ObjectController with Ember.Controller
+
+## 1.1.0
+* Add support for CoffeeScript
 
 ## 1.0.0
 * Add `Ember.computed.alias` snippet

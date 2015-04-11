@@ -10,17 +10,17 @@
   'Ember Computed Property':
     'prefix': 'property'
     'body': """
-      ${1:fooCount}: function() {
+      ${1:fooCount}: Ember.computed('$(2:property)') {
         ${3:// body}
-      }.property('${2:property}'),
+      }),
     """
 
   'Ember Observer':
     'prefix': 'observes'
     'body': """
-      ${1:fooChanged}: function() {
+      ${1:fooChanged}: Ember.observer('${2:property}') {
         ${3:// body}
-      }.observes('${2:property}'),
+      }),
     """
 
   'Ember Actions':

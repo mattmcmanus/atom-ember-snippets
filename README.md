@@ -40,7 +40,7 @@ Javascript:
 ```js
 import Ember from 'ember';
 
-export default Ember.ObjectController.extend({
+export default Ember.Controller.extend({
 	// body
 });
 ```
@@ -66,9 +66,9 @@ Example output for `observes` ⇥
 
 JavaScript:
 ```js
-fooChanged: function() {
+fooChanged: Ember.observer('foo') {
 	// body
-}.observes('foo'),
+}),
 ```
 
 CoffeeScript:
