@@ -1,3 +1,9 @@
+## 1.1.2
+* Add event as `.on` to properties
+* Rename observes to observer for consistency
+* Fix properties and observer syntax
+* Make `.coffee` syntax for properties more consistent
+
 ## 1.1.1
 * Use new computed property and observer syntax
 * Replace Ember.ObjectController with Ember.Controller
