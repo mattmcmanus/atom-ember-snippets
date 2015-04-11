@@ -1,3 +1,6 @@
+## 1.0.1
+* Duplicate snippets for CoffeeScript files
+
 ## 1.0.0
 * Add `Ember.computed.alias` snippet
 * Split snippets into different files

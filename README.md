@@ -36,12 +36,21 @@ Then reload your Atom.
 
 Example output for `controller` ⇥
 
+Javascript:
 ```js
 import Ember from 'ember';
 
 export default Ember.ObjectController.extend({
 	// body
 });
+```
+
+CoffeeScript:
+```coffee
+NameController = Ember.Controller.extend
+	# body
+
+`export default NameController`
 ```
 
 #### Properties
@@ -55,11 +64,19 @@ Used inside Ember objects
 
 Example output for `observes` ⇥
 
+JavaScript:
 ```js
 fooChanged: function() {
 	// body
 }.observes('foo'),
 ```
+
+CoffeeScript:
+```coffee
+fooChanged: Ember.observer 'foo', ->
+	# body
+```
+
 
 #### Functions
 
@@ -73,6 +90,12 @@ fooChanged: function() {
 
 Example output for `find` ⇥
 
+JavaScript:
 ```js
 this.store.find('post');
+```
+
+CoffeeScript:
+```coffee
+this.store.find 'post'
 ```
