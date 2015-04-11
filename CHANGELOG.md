@@ -1,3 +1,6 @@
+## 1.1.3
+* Fix property
+
 ## 1.1.2
 * Add event as `.on` to properties
 * Rename observes to observer for consistency

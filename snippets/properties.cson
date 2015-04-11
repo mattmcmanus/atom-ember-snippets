@@ -10,7 +10,7 @@
   'Ember Computed Property':
     'prefix': 'property'
     'body': """
-      ${1:fooCount}: Ember.computed('$(2:property)', function() {
+      ${1:fooCount}: Ember.computed('${2:property}', function() {
         ${3:// body}
       }),
     """
