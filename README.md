@@ -83,6 +83,7 @@ fooChanged: Ember.observer 'foo', ->
 
 - `find` ⇥
 - `find-id` ⇥
+- `run` ⇥
 - `logger-debug` ⇥
 - `logger-error` ⇥
 - `logger-info` ⇥
