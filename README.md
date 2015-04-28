@@ -95,6 +95,7 @@ fooChanged: Ember.observer 'foo', ->
 - `key-event` ⇥
 - `trigger-event` ⇥
 - `find-element` ⇥
+- `and-then` ⇥
 
 Example output for `find` ⇥
 

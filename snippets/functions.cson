@@ -68,6 +68,14 @@
     'prefix': 'find-element'
     'body': "find('${1:selector}', '${2:context}');"
 
+  'Ember And Then':
+    'prefix': 'and-then'
+    'body': """
+      andThen(function() {
+        ${1:// body}
+      });
+    """
+
 '.source.coffee':
 
   'Ember Find':
@@ -129,3 +137,10 @@
   'Ember Find Element':
     'prefix': 'find-element'
     'body': "find '${1:selector}', '${2:context}'"
+
+  'Ember And Then':
+    'prefix': 'and-then'
+    'body': """
+      andThen ->
+        ${1:// body}
+    """
