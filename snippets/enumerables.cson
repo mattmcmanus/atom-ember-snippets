@@ -8,7 +8,7 @@
 '.source.js':
 
   'Ember forEach':
-    'prefix': 'fore'
+    'prefix': 'forEach'
     'body': """
       ${1:enumerable}.forEach(function(${2:item}) {
         ${5}
@@ -36,7 +36,7 @@
     """
 
   'Ember mapBy':
-    'prefix': 'mapby'
+    'prefix': 'mapBy'
     'body': "${1:${2:var }${3:variable} = }${4:enumerable}.mapBy('${5:property}');"
 
   'Ember every':
@@ -48,7 +48,7 @@
     """
 
   'Ember isEvery':
-    'prefix': 'isevery'
+    'prefix': 'isEvery'
     'body': "${1:${2:var }${3:variable} = }${4:enumerable}.isEvery('${5:property}', ${6:bool});"
 
   'Ember some':
@@ -60,26 +60,26 @@
     """
 
   'Ember isAny':
-    'prefix': 'isany'
+    'prefix': 'isAny'
     'body': "${1:${2:var }${3:variable} = }${4:enumerable}.isAny('${5:property}', ${6:bool});"
 
   'Ember toArray':
-    'prefix': 'toar'
+    'prefix': 'toArray'
     'body': '${1:${2:var }${3:variable} = }${4:enumerable}.toArray();'
 
   'Ember firstObject':
-    'prefix': 'firsto'
+    'prefix': 'firstObject'
     'body': "${1:${2:var }${3:variable} = }${4:enumerable}.get('firstObject');"
 
   'Ember lastObject':
-    'prefix': 'lasto'
+    'prefix': 'lastObject'
     'body': "${1:${2:var }${3:variable} = }${4:enumerable}.get('lastObject');"
 
 
 '.source.coffee':
 
   'Ember forEach':
-    'prefix': 'fore'
+    'prefix': 'forEach'
     'body': """
       ${1:enumerable}.forEach (${2:item}) ->
         ${3}
@@ -93,7 +93,7 @@
     """
 
   'Ember filterBy':
-    'prefix': 'filterby'
+    'prefix': 'filterBy'
     'body': "${1:${2:variable} = }${3:enumerable}.filterBy '${4:property}', ${5:value}"
 
   'Ember map':
@@ -104,7 +104,7 @@
     """
 
   'Ember mapBy':
-    'prefix': 'mapby'
+    'prefix': 'mapBy'
     'body': "${1:${2:variable} = }${3:enumerable}.mapBy '${4:property}'"
 
   'Ember every':
@@ -115,7 +115,7 @@
     """
 
   'Ember isEvery':
-    'prefix': 'isevery'
+    'prefix': 'isEvery'
     'body': "${1:${2:variable} = }${3:enumerable}.isEvery '${4:property}', ${5:bool}"
 
   'Ember some':
@@ -126,17 +126,17 @@
     """
 
   'Ember isAny':
-    'prefix': 'isany'
+    'prefix': 'isAny'
     'body': "${1:${2:variable} = }${3:enumerable}.isAny '${4:property}', ${5:bool}"
 
   'Ember toArray':
-    'prefix': 'toar'
+    'prefix': 'toArray'
     'body': '${1:${2:variable} = }${3:enumerable}.toArray()'
 
   'Ember firstObject':
-    'prefix': 'firsto'
+    'prefix': 'firstObject'
     'body': "${1:${2:variable} = }${3:enumerable}.get 'firstObject'"
 
   'Ember lastObject':
-    'prefix': 'lasto'
+    'prefix': 'lastObject'
     'body': "${1:${2:variable} = }${3:enumerable}.get 'lastObject'"
