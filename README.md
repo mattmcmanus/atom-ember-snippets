@@ -89,6 +89,13 @@ fooChanged: Ember.observer 'foo', ->
 - `logger-info` ⇥
 - `logger-log` ⇥
 - `logger-warn` ⇥
+- `visit` ⇥
+- `fill-in` ⇥
+- `click` ⇥
+- `key-event` ⇥
+- `trigger-event` ⇥
+- `find-element` ⇥
+- `and-then` ⇥
 
 Example output for `find` ⇥
 

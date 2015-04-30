@@ -43,6 +43,39 @@
     'prefix': 'logger-error'
     'body': "Ember.Logger.error('${1:message}');"
 
+  # Test Helpers
+  'Ember Visit':
+    'prefix': 'visit'
+    'body': "visit('${1:url}');"
+
+  'Ember Fill In':
+    'prefix': 'fill-in'
+    'body': "fillIn('${1:selector}', '${2:text}');"
+
+  'Ember Click':
+    'prefix': 'click'
+    'body': "click('${1:selector}');"
+
+  'Ember Key Event':
+    'prefix': 'key-event'
+    'body': "keyEvent('${1:selector}', '${2:type}', '${3:keyCode}');"
+
+  'Ember Trigger Event':
+    'prefix': 'trigger-event'
+    'body': "triggerEvent('${1:selector}', '${2:type}', '${3:options}');"
+
+  'Ember Find Element':
+    'prefix': 'find-element'
+    'body': "find('${1:selector}', '${2:context}');"
+
+  'Ember And Then':
+    'prefix': 'and-then'
+    'body': """
+      andThen(function() {
+        ${1:// body}
+      });
+    """
+
 '.source.coffee':
 
   'Ember Find':
@@ -79,3 +112,35 @@
   'Ember Logger Error':
     'prefix': 'logger-error'
     'body': "Ember.Logger.error${1:(}\"${2:message}\"${1:)}"
+
+  # Test Helpers
+  'Ember Visit':
+    'prefix': 'visit'
+    'body': "visit ${1:url}"
+
+  'Ember Fill In':
+    'prefix': 'fill-in'
+    'body': "fillIn '${1:selector}', '${2:text}'"
+
+  'Ember Click':
+    'prefix': 'click'
+    'body': "click '${1:selector}'"
+
+  'Ember Key Event':
+    'prefix': 'key-event'
+    'body': "keyEvent '${1:selector}', '${2:type}', '${3:keyCode}'"
+
+  'Ember Trigger Event':
+    'prefix': 'trigger-event'
+    'body': "triggerEvent '${1:selector}', '${2:type}', '${3:options}'"
+
+  'Ember Find Element':
+    'prefix': 'find-element'
+    'body': "find '${1:selector}', '${2:context}'"
+
+  'Ember And Then':
+    'prefix': 'and-then'
+    'body': """
+      andThen ->
+        ${1:// body}
+    """
