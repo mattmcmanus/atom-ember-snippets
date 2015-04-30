@@ -100,3 +100,30 @@ CoffeeScript:
 ```coffee
 this.store.find 'post'
 ```
+
+#### Enumerables
+
+- `forEach` ⇥
+- `filter` ⇥
+- `filterBy` ⇥
+- `map` ⇥
+- `mapBy` ⇥
+- `every` ⇥
+- `isEvery` ⇥
+- `some` ⇥
+- `isAny` ⇥
+- `toArray` ⇥
+- `firstObject` ⇥
+- `lastObject` ⇥
+
+Example output for `isAny` ⇥
+
+JavaScript:
+```js
+people.isAny('isHappy', true);
+```
+
+CoffeeScript:
+```coffee
+people.isAny 'isHappy', true
+```
