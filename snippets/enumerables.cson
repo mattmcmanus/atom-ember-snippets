@@ -7,37 +7,13 @@
 
 '.source.js':
 
-  'Ember forEach':
-    'prefix': 'forEach'
-    'body': """
-      ${1:enumerable}.forEach(function(${2:item}) {
-        ${5}
-      }${3:, ${4:this}});
-    """
-
-  'Ember filter':
-    'prefix': 'filter'
-    'body': """
-      ${1:enumerable}.filter(function(${2:item}) {
-        ${3}
-      });
-    """
-
   'Ember filterBy':
     'prefix': 'filterby'
-    'body': "${1:${2:var }${3:variable} = }${4:enumerable}.filterBy('${5:property}', ${6:value});"
-
-  'Ember map':
-    'prefix': 'map'
-    'body': """
-      ${1:var }${2:variable} = ${3:enumerable}.map(function(${4:item}) {
-        ${5}
-      });
-    """
+    'body': "${1:enumerable}.filterBy('${2:property}', ${3:value});"
 
   'Ember mapBy':
     'prefix': 'mapBy'
-    'body': "${1:${2:var }${3:variable} = }${4:enumerable}.mapBy('${5:property}');"
+    'body': "${1:enumerable}.mapBy('${2:property}');"
 
   'Ember every':
     'prefix': 'every'
@@ -49,7 +25,7 @@
 
   'Ember isEvery':
     'prefix': 'isEvery'
-    'body': "${1:${2:var }${3:variable} = }${4:enumerable}.isEvery('${5:property}', ${6:bool});"
+    'body': "${1:enumerable}.isEvery('${2:property}', ${3:bool});"
 
   'Ember some':
     'prefix': 'some'
@@ -61,51 +37,30 @@
 
   'Ember isAny':
     'prefix': 'isAny'
-    'body': "${1:${2:var }${3:variable} = }${4:enumerable}.isAny('${5:property}', ${6:bool});"
+    'body': "${1:enumerable}.isAny('${2:property}', ${3:bool});"
 
   'Ember toArray':
     'prefix': 'toArray'
-    'body': '${1:${2:var }${3:variable} = }${4:enumerable}.toArray();'
+    'body': '${1:enumerable}.toArray();'
 
   'Ember firstObject':
     'prefix': 'firstObject'
-    'body': "${1:${2:var }${3:variable} = }${4:enumerable}.get('firstObject');"
+    'body': "${1:enumerable}.get('firstObject');"
 
   'Ember lastObject':
     'prefix': 'lastObject'
-    'body': "${1:${2:var }${3:variable} = }${4:enumerable}.get('lastObject');"
+    'body': "${1:enumerable}.get('lastObject');"
 
 
 '.source.coffee':
 
-  'Ember forEach':
-    'prefix': 'forEach'
-    'body': """
-      ${1:enumerable}.forEach (${2:item}) ->
-        ${3}
-    """
-
-  'Ember filter':
-    'prefix': 'filter'
-    'body': """
-      ${1:enumerable}.filter (${2:item}) ->
-        ${3}
-    """
-
   'Ember filterBy':
     'prefix': 'filterBy'
-    'body': "${1:${2:variable} = }${3:enumerable}.filterBy '${4:property}', ${5:value}"
-
-  'Ember map':
-    'prefix': 'map'
-    'body': """
-      ${1:variable} = ${2:enumerable}.map (${3:item}) ->
-        ${4}
-    """
+    'body': "${1:enumerable}.filterBy '${2:property}', ${3:value}"
 
   'Ember mapBy':
     'prefix': 'mapBy'
-    'body': "${1:${2:variable} = }${3:enumerable}.mapBy '${4:property}'"
+    'body': "${1:enumerable}.mapBy '${2:property}'"
 
   'Ember every':
     'prefix': 'every'
@@ -116,7 +71,7 @@
 
   'Ember isEvery':
     'prefix': 'isEvery'
-    'body': "${1:${2:variable} = }${3:enumerable}.isEvery '${4:property}', ${5:bool}"
+    'body': "${1:enumerable}.isEvery '${2:property}', ${3:bool}"
 
   'Ember some':
     'prefix': 'some'
@@ -127,16 +82,16 @@
 
   'Ember isAny':
     'prefix': 'isAny'
-    'body': "${1:${2:variable} = }${3:enumerable}.isAny '${4:property}', ${5:bool}"
+    'body': "${1:enumerable}.isAny '${2:property}', ${3:bool}"
 
   'Ember toArray':
     'prefix': 'toArray'
-    'body': '${1:${2:variable} = }${3:enumerable}.toArray()'
+    'body': '${1:enumerable}.toArray()'
 
   'Ember firstObject':
     'prefix': 'firstObject'
-    'body': "${1:${2:variable} = }${3:enumerable}.get 'firstObject'"
+    'body': "${1:enumerable}.get 'firstObject'"
 
   'Ember lastObject':
     'prefix': 'lastObject'
-    'body': "${1:${2:variable} = }${3:enumerable}.get 'lastObject'"
+    'body': "${1:enumerable}.get 'lastObject'"
