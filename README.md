@@ -86,18 +86,18 @@ fooChanged: Ember.observer 'foo', ->
 - `run` ⇥
 
 ##### Enumerables
-- `forEach` ⇥
+- `for-each` ⇥
 - `filter` ⇥
-- `filterBy` ⇥
+- `filter-by` ⇥
 - `map` ⇥
-- `mapBy` ⇥
+- `map-by` ⇥
 - `every` ⇥
-- `isEvery` ⇥
+- `is-every` ⇥
 - `some` ⇥
-- `isAny` ⇥
-- `toArray` ⇥
-- `firstObject` ⇥
-- `lastObject` ⇥
+- `is-any` ⇥
+- `to-array` ⇥
+- `first-object` ⇥
+- `last-object` ⇥
 
 ##### Logger
 - `logger-debug` ⇥

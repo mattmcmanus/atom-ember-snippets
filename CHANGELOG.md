@@ -1,3 +1,6 @@
+## 1.2.1
+* Add keywords to improve package discovery
+
 ## 1.2.0
 * Add Ember Enumerable functions. @taylon
 * Add Test helpers. @blimmer
