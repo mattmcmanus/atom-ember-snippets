@@ -7,6 +7,11 @@
   "engines": {
     "atom": ">0.50.0"
   },
+  "keywords": [
+    "ember",
+    "snippets",
+    "snippet"
+  ],
   "readmeFilename": "README.md",
   "bugs": {
     "url": "https://github.com/seifsallam/atom-ember-snippets/issues"
