@@ -1,0 +1,97 @@
+# Ember Enumerables snippets
+#
+# Examples
+#
+#  `ember<tab>`
+#
+
+'.source.js':
+
+  'Ember filterBy':
+    'prefix': 'filterby'
+    'body': "${1:enumerable}.filterBy('${2:property}', ${3:value});"
+
+  'Ember mapBy':
+    'prefix': 'mapBy'
+    'body': "${1:enumerable}.mapBy('${2:property}');"
+
+  'Ember every':
+    'prefix': 'every'
+    'body': """
+      ${1:enumerable}.every(function(${2:item}) {
+        ${3}
+      });
+    """
+
+  'Ember isEvery':
+    'prefix': 'isEvery'
+    'body': "${1:enumerable}.isEvery('${2:property}', ${3:bool});"
+
+  'Ember some':
+    'prefix': 'some'
+    'body': """
+      ${1:enumerable}.some(function(${2:item}) {
+        ${3}
+      });
+    """
+
+  'Ember isAny':
+    'prefix': 'isAny'
+    'body': "${1:enumerable}.isAny('${2:property}', ${3:bool});"
+
+  'Ember toArray':
+    'prefix': 'toArray'
+    'body': '${1:enumerable}.toArray();'
+
+  'Ember firstObject':
+    'prefix': 'firstObject'
+    'body': "${1:enumerable}.get('firstObject');"
+
+  'Ember lastObject':
+    'prefix': 'lastObject'
+    'body': "${1:enumerable}.get('lastObject');"
+
+
+'.source.coffee':
+
+  'Ember filterBy':
+    'prefix': 'filterBy'
+    'body': "${1:enumerable}.filterBy '${2:property}', ${3:value}"
+
+  'Ember mapBy':
+    'prefix': 'mapBy'
+    'body': "${1:enumerable}.mapBy '${2:property}'"
+
+  'Ember every':
+    'prefix': 'every'
+    'body': """
+      ${1:enumerable}.every (${2:item}) ->
+        ${3}
+    """
+
+  'Ember isEvery':
+    'prefix': 'isEvery'
+    'body': "${1:enumerable}.isEvery '${2:property}', ${3:bool}"
+
+  'Ember some':
+    'prefix': 'some'
+    'body': """
+      ${1:enumerable}.some (${2:item}) ->
+        ${3}
+    """
+
+  'Ember isAny':
+    'prefix': 'isAny'
+    'body': "${1:enumerable}.isAny '${2:property}', ${3:bool}"
+
+  'Ember toArray':
+    'prefix': 'toArray'
+    'body': '${1:enumerable}.toArray()'
+
+  'Ember firstObject':
+    'prefix': 'firstObject'
+    'body': "${1:enumerable}.get 'firstObject'"
+
+  'Ember lastObject':
+    'prefix': 'lastObject'
+    'body': "${1:enumerable}.get 'lastObject'"
