@@ -1,3 +1,7 @@
+## 1.2.0
+* Add Ember Enumerable functions. @taylon
+* Add Test helpers. @blimmer
+
 ## 1.1.3
 * Fix property
 
@@ -12,7 +16,7 @@
 * Replace Ember.ObjectController with Ember.Controller
 
 ## 1.1.0
-* Add support for CoffeeScript
+* Add support for CoffeeScript. @jgarth
 
 ## 1.0.0
 * Add `Ember.computed.alias` snippet

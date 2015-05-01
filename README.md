@@ -84,11 +84,29 @@ fooChanged: Ember.observer 'foo', ->
 - `find` ⇥
 - `find-id` ⇥
 - `run` ⇥
+
+##### Enumerables
+- `forEach` ⇥
+- `filter` ⇥
+- `filterBy` ⇥
+- `map` ⇥
+- `mapBy` ⇥
+- `every` ⇥
+- `isEvery` ⇥
+- `some` ⇥
+- `isAny` ⇥
+- `toArray` ⇥
+- `firstObject` ⇥
+- `lastObject` ⇥
+
+##### Logger
 - `logger-debug` ⇥
 - `logger-error` ⇥
 - `logger-info` ⇥
 - `logger-log` ⇥
 - `logger-warn` ⇥
+
+##### Test Helpers
 - `visit` ⇥
 - `fill-in` ⇥
 - `click` ⇥
@@ -107,31 +125,4 @@ this.store.find('post');
 CoffeeScript:
 ```coffee
 this.store.find 'post'
-```
-
-#### Enumerables
-
-- `forEach` ⇥
-- `filter` ⇥
-- `filterBy` ⇥
-- `map` ⇥
-- `mapBy` ⇥
-- `every` ⇥
-- `isEvery` ⇥
-- `some` ⇥
-- `isAny` ⇥
-- `toArray` ⇥
-- `firstObject` ⇥
-- `lastObject` ⇥
-
-Example output for `isAny` ⇥
-
-JavaScript:
-```js
-people.isAny('isHappy', true);
-```
-
-CoffeeScript:
-```coffee
-people.isAny 'isHappy', true
 ```

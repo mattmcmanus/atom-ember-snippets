@@ -23,6 +23,58 @@
       });
     """
 
+  #
+  # Enumerables
+  #
+
+  'Ember filterBy':
+    'prefix': 'filter-by'
+    'body': "${1:enumerable}.filterBy('${2:property}', ${3:value});"
+
+  'Ember mapBy':
+    'prefix': 'map-by'
+    'body': "${1:enumerable}.mapBy('${2:property}');"
+
+  'Ember every':
+    'prefix': 'every'
+    'body': """
+      ${1:enumerable}.every(function(${2:item}) {
+        ${3}
+      });
+    """
+
+  'Ember isEvery':
+    'prefix': 'is-every'
+    'body': "${1:enumerable}.isEvery('${2:property}', ${3:bool});"
+
+  'Ember some':
+    'prefix': 'some'
+    'body': """
+      ${1:enumerable}.some(function(${2:item}) {
+        ${3}
+      });
+    """
+
+  'Ember isAny':
+    'prefix': 'is-any'
+    'body': "${1:enumerable}.isAny('${2:property}', ${3:bool});"
+
+  'Ember toArray':
+    'prefix': 'to-array'
+    'body': '${1:enumerable}.toArray();'
+
+  'Ember firstObject':
+    'prefix': 'first-object'
+    'body': "${1:enumerable}.get('firstObject');"
+
+  'Ember lastObject':
+    'prefix': 'last-object'
+    'body': "${1:enumerable}.get('lastObject');"
+
+  #
+  # Logger
+  #
+
   'Ember Logger Debug':
     'prefix': 'logger-debug'
     'body': "Ember.Logger.debug('${1:message}');"
@@ -43,7 +95,10 @@
     'prefix': 'logger-error'
     'body': "Ember.Logger.error('${1:message}');"
 
+  #
   # Test Helpers
+  #
+
   'Ember Visit':
     'prefix': 'visit'
     'body': "visit('${1:url}');"
@@ -93,6 +148,10 @@
         ${1:# body}
     """
 
+  #
+  # Logger
+  #
+
   'Ember Logger Debug':
     'prefix': 'logger-debug'
     'body': "Ember.Logger.debug${1:(}\"${1:message}\"${1:)}"
@@ -113,7 +172,56 @@
     'prefix': 'logger-error'
     'body': "Ember.Logger.error${1:(}\"${2:message}\"${1:)}"
 
-  # Test Helpers
+  #
+  # Enumerables
+  #
+
+  'Ember filterBy':
+    'prefix': 'filter-by'
+    'body': "${1:enumerable}.filterBy '${2:property}', ${3:value}"
+
+  'Ember mapBy':
+    'prefix': 'map-by'
+    'body': "${1:enumerable}.mapBy '${2:property}'"
+
+  'Ember every':
+    'prefix': 'every'
+    'body': """
+      ${1:enumerable}.every (${2:item}) ->
+        ${3}
+    """
+
+  'Ember isEvery':
+    'prefix': 'is-every'
+    'body': "${1:enumerable}.isEvery '${2:property}', ${3:bool}"
+
+  'Ember some':
+    'prefix': 'some'
+    'body': """
+      ${1:enumerable}.some (${2:item}) ->
+        ${3}
+    """
+
+  'Ember isAny':
+    'prefix': 'is-any'
+    'body': "${1:enumerable}.isAny '${2:property}', ${3:bool}"
+
+  'Ember toArray':
+    'prefix': 'to-array'
+    'body': '${1:enumerable}.toArray()'
+
+  'Ember firstObject':
+    'prefix': 'first-object'
+    'body': "${1:enumerable}.get 'firstObject'"
+
+  'Ember lastObject':
+    'prefix': 'last-object'
+    'body': "${1:enumerable}.get 'lastObject'"
+
+  #
+  #  Test Helpers
+  #
+
   'Ember Visit':
     'prefix': 'visit'
     'body': "visit ${1:url}"
