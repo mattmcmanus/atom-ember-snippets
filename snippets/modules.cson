@@ -29,6 +29,16 @@
       });
     """
 
+  'Ember Service':
+    'prefix': 'service'
+    'body': """
+      import Ember from 'ember';
+
+      export default Ember.Service.extend({
+        ${1:// body}
+      });
+    """
+
   'Ember Array Controller':
     'prefix': 'arr-controller'
     'body': """

@@ -23,6 +23,7 @@ Then reload your Atom.
 - `arr-controller` ⇥
 - `component` ⇥
 - `controller` ⇥
+- `service` ⇥
 - `helper` ⇥
 - `initializer` ⇥
 - `mixin` ⇥
