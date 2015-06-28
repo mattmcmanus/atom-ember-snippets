@@ -80,12 +80,24 @@
     """
 
   'Ember Helper':
-    'prefix': 'helper'
+    'prefix': 'bound-helper'
     'body': """
       import Ember from 'ember';
 
       export default Ember.Handlebars.makeBoundHelper(function() {
         ${1:// body}
+      });
+    """
+
+  'Ember Helper':
+    'prefix': 'helper'
+    'body': """
+      import Ember from 'ember';
+
+      export default Ember.Helper.extend({
+        compute: function() {
+          ${1:// body}
+        }
       });
     """
 
