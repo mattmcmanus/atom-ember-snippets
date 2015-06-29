@@ -247,10 +247,20 @@
     """
 
   'Ember Helper':
-    'prefix': 'helper'
+    'prefix': 'bound-helper'
     'body': """
       ${1}Helper = Ember.Handlebars.makeBoundHelper ->
         ${2:# body}
+
+      `export default ${1}Helper`
+    """
+
+  'Ember Helper':
+    'prefix': 'helper'
+    'body': """
+      ${1}Helper = Ember.Helper.extend
+        compute: ->
+          ${2:# body}
 
       `export default ${1}Helper`
     """
