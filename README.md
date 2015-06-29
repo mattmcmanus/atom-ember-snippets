@@ -25,6 +25,7 @@ Then reload your Atom.
 - `controller` ⇥
 - `helper` ⇥ (uses >= 1.13.x Ember.Helper)
 - `bound-helper` ⇥ (DEPRECATED: Ember.Handlebars.makeBoundHelper)
+- `service` ⇥
 - `initializer` ⇥
 - `mixin` ⇥
 - `model` ⇥
