@@ -23,7 +23,8 @@ Then reload your Atom.
 - `arr-controller` ⇥
 - `component` ⇥
 - `controller` ⇥
-- `helper` ⇥
+- `helper` ⇥ (uses >= 1.13.x Ember.Helper)
+- `bound-helper` ⇥ (DEPRECATED: Ember.Handlebars.makeBoundHelper)
 - `initializer` ⇥
 - `mixin` ⇥
 - `model` ⇥
