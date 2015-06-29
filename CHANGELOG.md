@@ -1,3 +1,8 @@
+## 1.3.0
+* Rename Ember Computed prefix from `property` to `computed` @locks
+* Add Ember.Service snippet @jasonmit
+* Add Ember.Helper snippet as `helper`, while keeping deprecated helper as `bound-helper` @jasonmit
+
 ## 1.2.1
 * Add keywords to improve package discovery
 
