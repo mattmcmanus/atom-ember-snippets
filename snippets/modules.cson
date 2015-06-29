@@ -199,6 +199,15 @@
       `export default ${1}Controller`
     """
 
+  'Ember Service':
+    'prefix': 'service'
+    'body': """
+      ${1:name}Service = Ember.Service.extend
+        ${2:# body}
+
+      `export default ${1}Service`
+    """
+
   'Ember Array Controller':
     'prefix': 'arr-controller'
     'body': """
