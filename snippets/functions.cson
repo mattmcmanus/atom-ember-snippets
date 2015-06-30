@@ -160,20 +160,48 @@
 
 '.source.coffee':
 
-  'Ember Find':
-    'prefix': 'find'
-    'body': "this.store.find${1:(}'${2:model}'${1:)}"
-
-  'Ember Find by id':
-    'prefix': 'find-id'
-    'body': "this.store.find${1:(}'${2:model}', params.${2:model}_id${1:)}"
-
   'Ember Run':
     'prefix': 'run'
     'body': """
       Ember.run ->
         ${1:# body}
     """
+
+  #
+  # Ember Data 1.0.0-beta
+  #
+
+  'Ember Data: Find':
+    'prefix': 'find'
+    'body': "this.store.find${1:(}'${2:model}'${1:)}"
+
+  'Ember Data: Find by id':
+    'prefix': 'find-id'
+    'body': "this.store.find${1:(}'${2:model}', params.${2:model}_id${1:)}"
+
+  #
+  # Ember Data 1.13
+  #
+  'Ember Data: Find All':
+    'prefix': 'find-all'
+    'body': "this.store.findAll${1:(}'${2:model}'${1:)}"
+
+  'Ember Data: Find Record':
+    'prefix': 'find-record'
+    'body': "this.store.findRecord${1:(}'${2:model}', params.${2:model}_id${1:)}"
+
+  'Ember Data: Peek All':
+    'prefix': 'peek-all'
+    'body': "this.store.peekAll${1:(}'${2:model}'${1:)}"
+
+  'Ember Data: Peek Record':
+    'prefix': 'peek-record'
+    'body': "this.store.peekRecord${1:(}'${2:model}', params.${2:model}_id${1:)}"
+
+  'Ember Data: Query':
+    'prefix': 'query-all'
+    'body': "this.store.query${1:(}'${2:model}', { ${2:queryKey}: ${3:queryValue}}${1:)}"
+
 
   #
   # Logger

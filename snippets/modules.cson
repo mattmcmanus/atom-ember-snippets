@@ -120,7 +120,7 @@
     """
 
   'Ember JSON API Adapter':
-    'prefix': 'json-api-adapter'
+    'prefix': 'jsonapi-adapter'
     'body': """
       import DS from 'ember-data';
 
@@ -150,7 +150,7 @@
     """
 
   'Ember JSON API Serializer':
-    'prefix': 'active-serializer'
+    'prefix': 'jsonapi-serializer'
     'body': """
       import DS from 'ember-data';
 
@@ -290,6 +290,15 @@
       `export default ${1}Adapter`
     """
 
+  'Ember JSON API Adapter':
+    'prefix': 'jsonapi-adapter'
+    'body': """
+      ${1}Adapter = DS.JSONAPIAdapter.extend
+        ${2:# body}
+
+      `export default ${1}Adapter`
+    """
+
   'Ember REST Serializer':
     'prefix': 'serializer'
     'body': """
@@ -304,6 +313,16 @@
     'body': """
 
       ${1:name}Serializer = DS.ActiveModelSerializer.extend
+        ${2:# body}
+
+      `export default ${1}Serializer`
+    """
+
+  'Ember JSON API Serializer':
+    'prefix': 'jsonapi-serializer'
+    'body': """
+
+      ${1:name}Serializer = DS.JSONAPISerializer.extend
         ${2:# body}
 
       `export default ${1}Serializer`
