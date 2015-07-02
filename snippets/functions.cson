@@ -46,9 +46,13 @@
     'prefix': 'peek-record'
     'body': "this.store.peekRecord('${1:model}', params.${1:model}_id);"
 
-  'Ember Data: Query':
+  'Ember Data: Query All':
     'prefix': 'query-all'
     'body': "this.store.query('${1:model}', { ${2:queryKey}: ${3:queryValue}});"
+
+  'Ember Data: Query Record':
+    'prefix': 'query-record'
+    'body': "this.store.queryRecord('${1:model}', { ${2:queryKey}: ${3:queryValue}});"
 
   #
   # Enumerables
@@ -198,9 +202,13 @@
     'prefix': 'peek-record'
     'body': "this.store.peekRecord${1:(}'${2:model}', params.${2:model}_id${1:)}"
 
-  'Ember Data: Query':
+  'Ember Data: Query All':
     'prefix': 'query-all'
     'body': "this.store.query${1:(}'${2:model}', { ${2:queryKey}: ${3:queryValue}}${1:)}"
+
+  'Ember Data: Query Record':
+    'prefix': 'query-all'
+    'body': "this.store.queryRecord${1:(}'${2:model}', { ${2:queryKey}: ${3:queryValue}}${1:)}"
 
 
   #
