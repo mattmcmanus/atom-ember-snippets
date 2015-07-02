@@ -1,3 +1,6 @@
+## 1.4.0
+* Add Ember Data v1.13 snippets @locks
+
 ## 1.3.0
 * Rename Ember Computed prefix from `property` to `computed` @locks
 * Add Ember.Service snippet @jasonmit

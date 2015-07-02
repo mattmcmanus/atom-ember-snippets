@@ -21,17 +21,19 @@ Then reload your Atom.
 - `active-serializer` ⇥
 - `adapter` ⇥
 - `arr-controller` ⇥
+- `bound-helper` ⇥ (DEPRECATED: Ember.Handlebars.makeBoundHelper)
 - `component` ⇥
 - `controller` ⇥
 - `helper` ⇥ (uses >= 1.13.x Ember.Helper)
-- `bound-helper` ⇥ (DEPRECATED: Ember.Handlebars.makeBoundHelper)
-- `service` ⇥
 - `initializer` ⇥
+- `jsonapi-adapter` ⇥
+- `jsonapi-serializer` ⇥
 - `mixin` ⇥
 - `model` ⇥
 - `object` ⇥
 - `route` ⇥
 - `serializer` ⇥
+- `service` ⇥
 - `transform` ⇥
 - `utility` ⇥
 - `view` ⇥
@@ -83,8 +85,14 @@ fooChanged: Ember.observer 'foo', ->
 
 #### Functions
 
-- `find` ⇥
-- `find-id` ⇥
+- `find` ⇥ (DEPRECATED: uses < 1.13 Ember Data)
+- `find-id` ⇥ (DEPRECATED: uses < 1.13 Ember Data)
+- `find-all` ⇥
+- `find-record` ⇥
+- `peek-all` ⇥
+- `peek-record` ⇥
+- `query-all` ⇥
+- `query-record` ⇥
 - `run` ⇥
 
 ##### Enumerables
