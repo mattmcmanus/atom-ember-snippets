@@ -141,6 +141,16 @@
       });
     """
 
+  'Ember JSON API Adapter':
+    'prefix': 'jsonapi-adapter'
+    'body': """
+      import DS from 'ember-data';
+
+      export default DS.JSONAPIAdapter.extend({
+        ${1:// body}
+      });
+    """
+
   'Ember REST Serializer':
     'prefix': 'serializer'
     'body': """
@@ -157,6 +167,16 @@
       import DS from 'ember-data';
 
       export default DS.ActiveModelSerializer.extend({
+        ${1:// body}
+      });
+    """
+
+  'Ember JSON API Serializer':
+    'prefix': 'jsonapi-serializer'
+    'body': """
+      import DS from 'ember-data';
+
+      export default DS.JSONAPISerializer.extend({
         ${1:// body}
       });
     """
@@ -311,6 +331,15 @@
       `export default ${1}Adapter`
     """
 
+  'Ember JSON API Adapter':
+    'prefix': 'jsonapi-adapter'
+    'body': """
+      ${1}Adapter = DS.JSONAPIAdapter.extend
+        ${2:# body}
+
+      `export default ${1}Adapter`
+    """
+
   'Ember REST Serializer':
     'prefix': 'serializer'
     'body': """
@@ -325,6 +354,16 @@
     'body': """
 
       ${1:name}Serializer = DS.ActiveModelSerializer.extend
+        ${2:# body}
+
+      `export default ${1}Serializer`
+    """
+
+  'Ember JSON API Serializer':
+    'prefix': 'jsonapi-serializer'
+    'body': """
+
+      ${1:name}Serializer = DS.JSONAPISerializer.extend
         ${2:# body}
 
       `export default ${1}Serializer`
