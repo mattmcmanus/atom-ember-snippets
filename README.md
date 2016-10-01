@@ -61,7 +61,7 @@ NameController = Ember.Controller.extend
 
 Used inside Ember objects
 
-- `property` ⇥
+- `computed` ⇥
 - `observer` ⇥
 - `on` ⇥
 - `actions` ⇥
