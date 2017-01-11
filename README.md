@@ -1,3 +1,7 @@
+**I no longer maintain this project. Please let me know if you're interested in maintaining it, so I can transfer ownership to you :)**
+
+-- 
+
 ## Ember Snippets
 
 Ember.js ES6 snippets for Atom editor (ex: ember-cli, ember-app-kit)
