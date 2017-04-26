@@ -1,10 +1,8 @@
-**I no longer maintain this project. Please let me know if you're interested in maintaining it, so I can transfer ownership to you :)**
+# Atom Ember Snippets 
 
--- 
+*(Under new management!)*
 
-## Ember Snippets
-
-Ember.js ES6 snippets for Atom editor (ex: ember-cli, ember-app-kit)
+Ember.js ES6 snippets for Atom editor
 
 ## Installation
 
@@ -14,12 +12,9 @@ Run the following command:
 apm install ember-snippets
 ```
 
-Then reload your Atom.
-
-
 ## Usage
 
-#### Modules
+### Modules
 
 - `active-adapter` ⇥
 - `active-serializer` ⇥
