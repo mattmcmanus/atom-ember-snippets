@@ -39,26 +39,6 @@
       });
     """
 
-  'Ember Array Controller':
-    'prefix': 'arr-controller'
-    'body': """
-      import Ember from 'ember';
-
-      export default Ember.ArrayController.extend({
-        ${1:// body}
-      });
-    """
-
-  'Ember View':
-    'prefix': 'view'
-    'body': """
-      import Ember from 'ember';
-
-      export default Ember.View.extend({
-        ${1:// body}
-      });
-    """
-
   'Ember Component':
     'prefix': 'component'
     'body': """
