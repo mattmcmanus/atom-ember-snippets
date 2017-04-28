@@ -1,38 +1,50 @@
 # Ember Data Snippets
 
 '.source.js':
-
-  'Ember Data: Find':
-    'prefix': 'find'
-    'body': "this.store.find('${1:model}');"
-
-  'Ember Data: Find by id':
-    'prefix': 'find-id'
-    'body': "this.store.find('${1:model}', params.${1:model}_id);"
-
-  'Ember Data: Find All':
+  'store.findAll(...)':
     'prefix': 'find-all'
+    'leftLabel': 'Ember Data'
     'body': "this.store.findAll('${1:model}');"
 
-  'Ember Data: Find Record':
+  'store.findRecord(...)':
     'prefix': 'find-record'
+    'leftLabel': 'Ember Data'
     'body': "this.store.findRecord('${1:model}', params.${1:model}_id);"
 
-  'Ember Data: Peek All':
+  'store.peekAll(...)':
     'prefix': 'peek-all'
+    'leftLabel': 'Ember Data'
     'body': "this.store.peekAll('${1:model}');"
 
-  'Ember Data: Peek Record':
+  'store.peekRecord(...)':
     'prefix': 'peek-record'
+    'leftLabel': 'Ember Data'
     'body': "this.store.peekRecord('${1:model}', params.${1:model}_id);"
 
-  'Ember Data: Query All':
+  'store.query(...)':
     'prefix': 'query-all'
+    'leftLabel': 'Ember Data'
     'body': "this.store.query('${1:model}', { ${2:queryKey}: ${3:queryValue}});"
 
-  'Ember Data: Query Record':
+  'store.queryRecord(...)':
     'prefix': 'query-record'
+    'leftLabel': 'Ember Data'
     'body': "this.store.queryRecord('${1:model}', { ${2:queryKey}: ${3:queryValue}});"
+
+  'attr(...)':
+    'prefix': 'attr'
+    'leftLabel': 'Ember Data'
+    'body': "attr('${1:string}');"
+
+  'belongsTo(...)':
+    'prefix': 'belongsTo'
+    'leftLabel': 'Ember Data'
+    'body': "belongsTo('${1:name}');"
+
+  'hasMany(...)':
+    'prefix': 'hasMany'
+    'leftLabel': 'Ember Data'
+    'body': "hasMany('${1:string}');"
 
 #############################
 # DEPRECATED

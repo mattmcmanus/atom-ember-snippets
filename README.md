@@ -1,8 +1,8 @@
-# Atom Ember Snippets 
+# Atom Ember Snippets
 
-*(Under new management!)*
+Ember.js ES6, Ember Data, Mirage & Handlebars snippets for Atom editor
 
-Ember.js ES6 snippets for Atom editor
+![](https://d2ppvlu71ri8gs.cloudfront.net/items/400c0c1V1w2C060K253v/Screen%20Recording%202017-04-28%20at%2004.29%20PM.gif)
 
 ## Installation
 
@@ -14,124 +14,31 @@ apm install ember-snippets
 
 ## Usage
 
-### Modules
+Rather than listing everything out here, check out the snippet files themselves:
 
-- `active-adapter` ⇥
-- `active-serializer` ⇥
-- `adapter` ⇥
-- `arr-controller` ⇥
-- `bound-helper` ⇥ (DEPRECATED: Ember.Handlebars.makeBoundHelper)
-- `component` ⇥
-- `controller` ⇥
-- `helper` ⇥ (uses >= 1.13.x Ember.Helper)
-- `initializer` ⇥
-- `jsonapi-adapter` ⇥
-- `jsonapi-serializer` ⇥
-- `mixin` ⇥
-- `model` ⇥
-- `object` ⇥
-- `route` ⇥
-- `serializer` ⇥
-- `service` ⇥
-- `transform` ⇥
-- `utility` ⇥
-- `view` ⇥
+* [ember core snippets](snippets/ember.cson) for:
+  * Importing & module shorthands
+  * Ember Objects
+  * Routes
+  * Components
+  * Enumerables
+  * Logger
+  * Test
+* [ember-data snippets](snippets/ember-data.cson) for:
+  * Store
+  * Models
+* [Handlebars](snippets/handlebars.cson) for:
+  * Default Helpers
+  * Components
+* [Mirage](snippets/mirage.cson) for:
+  * Factories
+  * Routes
+* [New file stubs](snippets/file-stubs.cson) for:
+  * Routers, Components, Helpers & more
 
-Example output for `controller` ⇥
+## Recommended Packages
+* https://atom.io/packages/atom-handlebars
 
-Javascript:
-```js
-import Ember from 'ember';
+## Contributing
 
-export default Ember.Controller.extend({
-	// body
-});
-```
-
-CoffeeScript:
-```coffee
-NameController = Ember.Controller.extend
-	# body
-
-`export default NameController`
-```
-
-#### Properties
-
-Used inside Ember objects
-
-- `computed` ⇥
-- `observer` ⇥
-- `on` ⇥
-- `actions` ⇥
-- `alias` ⇥
-
-Example output for `observer` ⇥
-
-JavaScript:
-```js
-fooChanged: Ember.observer('foo', function() {
-	// body
-}),
-```
-
-CoffeeScript:
-```coffee
-fooChanged: Ember.observer 'foo', ->
-	# body
-```
-
-
-#### Functions
-
-- `find` ⇥ (DEPRECATED: uses < 1.13 Ember Data)
-- `find-id` ⇥ (DEPRECATED: uses < 1.13 Ember Data)
-- `find-all` ⇥
-- `find-record` ⇥
-- `peek-all` ⇥
-- `peek-record` ⇥
-- `query-all` ⇥
-- `query-record` ⇥
-- `run` ⇥
-
-##### Enumerables
-- `for-each` ⇥
-- `filter` ⇥
-- `filter-by` ⇥
-- `map` ⇥
-- `map-by` ⇥
-- `every` ⇥
-- `is-every` ⇥
-- `some` ⇥
-- `is-any` ⇥
-- `to-array` ⇥
-- `first-object` ⇥
-- `last-object` ⇥
-
-##### Logger
-- `logger-debug` ⇥
-- `logger-error` ⇥
-- `logger-info` ⇥
-- `logger-log` ⇥
-- `logger-warn` ⇥
-
-##### Test Helpers
-- `visit` ⇥
-- `fill-in` ⇥
-- `click` ⇥
-- `key-event` ⇥
-- `trigger-event` ⇥
-- `find-element` ⇥
-- `and-then` ⇥
-
-Example output for `find` ⇥
-
-JavaScript:
-```js
-this.store.find('post');
-```
-
-CoffeeScript:
-```coffee
-this.store.find 'post'
-```
+Please send PRs! I add things as I get tired of writing them, so there are certainly areas that I've missed.

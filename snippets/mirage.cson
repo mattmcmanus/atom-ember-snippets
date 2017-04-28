@@ -1,24 +1,34 @@
 # ember-cli-mirage snippets
 
 '.source.js':
-  'Mirage factory: afterCreate':
+  'Factory: afterCreate':
     'prefix': 'afterCreate'
+    'leftLabel': 'Mirage'
     'body': """
       afterCreate(${1:model}, server) {
         $2
       },
     """
 
-  'Mirage factory: trait':
+  'Factory: trait':
     'prefix': 'trait'
+    'leftLabel': 'Mirage'
     'body': """
       $1: trait({
         $2
       }),
     """
 
-  'Mirage server endpoint':
+  'Factory: .create(...)':
+    'prefix': 'create'
+    'leftLabel': 'Mirage'
+    'body': """
+      server.create(\'${1:model}\', ${2:\'${3:trait}\',} ${4:\{ $5 \}});
+    """
+
+  'Server endpoint':
     'prefix': 'server'
+    'leftLabel': 'Mirage'
     'body': """
       server.${1:get}('${2:/}', (${3:schema, request}) => {
         $4

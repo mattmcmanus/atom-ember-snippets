@@ -3,42 +3,23 @@
 #   handlebars
 # /////////////////////////////////////
 '.text.handlebars':
-  '#unless':
-    'prefix': 'unless'
-    'body': """
-      {{#unless ${1}}}
-        ${2}
-      {{/unless}}
-    """
+  'Ember: get':
+    'prefix': 'get'
+    'body': "{{get '${1}'}}"
 
-  '#if':
-    'prefix': 'if'
-    'body': """
-      {{#if ${1}}}
-        ${2}
-      {{/if}}
-    """
+  'Ember: helper':
+    'prefix': 'helper'
+    'body': "{{${1:get} '${2}'}}"
 
-  '#if else':
-    'prefix': 'ife'
-    'body': """
-      {{#if ${1}}}
-        ${2}
-      {{else}}
-        ${3}
-      {{/if}}
-    """
+  'Ember: closure helper':
+    'prefix': 'chelper'
+    'body': "(${1:get} '${2}')"
 
-  '#each':
-    'prefix': 'each'
-    'body': """
-      {{#each ${1} as |${2}|}}
-        ${3}
-      {{/each}}
+  'Ember: action':
+    'prefix': 'action'
+    'body': "{{action '${1:actionName}' ${2:argument}}}"
 
-    """
-
-  '#each/else':
+  'Ember: #each/else':
     'prefix': 'eachelse'
     'body': """
       {{#each ${1} as |${2}|}}
@@ -49,11 +30,7 @@
 
     """
 
-  '#link-to':
-    'prefix':'link-to'
-    'body': "{{#link-to '${1}'}}${2}{{/link-to}}"
-
-  "component":
+  "Ember: component":
     'prefix': 'comp'
     'body': """
       {{#${1} ${2:as |${3:yielded}|}}}

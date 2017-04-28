@@ -7,19 +7,23 @@
 
 '.source.js':
   'import Ember':
-   'prefix': 'imE'
-   'body': """
+    'prefix': 'imE'
+    'leftLabel': 'Ember'
+    'body': """
       import Ember from 'ember';
       const { ${1} } = Ember;
     """
+
   'const {} = Ember':
-   'prefix': 'cE'
-   'body': """
+    'prefix': 'cE'
+    'leftLabel': 'Ember'
+    'body': """
       const { ${1} } = Ember;
     """
 
-  'Ember run':
+  'run(() => { ... })':
     'prefix': 'run'
+    'leftLabel': 'Ember'
     'body':"""
       run(() => {
         ${1}
@@ -29,24 +33,29 @@
   #
   # Ember Object Snippets
   #
-  'Ember let get()':
+  'let ... get(...)':
     'prefix': 'lget'
-    'body': 'let $1 = this.get(\'$1\');'
+    'leftLabel': 'Ember'
+    'body': 'let $1 = ${2:this}.get(\'$1\');'
 
-  'Ember set':
-   'prefix': 'set'
-   'body': "set('${1}', ${2});"
+  '.set(...)':
+    'prefix': 'set'
+    'leftLabel': 'Ember'
+    'body': "${1:this}.set('${2}', ${3});"
 
-  'Ember get':
-   'prefix': 'get'
-   'body': 'this.get(\'${1}\');'
+  '.get(...)':
+    'prefix': 'get'
+    'leftLabel': 'Ember'
+    'body': "${1:this}.get('${2}');"
 
-  'super':
-   'prefix': 'super'
-   'body': 'this._super(...arguments);'
+  'this._super(...)':
+    'prefix': 'super'
+    'leftLabel': 'Ember'
+    'body': 'this._super(...arguments);'
 
-  'Ember init':
+  'init(){ ... }':
     'prefix': 'init'
+    'leftLabel': 'Ember'
     'body':"""
       init(){
         this._super(...arguments);
@@ -54,61 +63,68 @@
       },
     """
 
-  'Ember inject.service':
-   'prefix': 'inject'
-   'body': 'inject.service(${1}),'
+  'inject.service(...)':
+    'prefix': 'inject'
+    'leftLabel': 'Ember'
+    'body': 'inject.service(${1}),'
 
-  'Ember Computed Property':
+  'computed(...)':
     'prefix': 'computed'
+    'leftLabel': 'Ember'
     'body': """
-      ${1:fooCount}: computed('${2:property}', function() {
-        ${3:// body}
+      computed('${1:property}', function() {
+        ${2:// body}
       }),
     """
 
-  'Ember Observer':
+  'observer(...)':
     'prefix': 'observer'
+    'leftLabel': 'Ember'
     'body': """
-      ${1:fooChanged}: observer('${2:property}', function() {
-        ${3:// body}
+      observer('${1:property}', function() {
+        ${2:// body}
       }),
     """
 
-  'Ember Event':
+  'on(...)':
     'prefix': 'on'
+    'leftLabel': 'Ember'
     'body': """
-      ${1:event}: on('${2:property}', function() {
-        ${3:// body}
+      on('${1:property}', function() {
+        ${2:// body}
       }),
     """
 
-  'Ember Actions':
+  'actions: { ... }':
     'prefix': 'actions'
+    'leftLabel': 'Ember'
     'body': """
       actions: {
         ${1:// body}
       }
     """
 
-  'Ember Computed Alias':
+  'computed.alias(...)':
     'prefix': 'alias'
-    'body': """
-      ${1:foo}: computed.alias('${2:property}'),
-    """
+    'leftLabel': 'Ember'
+    'body': 'computed.alias(\'${2:property}\')',
 
   #
   #
   # Route Snippets
   #
-  'Ember Route.model':
+  'Route: model(...){ ... }':
     'prefix': 'model'
+    'leftLabel': 'Ember'
     'body': """
       model(params = {}) {
         return this.store.query('${1}', params);
       },
     """
-  'setupController':
+
+  'Route: setupController(...){ ... }':
     'prefix': 'setupController'
+    'leftLabel': 'Ember'
     'body':"""
       setupController(controller, model) {
         this._super(controller, model);
@@ -116,8 +132,10 @@
       },
 
     """
-  'afterModel':
+
+  'Route: afterModel(...){ ... }':
     'prefix': 'afterModel'
+    'leftLabel': 'Ember'
     'body':"""
       afterModel(model, transition) {
         ${1}
@@ -125,13 +143,13 @@
 
     """
 
-
   #
   #
   # Component Snippets
   #
-  'didReceiveAttrs':
+  'Component: didReceiveAttrs(){ ... }':
     'prefix': 'didReceiveAttrs'
+    'leftLabel': 'Ember'
     'body':"""
       didReceiveAttrs(){
         this._super(...arguments);
@@ -140,8 +158,9 @@
 
     """
 
-  'didRender':
+  'Component: didRender(){ ... }':
     'prefix': 'didRender'
+    'leftLabel': 'Ember'
     'body':"""
       didRender(){
         this._super(...arguments);
@@ -149,8 +168,9 @@
       },
     """
 
-  'didInsertElement':
+  'Component: didInsertElement(){ ... }':
     'prefix': 'didInsertElement'
+    'leftLabel': 'Ember'
     'body':"""
       didInsertElement(){
         this._super(...arguments);
@@ -158,8 +178,9 @@
       },
     """
 
-  'willDestroyElement':
+  'Component: willDestroyElement(){ ... }':
     'prefix': 'willDestroyElement'
+    'leftLabel': 'Ember'
     'body':"""
       willDestroyElement(){
         this._super(...arguments);
@@ -170,116 +191,138 @@
   #
   # Enumerables
   #
-
-  'Ember filterBy':
+  '.filterBy(...)':
     'prefix': 'filter-by'
+    'leftLabel': 'Ember'
     'body': "${1:enumerable}.filterBy('${2:property}', ${3:value});"
 
-  'Ember mapBy':
+  '.mapBy(...)':
     'prefix': 'map-by'
+    'leftLabel': 'Ember'
     'body': "${1:enumerable}.mapBy('${2:property}');"
 
-  'Ember every':
+  '.every(...)':
     'prefix': 'every'
+    'leftLabel': 'Ember'
     'body': """
       ${1:enumerable}.every(function(${2:item}) {
         ${3}
       });
     """
 
-  'Ember isEvery':
+  '.isEvery(...)':
     'prefix': 'is-every'
+    'leftLabel': 'Ember'
     'body': "${1:enumerable}.isEvery('${2:property}', ${3:bool});"
 
-  'Ember some':
+  '.some(...)':
     'prefix': 'some'
+    'leftLabel': 'Ember'
     'body': """
       ${1:enumerable}.some(function(${2:item}) {
         ${3}
       });
     """
 
-  'Ember isAny':
+  '.isAny(...)':
     'prefix': 'is-any'
+    'leftLabel': 'Ember'
     'body': "${1:enumerable}.isAny('${2:property}', ${3:bool});"
 
-  'Ember toArray':
+  '.toArray(...)':
     'prefix': 'to-array'
+    'leftLabel': 'Ember'
     'body': '${1:enumerable}.toArray();'
 
-  'Ember firstObject':
+  '.get(\'firstObject\')':
     'prefix': 'first-object'
+    'leftLabel': 'Ember'
     'body': "${1:enumerable}.get('firstObject');"
 
-  'Ember lastObject':
+  '.get(\'lastObject\')':
     'prefix': 'last-object'
+    'leftLabel': 'Ember'
     'body': "${1:enumerable}.get('lastObject');"
 
   #
   # Logger
   #
-
-  'Ember Logger Debug':
+  'Logger.debug(...)':
     'prefix': 'logger-debug'
-    'body': "Ember.Logger.debug('${1:message}');"
+    'leftLabel': 'Ember'
+    'body': "Logger.debug('${1:message}');"
 
-  'Ember Logger Log':
+  'Logger.log(...)':
     'prefix': 'logger-log'
+    'leftLabel': 'Ember'
     'body': "Ember.Logger.log('${1:message}');"
 
-  'Ember Logger Info':
+  'Logger.info(...)':
     'prefix': 'logger-info'
+    'leftLabel': 'Ember'
     'body': "Ember.Logger.info('${1:message}');"
 
-  'Ember Logger Warn':
+  'Logger.warn(...)':
     'prefix': 'logger-warn'
+    'leftLabel': 'Ember'
     'body': "Ember.Logger.warn('${1:message}');"
 
-  'Ember Logger Error':
+  'Logger.error(...)':
     'prefix': 'logger-error'
+    'leftLabel': 'Ember'
     'body': "Ember.Logger.error('${1:message}');"
 
   #
   # Test Helpers
   #
 
-  'Ember Visit':
+  'visit(...)':
     'prefix': 'visit'
+    'leftLabel': 'Ember'
     'body': "visit('${1:url}');"
 
-  'Ember Fill In':
+  'fillIn(...)':
     'prefix': 'fill-in'
+    'leftLabel': 'Ember'
     'body': "fillIn('${1:selector}', '${2:text}');"
 
-  'Ember Click':
+  'click(...)':
     'prefix': 'click'
+    'leftLabel': 'Ember'
     'body': "click('${1:selector}');"
 
-  'Ember Key Event':
+  'keyEvent(...)':
     'prefix': 'key-event'
+    'leftLabel': 'Ember'
     'body': "keyEvent('${1:selector}', '${2:type}', '${3:keyCode}');"
 
-  'Ember Trigger Event':
+  'triggerEvent(...)':
     'prefix': 'trigger-event'
+    'leftLabel': 'Ember'
     'body': "triggerEvent('${1:selector}', '${2:type}', '${3:options}');"
 
-  'Ember Find Element':
+  'find(...)':
     'prefix': 'find-element'
+    'leftLabel': 'Ember'
     'body': "find('${1:selector}', '${2:context}');"
 
-  'Ember pauseTest':
+  'await pauseTest(...)':
     'prefix': 'pause'
+    'leftLabel': 'Ember'
     'body':"""
       await pauseTest();
     """
 
-  'Ember wait':
+  'await wait(...)':
     'prefix': 'wait'
+    'leftLabel': 'Ember'
     'body':"""
       await wait();
     """
-  'Ember andThen':
+
+  'andThen(...)':
     'prefix': 'and'
+    'leftLabel': 'Ember'
     'body':"""
       andThen(() => {
         ${1}
