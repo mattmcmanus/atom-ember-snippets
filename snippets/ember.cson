@@ -1,0 +1,481 @@
+# Ember Functions snippets
+#
+# Examples
+#
+#  `ember<tab>`
+#
+
+'.source.js':
+  'import Ember':
+    'prefix': 'imE'
+    'leftLabel': 'Ember'
+    'body': """
+      import Ember from 'ember';
+      const { ${1} } = Ember;
+    """
+
+  'const {} = Ember':
+    'prefix': 'cE'
+    'leftLabel': 'Ember'
+    'body': """
+      const { ${1} } = Ember;
+    """
+
+  'run(() => { ... })':
+    'prefix': 'run'
+    'leftLabel': 'Ember'
+    'body':"""
+      run(() => {
+        ${1}
+      });
+    """
+  #
+  #
+  # Ember Object Snippets
+  #
+  'let ... get(...)':
+    'prefix': 'lget'
+    'leftLabel': 'Ember'
+    'body': 'let $1 = ${2:this}.get(\'$1\');'
+
+  '.set(...)':
+    'prefix': 'set'
+    'leftLabel': 'Ember'
+    'body': "${1:this}.set('${2}', ${3});"
+
+  '.get(...)':
+    'prefix': 'get'
+    'leftLabel': 'Ember'
+    'body': "${1:this}.get('${2}');"
+
+  'this._super(...)':
+    'prefix': 'super'
+    'leftLabel': 'Ember'
+    'body': 'this._super(...arguments);'
+
+  'init(){ ... }':
+    'prefix': 'init'
+    'leftLabel': 'Ember'
+    'body':"""
+      init(){
+        this._super(...arguments);
+        ${1}
+      },
+    """
+
+  'inject.service(...)':
+    'prefix': 'inject'
+    'leftLabel': 'Ember'
+    'body': 'inject.service(${1}),'
+
+  'computed(...)':
+    'prefix': 'computed'
+    'leftLabel': 'Ember'
+    'body': """
+      computed('${1:property}', function() {
+        ${2:// body}
+      }),
+    """
+
+  'observer(...)':
+    'prefix': 'observer'
+    'leftLabel': 'Ember'
+    'body': """
+      observer('${1:property}', function() {
+        ${2:// body}
+      }),
+    """
+
+  'on(...)':
+    'prefix': 'on'
+    'leftLabel': 'Ember'
+    'body': """
+      on('${1:property}', function() {
+        ${2:// body}
+      }),
+    """
+
+  'actions: { ... }':
+    'prefix': 'actions'
+    'leftLabel': 'Ember'
+    'body': """
+      actions: {
+        ${1:// body}
+      }
+    """
+
+  'computed.alias(...)':
+    'prefix': 'alias'
+    'leftLabel': 'Ember'
+    'body': 'computed.alias(\'${2:property}\')',
+
+  #
+  #
+  # Route Snippets
+  #
+  'Route: model(...){ ... }':
+    'prefix': 'model'
+    'leftLabel': 'Ember'
+    'body': """
+      model(params = {}) {
+        return this.store.query('${1}', params);
+      },
+    """
+
+  'Route: setupController(...){ ... }':
+    'prefix': 'setupController'
+    'leftLabel': 'Ember'
+    'body':"""
+      setupController(controller, model) {
+        this._super(controller, model);
+        ${1}
+      },
+
+    """
+
+  'Route: afterModel(...){ ... }':
+    'prefix': 'afterModel'
+    'leftLabel': 'Ember'
+    'body':"""
+      afterModel(model, transition) {
+        ${1}
+      },
+
+    """
+
+  #
+  #
+  # Component Snippets
+  #
+  'Component: didReceiveAttrs(){ ... }':
+    'prefix': 'didReceiveAttrs'
+    'leftLabel': 'Ember'
+    'body':"""
+      didReceiveAttrs(){
+        this._super(...arguments);
+        ${1}
+      },
+
+    """
+
+  'Component: didRender(){ ... }':
+    'prefix': 'didRender'
+    'leftLabel': 'Ember'
+    'body':"""
+      didRender(){
+        this._super(...arguments);
+        ${1}
+      },
+    """
+
+  'Component: didInsertElement(){ ... }':
+    'prefix': 'didInsertElement'
+    'leftLabel': 'Ember'
+    'body':"""
+      didInsertElement(){
+        this._super(...arguments);
+        ${1}
+      },
+    """
+
+  'Component: willDestroyElement(){ ... }':
+    'prefix': 'willDestroyElement'
+    'leftLabel': 'Ember'
+    'body':"""
+      willDestroyElement(){
+        this._super(...arguments);
+        ${1}
+      },
+    """
+  #
+  #
+  # Enumerables
+  #
+  '.filterBy(...)':
+    'prefix': 'filter-by'
+    'leftLabel': 'Ember'
+    'body': "${1:enumerable}.filterBy('${2:property}', ${3:value});"
+
+  '.mapBy(...)':
+    'prefix': 'map-by'
+    'leftLabel': 'Ember'
+    'body': "${1:enumerable}.mapBy('${2:property}');"
+
+  '.every(...)':
+    'prefix': 'every'
+    'leftLabel': 'Ember'
+    'body': """
+      ${1:enumerable}.every(function(${2:item}) {
+        ${3}
+      });
+    """
+
+  '.isEvery(...)':
+    'prefix': 'is-every'
+    'leftLabel': 'Ember'
+    'body': "${1:enumerable}.isEvery('${2:property}', ${3:bool});"
+
+  '.some(...)':
+    'prefix': 'some'
+    'leftLabel': 'Ember'
+    'body': """
+      ${1:enumerable}.some(function(${2:item}) {
+        ${3}
+      });
+    """
+
+  '.isAny(...)':
+    'prefix': 'is-any'
+    'leftLabel': 'Ember'
+    'body': "${1:enumerable}.isAny('${2:property}', ${3:bool});"
+
+  '.toArray(...)':
+    'prefix': 'to-array'
+    'leftLabel': 'Ember'
+    'body': '${1:enumerable}.toArray();'
+
+  '.get(\'firstObject\')':
+    'prefix': 'first-object'
+    'leftLabel': 'Ember'
+    'body': "${1:enumerable}.get('firstObject');"
+
+  '.get(\'lastObject\')':
+    'prefix': 'last-object'
+    'leftLabel': 'Ember'
+    'body': "${1:enumerable}.get('lastObject');"
+
+  #
+  # Logger
+  #
+  'Logger.debug(...)':
+    'prefix': 'logger-debug'
+    'leftLabel': 'Ember'
+    'body': "Logger.debug('${1:message}');"
+
+  'Logger.log(...)':
+    'prefix': 'logger-log'
+    'leftLabel': 'Ember'
+    'body': "Ember.Logger.log('${1:message}');"
+
+  'Logger.info(...)':
+    'prefix': 'logger-info'
+    'leftLabel': 'Ember'
+    'body': "Ember.Logger.info('${1:message}');"
+
+  'Logger.warn(...)':
+    'prefix': 'logger-warn'
+    'leftLabel': 'Ember'
+    'body': "Ember.Logger.warn('${1:message}');"
+
+  'Logger.error(...)':
+    'prefix': 'logger-error'
+    'leftLabel': 'Ember'
+    'body': "Ember.Logger.error('${1:message}');"
+
+  #
+  # Test Helpers
+  #
+
+  'visit(...)':
+    'prefix': 'visit'
+    'leftLabel': 'Ember'
+    'body': "visit('${1:url}');"
+
+  'fillIn(...)':
+    'prefix': 'fill-in'
+    'leftLabel': 'Ember'
+    'body': "fillIn('${1:selector}', '${2:text}');"
+
+  'click(...)':
+    'prefix': 'click'
+    'leftLabel': 'Ember'
+    'body': "click('${1:selector}');"
+
+  'keyEvent(...)':
+    'prefix': 'key-event'
+    'leftLabel': 'Ember'
+    'body': "keyEvent('${1:selector}', '${2:type}', '${3:keyCode}');"
+
+  'triggerEvent(...)':
+    'prefix': 'trigger-event'
+    'leftLabel': 'Ember'
+    'body': "triggerEvent('${1:selector}', '${2:type}', '${3:options}');"
+
+  'find(...)':
+    'prefix': 'find-element'
+    'leftLabel': 'Ember'
+    'body': "find('${1:selector}', '${2:context}');"
+
+  'await pauseTest(...)':
+    'prefix': 'pause'
+    'leftLabel': 'Ember'
+    'body':"""
+      await pauseTest();
+    """
+
+  'await wait(...)':
+    'prefix': 'wait'
+    'leftLabel': 'Ember'
+    'body':"""
+      await wait();
+    """
+
+  'andThen(...)':
+    'prefix': 'and'
+    'leftLabel': 'Ember'
+    'body':"""
+      andThen(() => {
+        ${1}
+      });
+    """
+
+#############################
+# DEPRECATED
+#############################
+'.source.coffee':
+
+  'Ember Run':
+    'prefix': 'run'
+    'body': """
+      Ember.run ->
+        ${1:# body}
+    """
+
+  'Ember Computed Property':
+    'prefix': 'computed'
+    'body': """
+      ${1:fooCount}: Ember.computed '${2:property}', ->
+        ${4:# body}
+    """
+
+  'Ember Observer':
+    'prefix': 'observer'
+    'body': """
+      ${1:fooChanged}: Ember.observer '${2:property}', ->
+        ${3:# body}
+    """
+
+  'Ember Event':
+    'prefix': 'on'
+    'body': """
+      ${1:event}: Ember.on '${2:property}', ->
+        ${3:# body}
+    """
+
+  'Ember Actions':
+    'prefix': 'actions'
+    'body': """
+      actions:
+        ${1:# body}
+    """
+
+  'Ember Computed Alias':
+    'prefix': 'alias'
+    'body': """
+      ${1:foo}: Ember.computed.alias '${2:property}'
+    """
+
+  #
+  # Logger
+  #
+
+  'Ember Logger Debug':
+    'prefix': 'logger-debug'
+    'body': "Ember.Logger.debug${1:(}\"${1:message}\"${1:)}"
+
+  'Ember Logger Log':
+    'prefix': 'logger-log'
+    'body': "Ember.Logger.log${1:(}\"${2:message}\"${1:)}"
+
+  'Ember Logger Info':
+    'prefix': 'logger-info'
+    'body': "Ember.Logger.info${1:(}\"${2:message}\"${1:)}"
+
+  'Ember Logger Warn':
+    'prefix': 'logger-warn'
+    'body': "Ember.Logger.warn${1:(}\"${2:message}\"${1:)}"
+
+  'Ember Logger Error':
+    'prefix': 'logger-error'
+    'body': "Ember.Logger.error${1:(}\"${2:message}\"${1:)}"
+
+  #
+  # Enumerables
+  #
+
+  'Ember filterBy':
+    'prefix': 'filter-by'
+    'body': "${1:enumerable}.filterBy '${2:property}', ${3:value}"
+
+  'Ember mapBy':
+    'prefix': 'map-by'
+    'body': "${1:enumerable}.mapBy '${2:property}'"
+
+  'Ember every':
+    'prefix': 'every'
+    'body': """
+      ${1:enumerable}.every (${2:item}) ->
+        ${3}
+    """
+
+  'Ember isEvery':
+    'prefix': 'is-every'
+    'body': "${1:enumerable}.isEvery '${2:property}', ${3:bool}"
+
+  'Ember some':
+    'prefix': 'some'
+    'body': """
+      ${1:enumerable}.some (${2:item}) ->
+        ${3}
+    """
+
+  'Ember isAny':
+    'prefix': 'is-any'
+    'body': "${1:enumerable}.isAny '${2:property}', ${3:bool}"
+
+  'Ember toArray':
+    'prefix': 'to-array'
+    'body': '${1:enumerable}.toArray()'
+
+  'Ember firstObject':
+    'prefix': 'first-object'
+    'body': "${1:enumerable}.get 'firstObject'"
+
+  'Ember lastObject':
+    'prefix': 'last-object'
+    'body': "${1:enumerable}.get 'lastObject'"
+
+  #
+  #  Test Helpers
+  #
+
+  'Ember Visit':
+    'prefix': 'visit'
+    'body': "visit ${1:url}"
+
+  'Ember Fill In':
+    'prefix': 'fill-in'
+    'body': "fillIn '${1:selector}', '${2:text}'"
+
+  'Ember Click':
+    'prefix': 'click'
+    'body': "click '${1:selector}'"
+
+  'Ember Key Event':
+    'prefix': 'key-event'
+    'body': "keyEvent '${1:selector}', '${2:type}', '${3:keyCode}'"
+
+  'Ember Trigger Event':
+    'prefix': 'trigger-event'
+    'body': "triggerEvent '${1:selector}', '${2:type}', '${3:options}'"
+
+  'Ember Find Element':
+    'prefix': 'find-element'
+    'body': "find '${1:selector}', '${2:context}'"
+
+  'Ember And Then':
+    'prefix': 'and-then'
+    'body': """
+      andThen ->
+        ${1:// body}
+    """

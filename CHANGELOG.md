@@ -1,3 +1,10 @@
+## 2.0.0
+* Deprecate coffee script snippets
+* Introduce mirage snippets
+* Introduce ember specific handlebars snipets
+* Reorganize snippet files
+* Introduce lots of new ember snippets
+
 ## 1.4.0
 * Add Ember Data v1.13 snippets @locks
 

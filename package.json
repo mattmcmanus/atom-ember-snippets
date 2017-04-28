@@ -2,7 +2,7 @@
   "name": "ember-snippets",
   "version": "1.4.0",
   "description": "Ember.js ES6 Snippets for Atom",
-  "repository": "https://github.com/seifsallam/atom-ember-snippets",
+  "repository": "https://github.com/mattmcmanus/atom-ember-snippets",
   "license": "MIT",
   "engines": {
     "atom": ">0.50.0"
@@ -16,7 +16,7 @@
   ],
   "readmeFilename": "README.md",
   "bugs": {
-    "url": "https://github.com/seifsallam/atom-ember-snippets/issues"
+    "url": "https://github.com/mattmcmanus/atom-ember-snippets/issues"
   },
-  "homepage": "https://github.com/seifsallam/atom-ember-snippets"
+  "homepage": "https://github.com/mattmcmanus/atom-ember-snippets"
 }

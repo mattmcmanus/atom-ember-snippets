@@ -7,70 +7,59 @@
 
 '.source.js':
 
-  'Ember Route':
+  'Route Skeleton':
     'prefix': 'route'
+    'leftLabel': 'Ember'
     'body': """
       import Ember from 'ember';
+      const { Route } = Ember;
 
-      export default Ember.Route.extend({
+      export default Route.extend({({
         model: function() {
           ${1:// body}
         },
       });
     """
 
-  'Ember Controller':
+  'Controller Skeleton':
     'prefix': 'controller'
+    'leftLabel': 'Ember'
     'body': """
       import Ember from 'ember';
+      const { Controller } = Ember;
 
-      export default Ember.Controller.extend({
+      export default Controller.extend({({
         ${1:// body}
       });
     """
 
-  'Ember Service':
+  'Service Skeleton':
     'prefix': 'service'
+    'leftLabel': 'Ember'
     'body': """
       import Ember from 'ember';
+      const { Service } = Ember;
 
-      export default Ember.Service.extend({
+      export default Service.extend({({
         ${1:// body}
       });
     """
 
-  'Ember Array Controller':
-    'prefix': 'arr-controller'
-    'body': """
-      import Ember from 'ember';
-
-      export default Ember.ArrayController.extend({
-        ${1:// body}
-      });
-    """
-
-  'Ember View':
-    'prefix': 'view'
-    'body': """
-      import Ember from 'ember';
-
-      export default Ember.View.extend({
-        ${1:// body}
-      });
-    """
-
-  'Ember Component':
+  'Component Skeleton':
     'prefix': 'component'
+    'leftLabel': 'Ember'
     'body': """
       import Ember from 'ember';
+      const { Component } = Ember;
 
-      export default Ember.Component.extend({
+      export default Component.extend({({
         ${1:// body}
       });
     """
 
-  'Ember Mixin':
+  'Mixin Skeleton':
     'prefix': 'mixin'
+    'leftLabel': 'Ember'
     'body': """
       import Ember from 'ember';
 
@@ -79,18 +68,21 @@
       });
     """
 
-  'Ember Object':
+  'Object Skeleton':
     'prefix': 'object'
+    'leftLabel': 'Ember'
     'body': """
       import Ember from 'ember';
+      const { Object } = Ember;
 
-      export default Ember.Object.extend({
+      export default Object.extend({({
         ${1:// body}
       });
     """
 
-  'Ember Helper':
+  'Helper Skeleton':
     'prefix': 'bound-helper'
+    'leftLabel': 'Ember'
     'body': """
       import Ember from 'ember';
 
@@ -99,20 +91,23 @@
       });
     """
 
-  'Ember Helper':
+  'Helper Skeleton':
     'prefix': 'helper'
+    'leftLabel': 'Ember'
     'body': """
       import Ember from 'ember';
+      const { Helper } = Ember;
 
-      export default Ember.Helper.extend({
+      export default Helper.extend({({
         compute: function() {
           ${1:// body}
         }
       });
     """
 
-  'Ember Model':
+  'Model Skeleton':
     'prefix': 'model'
+    'leftLabel': 'Ember'
     'body': """
       import DS from 'ember-data';
 
@@ -121,8 +116,9 @@
       });
     """
 
-  'Ember REST Adapter':
+  'REST Adapter Skeleton':
     'prefix': 'adapter'
+    'leftLabel': 'Ember'
     'body': """
       import DS from 'ember-data';
 
@@ -131,8 +127,9 @@
       });
     """
 
-  'Ember Active Model Adapter':
+  'Active Model Adapter Skeleton':
     'prefix': 'active-adapter'
+    'leftLabel': 'Ember'
     'body': """
       import DS from 'ember-data';
 
@@ -141,8 +138,9 @@
       });
     """
 
-  'Ember JSON API Adapter':
+  'JSON API Adapter Skeleton':
     'prefix': 'jsonapi-adapter'
+    'leftLabel': 'Ember'
     'body': """
       import DS from 'ember-data';
 
@@ -151,8 +149,9 @@
       });
     """
 
-  'Ember REST Serializer':
+  'REST Serializer Skeleton':
     'prefix': 'serializer'
+    'leftLabel': 'Ember'
     'body': """
       import DS from 'ember-data';
 
@@ -161,8 +160,9 @@
       });
     """
 
-  'Ember Active Model Serializer':
+  'Active Model Serializer Skeleton':
     'prefix': 'active-serializer'
+    'leftLabel': 'Ember'
     'body': """
       import DS from 'ember-data';
 
@@ -171,8 +171,9 @@
       });
     """
 
-  'Ember JSON API Serializer':
+  'JSON API Serializer Skeleton':
     'prefix': 'jsonapi-serializer'
+    'leftLabel': 'Ember'
     'body': """
       import DS from 'ember-data';
 
@@ -181,8 +182,9 @@
       });
     """
 
-  'Ember Transform Serializer':
+  'Transform Serializer Skeleton':
     'prefix': 'transform'
+    'leftLabel': 'Ember'
     'body': """
       import DS from 'ember-data';
 
@@ -191,8 +193,9 @@
       });
     """
 
-  'Ember Initializer':
+  'Initializer Skeleton':
     'prefix': 'initializer'
+    'leftLabel': 'Ember'
     'body': """
       export default {
         name: '${1:name}',
@@ -202,8 +205,9 @@
       };
     """
 
-  'Ember Utility':
+  'Utility Skeleton':
     'prefix': 'utility'
+    'leftLabel': 'Ember'
     'body': """
       export default function ${1:myUtility}() {
         ${2:// body}
@@ -212,7 +216,7 @@
 
 '.source.coffee':
 
-  'Ember Route':
+  'Route Skeleton':
     'prefix': 'route'
     'body': """
       ${1:name}Route = Ember.Route.extend
@@ -222,7 +226,7 @@
       `export default ${1}Route`
     """
 
-  'Ember Controller':
+  'Controller Skeleton':
     'prefix': 'controller'
     'body': """
       ${1:name}Controller = Ember.Controller.extend
@@ -231,7 +235,7 @@
       `export default ${1}Controller`
     """
 
-  'Ember Service':
+  'Service Skeleton':
     'prefix': 'service'
     'body': """
       ${1:name}Service = Ember.Service.extend
@@ -240,7 +244,7 @@
       `export default ${1}Service`
     """
 
-  'Ember Array Controller':
+  'Array Controller Skeleton':
     'prefix': 'arr-controller'
     'body': """
       ${1:name}Controller = Ember.ArrayController.extend
@@ -249,7 +253,7 @@
       `export default ${1}Controller`
     """
 
-  'Ember View':
+  'View Skeleton':
     'prefix': 'view'
     'body': """
       ${1:name}View = Ember.View.extend
@@ -258,7 +262,7 @@
       `export default ${1}View`
     """
 
-  'Ember Component':
+  'Component Skeleton':
     'prefix': 'component'
     'body': """
       ${1:name}Component = Ember.Component.extend
@@ -267,7 +271,7 @@
       `export default ${1}Component`
     """
 
-  'Ember Mixin':
+  'Mixin Skeleton':
     'prefix': 'mixin'
     'body': """
       ${1:name}Mixin = Ember.Mixin.create
@@ -276,7 +280,7 @@
       `export default ${1}Mixin`
     """
 
-  'Ember Object':
+  'Object Skeleton':
     'prefix': 'object'
     'body': """
       ${1:name} = Ember.Object.extend
@@ -285,7 +289,7 @@
       `export default ${1}`
     """
 
-  'Ember Helper':
+  'Helper Skeleton':
     'prefix': 'bound-helper'
     'body': """
       ${1}Helper = Ember.Handlebars.makeBoundHelper ->
@@ -294,7 +298,7 @@
       `export default ${1}Helper`
     """
 
-  'Ember Helper':
+  'Helper Skeleton':
     'prefix': 'helper'
     'body': """
       ${1}Helper = Ember.Helper.extend
@@ -304,7 +308,7 @@
       `export default ${1}Helper`
     """
 
-  'Ember Model':
+  'Model Skeleton':
     'prefix': 'model'
     'body': """
       ${1:name} = DS.Model.extend
@@ -313,7 +317,7 @@
       `export default ${1}`
     """
 
-  'Ember REST Adapter':
+  'REST Adapter Skeleton':
     'prefix': 'adapter'
     'body': """
       ${1}Adapter = DS.RESTAdapter.extend
@@ -322,7 +326,7 @@
       `export default ${1}Adapter`
     """
 
-  'Ember Active Model Adapter':
+  'Active Model Adapter Skeleton':
     'prefix': 'active-adapter'
     'body': """
       ${1}Adapter = DS.ActiveModelAdapter.extend
@@ -331,7 +335,7 @@
       `export default ${1}Adapter`
     """
 
-  'Ember JSON API Adapter':
+  'JSON API Adapter Skeleton':
     'prefix': 'jsonapi-adapter'
     'body': """
       ${1}Adapter = DS.JSONAPIAdapter.extend
@@ -340,7 +344,7 @@
       `export default ${1}Adapter`
     """
 
-  'Ember REST Serializer':
+  'REST Serializer Skeleton':
     'prefix': 'serializer'
     'body': """
       ${1:name}Serializer = DS.RESTSerializer.extend
@@ -349,7 +353,7 @@
       `export default ${1}Serializer`
     """
 
-  'Ember Active Model Serializer':
+  'Active Model Serializer Skeleton':
     'prefix': 'active-serializer'
     'body': """
 
@@ -359,7 +363,7 @@
       `export default ${1}Serializer`
     """
 
-  'Ember JSON API Serializer':
+  'JSON API Serializer Skeleton':
     'prefix': 'jsonapi-serializer'
     'body': """
 
@@ -369,7 +373,7 @@
       `export default ${1}Serializer`
     """
 
-  'Ember Transform Serializer':
+  'Transform Serializer Skeleton':
     'prefix': 'transform'
     'body': """
       ${1:name}Transformer = DS.Transforms.extend
@@ -378,7 +382,7 @@
       `export default ${1}Transformer`
     """
 
-  'Ember Initializer':
+  'Initializer Skeleton':
     'prefix': 'initializer'
     'body': """
       ${1:name}Initializer =
@@ -389,7 +393,7 @@
       `export default ${1}Initializer`
     """
 
-  'Ember Utility':
+  'Utility Skeleton':
     'prefix': 'utility'
     'body': """
       ${1:myUtility} = ->
