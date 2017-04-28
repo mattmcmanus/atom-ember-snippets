@@ -6,15 +6,166 @@
 #
 
 '.source.js':
-
-  'Ember Run':
-    'prefix': 'run'
-    'body': """
-      Ember.run(function() {
-        ${1:// body}
-      });
+  'import Ember':
+   'prefix': 'imE'
+   'body': """
+      import Ember from 'ember';
+      const { ${1} } = Ember;
+    """
+  'const {} = Ember':
+   'prefix': 'cE'
+   'body': """
+      const { ${1} } = Ember;
     """
 
+  'Ember run':
+    'prefix': 'run'
+    'body':"""
+      run(() => {
+        ${1}
+      });
+    """
+  #
+  #
+  # Ember Object Snippets
+  #
+  'Ember let get()':
+    'prefix': 'lget'
+    'body': 'let $1 = this.get(\'$1\');'
+
+  'Ember set':
+   'prefix': 'set'
+   'body': "set('${1}', ${2});"
+
+  'Ember get':
+   'prefix': 'get'
+   'body': 'this.get(\'${1}\');'
+
+  'super':
+   'prefix': 'super'
+   'body': 'this._super(...arguments);'
+
+  'Ember init':
+    'prefix': 'init'
+    'body':"""
+      init(){
+        this._super(...arguments);
+        ${1}
+      },
+    """
+
+  'Ember inject.service':
+   'prefix': 'inject'
+   'body': 'inject.service(${1}),'
+
+  'Ember Computed Property':
+    'prefix': 'computed'
+    'body': """
+      ${1:fooCount}: computed('${2:property}', function() {
+        ${3:// body}
+      }),
+    """
+
+  'Ember Observer':
+    'prefix': 'observer'
+    'body': """
+      ${1:fooChanged}: observer('${2:property}', function() {
+        ${3:// body}
+      }),
+    """
+
+  'Ember Event':
+    'prefix': 'on'
+    'body': """
+      ${1:event}: on('${2:property}', function() {
+        ${3:// body}
+      }),
+    """
+
+  'Ember Actions':
+    'prefix': 'actions'
+    'body': """
+      actions: {
+        ${1:// body}
+      }
+    """
+
+  'Ember Computed Alias':
+    'prefix': 'alias'
+    'body': """
+      ${1:foo}: computed.alias('${2:property}'),
+    """
+
+  #
+  #
+  # Route Snippets
+  #
+  'Ember Route.model':
+    'prefix': 'model'
+    'body': """
+      model(params = {}) {
+        return this.store.query('${1}', params);
+      },
+    """
+  'setupController':
+    'prefix': 'setupController'
+    'body':"""
+      setupController(controller, model) {
+        this._super(controller, model);
+        ${1}
+      },
+
+    """
+  'afterModel':
+    'prefix': 'afterModel'
+    'body':"""
+      afterModel(model, transition) {
+        ${1}
+      },
+
+    """
+
+
+  #
+  #
+  # Component Snippets
+  #
+  'didReceiveAttrs':
+    'prefix': 'didReceiveAttrs'
+    'body':"""
+      didReceiveAttrs(){
+        this._super(...arguments);
+        ${1}
+      },
+
+    """
+
+  'didRender':
+    'prefix': 'didRender'
+    'body':"""
+      didRender(){
+        this._super(...arguments);
+        ${1}
+      },
+    """
+
+  'didInsertElement':
+    'prefix': 'didInsertElement'
+    'body':"""
+      didInsertElement(){
+        this._super(...arguments);
+        ${1}
+      },
+    """
+
+  'willDestroyElement':
+    'prefix': 'willDestroyElement'
+    'body':"""
+      willDestroyElement(){
+        this._super(...arguments);
+        ${1}
+      },
+    """
   #
   #
   # Enumerables
@@ -116,11 +267,22 @@
     'prefix': 'find-element'
     'body': "find('${1:selector}', '${2:context}');"
 
-  'Ember And Then':
-    'prefix': 'and-then'
-    'body': """
-      andThen(function() {
-        ${1:// body}
+  'Ember pauseTest':
+    'prefix': 'pause'
+    'body':"""
+      await pauseTest();
+    """
+
+  'Ember wait':
+    'prefix': 'wait'
+    'body':"""
+      await wait();
+    """
+  'Ember andThen':
+    'prefix': 'and'
+    'body':"""
+      andThen(() => {
+        ${1}
       });
     """
 
@@ -136,6 +298,39 @@
         ${1:# body}
     """
 
+  'Ember Computed Property':
+    'prefix': 'computed'
+    'body': """
+      ${1:fooCount}: Ember.computed '${2:property}', ->
+        ${4:# body}
+    """
+
+  'Ember Observer':
+    'prefix': 'observer'
+    'body': """
+      ${1:fooChanged}: Ember.observer '${2:property}', ->
+        ${3:# body}
+    """
+
+  'Ember Event':
+    'prefix': 'on'
+    'body': """
+      ${1:event}: Ember.on '${2:property}', ->
+        ${3:# body}
+    """
+
+  'Ember Actions':
+    'prefix': 'actions'
+    'body': """
+      actions:
+        ${1:# body}
+    """
+
+  'Ember Computed Alias':
+    'prefix': 'alias'
+    'body': """
+      ${1:foo}: Ember.computed.alias '${2:property}'
+    """
 
   #
   # Logger
