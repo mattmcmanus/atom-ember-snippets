@@ -2,7 +2,7 @@
 # /////////////////////////////////////
 #   handlebars
 # /////////////////////////////////////
-'.text.handlebars':
+'.text.html.handlebars':
   'Ember: get':
     'prefix': 'get'
     'body': "{{get '${1}'}}"
