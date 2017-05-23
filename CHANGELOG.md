@@ -1,3 +1,6 @@
+## 2.0.1
+* Consistently use spaces after parens. Closes #20
+
 ## 2.0.0
 * Deprecate coffee script snippets
 * Introduce mirage snippets

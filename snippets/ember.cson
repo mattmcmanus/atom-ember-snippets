@@ -53,11 +53,11 @@
     'leftLabel': 'Ember'
     'body': 'this._super(...arguments);'
 
-  'init(){ ... }':
+  'init() { ... }':
     'prefix': 'init'
     'leftLabel': 'Ember'
     'body':"""
-      init(){
+      init() {
         this._super(...arguments);
         ${1}
       },
@@ -113,7 +113,7 @@
   #
   # Route Snippets
   #
-  'Route: model(...){ ... }':
+  'Route: model(...) { ... }':
     'prefix': 'model'
     'leftLabel': 'Ember'
     'body': """
@@ -122,7 +122,7 @@
       },
     """
 
-  'Route: setupController(...){ ... }':
+  'Route: setupController(...) { ... }':
     'prefix': 'setupController'
     'leftLabel': 'Ember'
     'body':"""
@@ -133,7 +133,7 @@
 
     """
 
-  'Route: afterModel(...){ ... }':
+  'Route: afterModel(...) { ... }':
     'prefix': 'afterModel'
     'leftLabel': 'Ember'
     'body':"""
@@ -147,42 +147,42 @@
   #
   # Component Snippets
   #
-  'Component: didReceiveAttrs(){ ... }':
+  'Component: didReceiveAttrs() { ... }':
     'prefix': 'didReceiveAttrs'
     'leftLabel': 'Ember'
     'body':"""
-      didReceiveAttrs(){
+      didReceiveAttrs() {
         this._super(...arguments);
         ${1}
       },
 
     """
 
-  'Component: didRender(){ ... }':
+  'Component: didRender() { ... }':
     'prefix': 'didRender'
     'leftLabel': 'Ember'
     'body':"""
-      didRender(){
+      didRender() {
         this._super(...arguments);
         ${1}
       },
     """
 
-  'Component: didInsertElement(){ ... }':
+  'Component: didInsertElement() { ... }':
     'prefix': 'didInsertElement'
     'leftLabel': 'Ember'
     'body':"""
-      didInsertElement(){
+      didInsertElement() {
         this._super(...arguments);
         ${1}
       },
     """
 
-  'Component: willDestroyElement(){ ... }':
+  'Component: willDestroyElement() { ... }':
     'prefix': 'willDestroyElement'
     'leftLabel': 'Ember'
     'body':"""
-      willDestroyElement(){
+      willDestroyElement() {
         this._super(...arguments);
         ${1}
       },
