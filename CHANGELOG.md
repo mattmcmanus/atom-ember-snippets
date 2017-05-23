@@ -1,3 +1,6 @@
+## 2.0.3
+* Fix typos in some skeletons #21
+
 ## 2.0.2
 * Consistently use spaces after parens. Closes #20
 
