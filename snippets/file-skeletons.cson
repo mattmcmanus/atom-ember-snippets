@@ -14,7 +14,7 @@
       import Ember from 'ember';
       const { Route } = Ember;
 
-      export default Route.extend({({
+      export default Route.extend({
         model: function() {
           ${1:// body}
         },
@@ -28,7 +28,7 @@
       import Ember from 'ember';
       const { Controller } = Ember;
 
-      export default Controller.extend({({
+      export default Controller.extend({
         ${1:// body}
       });
     """
@@ -40,7 +40,7 @@
       import Ember from 'ember';
       const { Service } = Ember;
 
-      export default Service.extend({({
+      export default Service.extend({
         ${1:// body}
       });
     """
@@ -52,7 +52,7 @@
       import Ember from 'ember';
       const { Component } = Ember;
 
-      export default Component.extend({({
+      export default Component.extend({
         ${1:// body}
       });
     """
@@ -75,7 +75,7 @@
       import Ember from 'ember';
       const { Object } = Ember;
 
-      export default Object.extend({({
+      export default Object.extend({
         ${1:// body}
       });
     """
@@ -98,7 +98,7 @@
       import Ember from 'ember';
       const { Helper } = Ember;
 
-      export default Helper.extend({({
+      export default Helper.extend({
         compute: function() {
           ${1:// body}
         }
