@@ -1,4 +1,4 @@
-## 2.0.1
+## 2.0.2
 * Consistently use spaces after parens. Closes #20
 
 ## 2.0.0
