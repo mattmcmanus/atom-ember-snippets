@@ -1,3 +1,6 @@
+## 2.0.4
+* Respect configured indent rule when inserting #23
+
 ## 2.0.3
 * Fix typos in some skeletons #21
 
