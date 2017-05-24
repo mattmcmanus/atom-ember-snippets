@@ -6,7 +6,7 @@
     'leftLabel': 'Mirage'
     'body': """
       afterCreate(${1:model}, server) {
-        $2
+      \t$2
       },
     """
 
@@ -15,7 +15,7 @@
     'leftLabel': 'Mirage'
     'body': """
       $1: trait({
-        $2
+      \t$2
       }),
     """
 
@@ -31,6 +31,6 @@
     'leftLabel': 'Mirage'
     'body': """
       server.${1:get}('${2:/}', (${3:schema, request}) => {
-        $4
+      \t$4
       });
     """
