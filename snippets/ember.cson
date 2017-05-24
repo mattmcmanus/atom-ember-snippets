@@ -26,7 +26,7 @@
     'leftLabel': 'Ember'
     'body':"""
       run(() => {
-        ${1}
+      \t${1}
       });
     """
   #
@@ -58,8 +58,8 @@
     'leftLabel': 'Ember'
     'body':"""
       init() {
-        this._super(...arguments);
-        ${1}
+      \tthis._super(...arguments);
+      \t${1}
       },
     """
 
@@ -73,7 +73,7 @@
     'leftLabel': 'Ember'
     'body': """
       computed('${1:property}', function() {
-        ${2:// body}
+      \t${2:// body}
       }),
     """
 
@@ -82,7 +82,7 @@
     'leftLabel': 'Ember'
     'body': """
       observer('${1:property}', function() {
-        ${2:// body}
+      \t${2:// body}
       }),
     """
 
@@ -91,7 +91,7 @@
     'leftLabel': 'Ember'
     'body': """
       on('${1:property}', function() {
-        ${2:// body}
+      \t${2:// body}
       }),
     """
 
@@ -100,7 +100,7 @@
     'leftLabel': 'Ember'
     'body': """
       actions: {
-        ${1:// body}
+      \t${1:// body}
       }
     """
 
@@ -118,7 +118,7 @@
     'leftLabel': 'Ember'
     'body': """
       model(params = {}) {
-        return this.store.query('${1}', params);
+      \treturn this.store.query('${1}', params);
       },
     """
 
@@ -127,8 +127,8 @@
     'leftLabel': 'Ember'
     'body':"""
       setupController(controller, model) {
-        this._super(controller, model);
-        ${1}
+      \tthis._super(controller, model);
+      \t${1}
       },
 
     """
@@ -138,7 +138,7 @@
     'leftLabel': 'Ember'
     'body':"""
       afterModel(model, transition) {
-        ${1}
+      \t${1}
       },
 
     """
@@ -152,8 +152,8 @@
     'leftLabel': 'Ember'
     'body':"""
       didReceiveAttrs() {
-        this._super(...arguments);
-        ${1}
+      \tthis._super(...arguments);
+      \t${1}
       },
 
     """
@@ -163,8 +163,8 @@
     'leftLabel': 'Ember'
     'body':"""
       didRender() {
-        this._super(...arguments);
-        ${1}
+      \tthis._super(...arguments);
+      \t${1}
       },
     """
 
@@ -173,8 +173,8 @@
     'leftLabel': 'Ember'
     'body':"""
       didInsertElement() {
-        this._super(...arguments);
-        ${1}
+      \tthis._super(...arguments);
+      \t${1}
       },
     """
 
@@ -183,8 +183,8 @@
     'leftLabel': 'Ember'
     'body':"""
       willDestroyElement() {
-        this._super(...arguments);
-        ${1}
+      \tthis._super(...arguments);
+      \t${1}
       },
     """
   #
@@ -206,7 +206,7 @@
     'leftLabel': 'Ember'
     'body': """
       ${1:enumerable}.every(function(${2:item}) {
-        ${3}
+      \t${3}
       });
     """
 
@@ -220,7 +220,7 @@
     'leftLabel': 'Ember'
     'body': """
       ${1:enumerable}.some(function(${2:item}) {
-        ${3}
+      \t${3}
       });
     """
 
@@ -325,7 +325,7 @@
     'leftLabel': 'Ember'
     'body':"""
       andThen(() => {
-        ${1}
+      \t${1}
       });
     """
 
@@ -338,35 +338,35 @@
     'prefix': 'run'
     'body': """
       Ember.run ->
-        ${1:# body}
+      \t${1:# body}
     """
 
   'Ember Computed Property':
     'prefix': 'computed'
     'body': """
       ${1:fooCount}: Ember.computed '${2:property}', ->
-        ${4:# body}
+      \t${4:# body}
     """
 
   'Ember Observer':
     'prefix': 'observer'
     'body': """
       ${1:fooChanged}: Ember.observer '${2:property}', ->
-        ${3:# body}
+      \t${3:# body}
     """
 
   'Ember Event':
     'prefix': 'on'
     'body': """
       ${1:event}: Ember.on '${2:property}', ->
-        ${3:# body}
+      \t${3:# body}
     """
 
   'Ember Actions':
     'prefix': 'actions'
     'body': """
       actions:
-        ${1:# body}
+      \t${1:# body}
     """
 
   'Ember Computed Alias':
@@ -415,7 +415,7 @@
     'prefix': 'every'
     'body': """
       ${1:enumerable}.every (${2:item}) ->
-        ${3}
+      \t${3}
     """
 
   'Ember isEvery':
@@ -426,7 +426,7 @@
     'prefix': 'some'
     'body': """
       ${1:enumerable}.some (${2:item}) ->
-        ${3}
+      \t${3}
     """
 
   'Ember isAny':
@@ -477,5 +477,5 @@
     'prefix': 'and-then'
     'body': """
       andThen ->
-        ${1:// body}
+      \t${1:// body}
     """

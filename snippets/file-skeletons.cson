@@ -15,9 +15,9 @@
       const { Route } = Ember;
 
       export default Route.extend({
-        model: function() {
-          ${1:// body}
-        },
+      \tmodel: function() {
+      \t\t${1:// body}
+      \t},
       });
     """
 
@@ -29,7 +29,7 @@
       const { Controller } = Ember;
 
       export default Controller.extend({
-        ${1:// body}
+      \t${1:// body}
       });
     """
 
@@ -41,7 +41,7 @@
       const { Service } = Ember;
 
       export default Service.extend({
-        ${1:// body}
+      \t${1:// body}
       });
     """
 
@@ -53,7 +53,7 @@
       const { Component } = Ember;
 
       export default Component.extend({
-        ${1:// body}
+      \t${1:// body}
       });
     """
 
@@ -64,7 +64,7 @@
       import Ember from 'ember';
 
       export default Ember.Mixin.create({
-        ${1:// body}
+      \t${1:// body}
       });
     """
 
@@ -76,7 +76,7 @@
       const { Object } = Ember;
 
       export default Object.extend({
-        ${1:// body}
+      \t${1:// body}
       });
     """
 
@@ -87,7 +87,7 @@
       import Ember from 'ember';
 
       export default Ember.Handlebars.makeBoundHelper(function() {
-        ${1:// body}
+      \t${1:// body}
       });
     """
 
@@ -99,9 +99,9 @@
       const { Helper } = Ember;
 
       export default Helper.extend({
-        compute: function() {
-          ${1:// body}
-        }
+      \tcompute: function() {
+      \t\t${1:// body}
+      \t}
       });
     """
 
@@ -112,7 +112,7 @@
       import DS from 'ember-data';
 
       export default DS.Model.extend({
-        ${1:// body}
+      \t${1:// body}
       });
     """
 
@@ -123,7 +123,7 @@
       import DS from 'ember-data';
 
       export default DS.RESTAdapter.extend({
-        ${1:// body}
+      \t${1:// body}
       });
     """
 
@@ -134,7 +134,7 @@
       import DS from 'ember-data';
 
       export default DS.ActiveModelAdapter.extend({
-        ${1:// body}
+      \t${1:// body}
       });
     """
 
@@ -145,7 +145,7 @@
       import DS from 'ember-data';
 
       export default DS.JSONAPIAdapter.extend({
-        ${1:// body}
+      \t${1:// body}
       });
     """
 
@@ -156,7 +156,7 @@
       import DS from 'ember-data';
 
       export default DS.RESTSerializer.extend({
-        ${1:// body}
+      \t${1:// body}
       });
     """
 
@@ -167,7 +167,7 @@
       import DS from 'ember-data';
 
       export default DS.ActiveModelSerializer.extend({
-        ${1:// body}
+      \t${1:// body}
       });
     """
 
@@ -178,7 +178,7 @@
       import DS from 'ember-data';
 
       export default DS.JSONAPISerializer.extend({
-        ${1:// body}
+      \t${1:// body}
       });
     """
 
@@ -189,7 +189,7 @@
       import DS from 'ember-data';
 
       export default DS.Transforms.extend({
-        ${1:// body}
+      \t${1:// body}
       });
     """
 
@@ -198,10 +198,10 @@
     'leftLabel': 'Ember'
     'body': """
       export default {
-        name: '${1:name}',
-        initialize: function() {
-          ${2:// body}
-        }
+      \tname: '${1:name}',
+      \tinitialize: function() {
+      \t\t${2:// body}
+      \t}
       };
     """
 
@@ -210,7 +210,7 @@
     'leftLabel': 'Ember'
     'body': """
       export default function ${1:myUtility}() {
-        ${2:// body}
+      \t${2:// body}
       };
     """
 
@@ -220,8 +220,8 @@
     'prefix': 'route'
     'body': """
       ${1:name}Route = Ember.Route.extend
-        model: ->
-          ${2:# body}
+      \tmodel: ->
+      \t\t${2:# body}
 
       `export default ${1}Route`
     """
@@ -230,7 +230,7 @@
     'prefix': 'controller'
     'body': """
       ${1:name}Controller = Ember.Controller.extend
-        ${2:# body}
+      \t${2:# body}
 
       `export default ${1}Controller`
     """
@@ -239,7 +239,7 @@
     'prefix': 'service'
     'body': """
       ${1:name}Service = Ember.Service.extend
-        ${2:# body}
+      \t${2:# body}
 
       `export default ${1}Service`
     """
@@ -248,7 +248,7 @@
     'prefix': 'arr-controller'
     'body': """
       ${1:name}Controller = Ember.ArrayController.extend
-        ${2:# body}
+      \t${2:# body}
 
       `export default ${1}Controller`
     """
@@ -257,7 +257,7 @@
     'prefix': 'view'
     'body': """
       ${1:name}View = Ember.View.extend
-        ${2:# body}
+      \t${2:# body}
 
       `export default ${1}View`
     """
@@ -266,7 +266,7 @@
     'prefix': 'component'
     'body': """
       ${1:name}Component = Ember.Component.extend
-        ${2:# body}
+      \t${2:# body}
 
       `export default ${1}Component`
     """
@@ -275,7 +275,7 @@
     'prefix': 'mixin'
     'body': """
       ${1:name}Mixin = Ember.Mixin.create
-        ${2:# body}
+      \t${2:# body}
 
       `export default ${1}Mixin`
     """
@@ -284,7 +284,7 @@
     'prefix': 'object'
     'body': """
       ${1:name} = Ember.Object.extend
-        ${2:# body}
+      \t${2:# body}
 
       `export default ${1}`
     """
@@ -293,7 +293,7 @@
     'prefix': 'bound-helper'
     'body': """
       ${1}Helper = Ember.Handlebars.makeBoundHelper ->
-        ${2:# body}
+      \t${2:# body}
 
       `export default ${1}Helper`
     """
@@ -302,8 +302,8 @@
     'prefix': 'helper'
     'body': """
       ${1}Helper = Ember.Helper.extend
-        compute: ->
-          ${2:# body}
+      \tcompute: ->
+      \t\t${2:# body}
 
       `export default ${1}Helper`
     """
@@ -312,7 +312,7 @@
     'prefix': 'model'
     'body': """
       ${1:name} = DS.Model.extend
-        ${2:# body}
+      \t${2:# body}
 
       `export default ${1}`
     """
@@ -321,7 +321,7 @@
     'prefix': 'adapter'
     'body': """
       ${1}Adapter = DS.RESTAdapter.extend
-        ${2:# body}
+      \t${2:# body}
 
       `export default ${1}Adapter`
     """
@@ -330,7 +330,7 @@
     'prefix': 'active-adapter'
     'body': """
       ${1}Adapter = DS.ActiveModelAdapter.extend
-        ${2:# body}
+      \t${2:# body}
 
       `export default ${1}Adapter`
     """
@@ -339,7 +339,7 @@
     'prefix': 'jsonapi-adapter'
     'body': """
       ${1}Adapter = DS.JSONAPIAdapter.extend
-        ${2:# body}
+      \t${2:# body}
 
       `export default ${1}Adapter`
     """
@@ -348,7 +348,7 @@
     'prefix': 'serializer'
     'body': """
       ${1:name}Serializer = DS.RESTSerializer.extend
-        ${2:# body}
+      \t${2:# body}
 
       `export default ${1}Serializer`
     """
@@ -358,7 +358,7 @@
     'body': """
 
       ${1:name}Serializer = DS.ActiveModelSerializer.extend
-        ${2:# body}
+      \t${2:# body}
 
       `export default ${1}Serializer`
     """
@@ -368,7 +368,7 @@
     'body': """
 
       ${1:name}Serializer = DS.JSONAPISerializer.extend
-        ${2:# body}
+      \t${2:# body}
 
       `export default ${1}Serializer`
     """
@@ -377,7 +377,7 @@
     'prefix': 'transform'
     'body': """
       ${1:name}Transformer = DS.Transforms.extend
-        ${2:# body}
+      \t${2:# body}
 
       `export default ${1}Transformer`
     """
@@ -386,9 +386,9 @@
     'prefix': 'initializer'
     'body': """
       ${1:name}Initializer =
-        name: '${1:name}'
-        initialize: ->
-          ${2:# body}
+      \tname: '${1:name}'
+      \tinitialize: ->
+      \t\t${2:# body}
 
       `export default ${1}Initializer`
     """
@@ -397,7 +397,7 @@
     'prefix': 'utility'
     'body': """
       ${1:myUtility} = ->
-        ${2:# body}
+      \t${2:# body}
 
       `export default ${1:myUtility}`
     """
