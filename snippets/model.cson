@@ -1,0 +1,41 @@
+'.source.coffee':
+
+
+  'DS.Model.extend(...':
+    'prefix': 'model'
+    'body':
+      """
+        _export = DS.Model.extend
+          ${1}
+      """
+
+
+  'Verbose DS.attr(...':
+    'prefix': 'model_attr-v'
+    'body': "${1}: DS.attr(  'string' ,  defaultValue:${2:null}  )     # or 'number' , 'boolean' , 'date'"
+
+
+  'DS.attr(...':
+    'prefix': 'model_attr'
+    'body': "${1}: DS.attr()"
+
+
+  'Verbose DS.hasMany(...':
+    'prefix': 'model_hasMany-v'
+    'body': "${1}: DS.hasMany(  '${2:other_Model}' , inverse:'${2:some_propery}' , async:${3:false} )"
+
+
+  'DS.hasMany(...':
+    'prefix': 'model_hasMany'
+    'body': "${1}: DS.hasMany( '${2:other_Model}' )"
+
+
+
+  'DS.belongsTo(...':
+    'prefix': 'model_belongsTo'
+    'body': "${1}: DS.belongsTo( '${2:other_Model}' )"
+
+
+  'Verbose DS.belongsTo(...':
+    'prefix': 'model_belongsTo-v'
+    'body': "${1}: DS.belongsTo( '${2:other_Model}' , inverse:'${3:some_propery}' , async:${4:false} )"

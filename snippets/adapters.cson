@@ -1,0 +1,83 @@
+'.source.coffee':
+
+  'Ember FixtureAdapter':
+    'prefix': 'adapter_fixture'
+    'body':
+      """
+        _export = DS.FixtureAdapter.extend()
+      """
+
+
+  'Ember RESTAdapter':
+    'prefix': 'adapter_rest'
+    'body':
+      """
+        _export = DS.RESTAdapter.extend(
+          ${1:#body}
+        )
+
+
+        _export.reopenClass FIXTURES: [
+          {
+            id: 1
+            ${1}: "${2}"
+          }
+          {
+            id: 2
+            ${3}: "${4}"
+          }
+        ]
+      """
+
+
+  'Ember ActiveModelAdapter':
+    'prefix': 'adapter_activeModel'
+    'body':
+      """
+        _export = DS.ActiveModelAdapter.extend(
+          ${1:#body}
+        )
+      """
+
+
+
+
+
+  'FixtureAdapter':
+    'prefix': 'fixture_adapter'
+    'body':
+      """
+        _export = DS.FixtureAdapter.extend()
+      """
+
+
+  'RESTAdapter':
+    'prefix': 'rest_adapter'
+    'body':
+      """
+        _export = DS.RESTAdapter.extend(
+          ${1:#body}
+        )
+
+
+        _export.reopenClass FIXTURES: [
+          {
+            id: 1
+            ${1}: "${2}"
+          }
+          {
+            id: 2
+            ${3}: "${4}"
+          }
+        ]
+      """
+
+
+  'ActiveModelAdapter':
+    'prefix': 'activemodel_adapter'
+    'body':
+      """
+        _export = DS.ActiveModelAdapter.extend(
+          ${1:#body}
+        )
+      """

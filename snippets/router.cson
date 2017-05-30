@@ -1,0 +1,14 @@
+'.source.coffee':
+
+  'Nested @resource':
+    'prefix': 'resource-v'
+    'body':
+      """
+        resource( '${1}' , path: '${2:/some/path/item_id}' ) , ->
+          @route '${3}'
+      """
+
+
+  'Simple @resource':
+    'prefix': 'resource'
+    'body':"resource( '${1}' )"

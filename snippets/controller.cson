@@ -1,0 +1,75 @@
+'.source.coffee':
+
+
+  'Ember.ObjectController.extend(...':
+    'prefix': 'objectController'
+    'body':
+      """
+        _export = Ember.ObjectController.extend(
+          actions:
+            ${2:name}: ->
+              ${3:#logic...}
+        )
+      """
+
+
+
+
+  'Ember.ArrayController.extend(...':
+    'prefix': 'arrayController'
+    'body':
+      """
+        _export = Ember.ArrayController.extend(
+          actions:
+            ${2:name}: ->
+              ${3:#logic...}
+
+        )
+      """
+
+
+
+  'Ember.controller.extend(...':
+    'prefix': 'controller'
+    'body':
+      """
+        _export = Ember.controller.extend(
+          actions:
+            ${2:name}: ->
+              ${3:#logic...}
+        )
+      """
+
+
+
+  'itemController : ...':
+    'prefix': 'arrayController_itemController'
+    'body': "itemController : '${1:an_objController}'}"
+
+
+  'sortProperties : ...':
+    'prefix': 'arrayController_sortProperties'
+    'body': "sortProperties : ['${1:property}']}"
+
+
+  'sortAscending : ...':
+    'prefix': 'arrayController_sortAscending'
+    'body': "sortAscending : ['${1:false}']}"
+
+
+
+
+
+  'itemController: ...':
+    'prefix': 'itemController'
+    'body': "itemController : '${1:an_objController}'}"
+
+
+  'sortProperties: ...':
+    'prefix': 'sortProperties'
+    'body': "sortProperties : ['${1:property}']}"
+
+
+  'sortAscending: ...':
+    'prefix': 'sortAscending'
+    'body': "sortAscending : ['${1:false}']}"

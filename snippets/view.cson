@@ -1,0 +1,172 @@
+'.source.coffee':
+
+
+  'Ember.View.extend(...':
+    'prefix': 'view'
+    'body':
+      """
+        _export = Ember.View.extend(
+          ${1}
+        )
+      """
+
+
+
+  'Ember.TextField.extend(...':
+    'prefix': 'view_textField'
+    'body':
+      """
+        Ember.TextField.extend
+          ${1:#logic...}
+      """
+
+
+
+
+  'Ember.TextArea.extend(...':
+    'prefix': 'view_textArea'
+    'body':
+      """
+        Ember.TextArea.extend
+          ${1:#logic...}
+      """
+
+
+
+
+  'Ember.Checkbox.extend(...':
+    'prefix': 'view_checkbox'
+    'body':
+      """
+        Ember.Checkbox.extend
+          ${1:#logic...}
+      """
+
+
+
+
+  'Ember.Select.extend(...':
+    'prefix': 'view_Select'
+    'body':
+      """
+        Ember.Select.extend
+          ${1:#logic...}
+      """
+
+
+
+
+  'eventManager: ...':
+    'prefix': 'view_eventManager'
+    'body':
+      """
+        eventManager: Ember.Object.create(
+          ${1:event} :
+            ${2:#logic...}
+        )
+      """
+
+
+
+
+  'tagName : null':
+    'prefix': 'view_tagName'
+    'body':
+      """
+        tagName: '${1:div}'
+        ${2}
+      """
+
+
+
+
+  'attributeBindings : [...':
+    'prefix': 'view_attributeBind'
+    'body':
+      """
+        attributeBindings: ['${1:prop_to}:${2:attr}']
+        ${1:prop_to}
+      """
+
+
+
+
+  'classNames : [...':
+    'prefix': 'view_className'
+    'body':
+      """
+        classNames: ['${1:class-1}','${2:class-2}']
+        ${2}
+      """
+
+
+
+
+  'classNameBindings : [...':
+    'prefix': 'view_classNameBindings'
+    'body':
+      """
+        classNameBindings: ['${1:property_1:TruthyClass:FalsyClass}']
+        ${2:property_1} : ${3:true}
+      """
+
+
+
+
+  'isVisible : null':
+    'prefix': 'view_isVisible'
+    'body':
+      """
+        isVisible: ${1:null}
+      """
+
+
+
+  'Ember willInsertElement Hook':
+    'prefix': 'view_willInsertElement'
+    'body':
+      """
+        willInsertElement: ->
+          @_super
+          ${1:#logic...}
+      """
+
+
+
+  'Ember didInsertElement Hook':
+    'prefix': 'view_didInsertElement'
+    'body':
+      """
+        didInsertElement: ->
+          ${1:#logic...}
+      """
+
+
+
+  'Ember willDestroyElement Hook':
+    'prefix': 'view_willDestroyElement'
+    'body':
+      """
+        willDestroyElement: ->
+          ${1:#logic...}
+      """
+
+
+
+  'Ember parentViewDidChange Hook':
+    'prefix': 'view_parentViewDidChange'
+    'body':
+      """
+        parentViewDidChange: ->
+          ${1:#logic...}
+      """
+
+
+
+  'Ember willClearRender Hook':
+    'prefix': 'view_willClearRender'
+    'body':
+      """
+        willClearRender: ->
+          ${1:#logic...}
+      """
