@@ -1,0 +1,70 @@
+'.source.coffee':
+
+
+  'then':
+    'prefix': 'then'
+    'body':
+      """.then( (data) ->
+            ${1:#logic}
+        )
+      """
+
+
+
+  'set':
+    'prefix': 'set'
+    'body': "set('${1:key}','${2:val}')"
+
+
+
+
+  'get':
+    'prefix': 'get'
+    'body':"get('${1:key}').${2}"
+
+
+
+
+  'save':
+    'prefix': 'save'
+    'body':
+      """save()
+      ${1} """
+
+
+
+  'create a Record()':
+    'prefix': 'creatRecord'
+    'body':"""creatRecord()
+        ${1}
+      """
+
+
+
+
+  'delete a Record':
+    'prefix': 'deleteRecord'
+    'body': "deleteRecord()${1}"
+
+
+
+
+
+  'controllerFor':
+    'prefix': 'controllerFor'
+    'body':  "controllerFor( '${1}' )${2}"
+
+
+
+
+
+  'modelFor':
+    'prefix': 'modelFor'
+    'body':  "modelFor( '${1}' )${2}"
+
+
+
+
+  'transitionTo':
+    'prefix': 'transitionTo'
+    'body':  "transitionTo('${1:route_name}')${2}"

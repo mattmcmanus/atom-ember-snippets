@@ -1,0 +1,125 @@
+'.source.coffee':
+
+
+
+
+  'vie.ext wrapper with view':
+    'prefix': 'vie'
+    'body':"view${1}"
+
+  'rou.ext wrapper with route':
+    'prefix': 'rou'
+    'body':"route${1}"
+
+  'mod.ext wrapper with model':
+    'prefix': 'mod'
+    'body':"model${1}"
+
+  'arr wrapper with arrayController':
+    'prefix': 'arr'
+    'body':"arrayController${1}"
+
+  'obj wrapper with objectController':
+    'prefix': 'obj'
+    'body': "objectController${1}"
+
+
+
+
+
+
+  'imp-emb wrapper with import-ember':
+    'prefix': 'imp-emb'
+    'body':"import-ember${1}"
+
+  'imp-ds wrapper with import-ds':
+    'prefix': 'imp-ds'
+    'body':"import-ds${1}"
+
+  'exp-def wrapper with export':
+    'prefix': 'exp-def'
+    'body'  :"export-default${1}"
+
+
+
+
+
+  'logger.err':
+    'prefix': 'log.err'
+    'body'  : "logger.error"
+
+  'logger.deb':
+    'prefix': 'log.deb'
+    'body'  : "logger.debug"
+
+  'logger.log':
+    'prefix': 'log.log'
+    'body'  : "logger.log"
+
+  'logger.inf':
+    'prefix': 'log.inf'
+    'body'  : "logger.info"
+
+  'logger.war':
+    'prefix': 'log.war'
+    'body'  : "logger.warn"
+
+
+
+
+
+
+
+
+  'ds.attr':
+    'prefix': 'att'
+    'body'  : "ds.attr"
+
+
+  'ds.belongsTo':
+    'prefix': 'bel'
+    'body'  : "ds.belongsTo"
+
+
+  'ds.hasMany':
+    'prefix': 'has'
+    'body'  : "ds.hasMany"
+
+
+
+
+
+
+
+  'afterModel':
+    'prefix': 'aM'
+    'body'  : "afterModel"
+
+
+  'beforeModel':
+    'prefix': 'bM'
+    'body'  : "beforeModel"
+
+
+  'setupController':
+    'prefix': 'sC'
+    'body'  : "setupController"
+
+
+
+
+
+
+
+  'itemController':
+    'prefix': 'iC'
+    'body'  : "sortProperties"
+
+
+  'sortProperties':
+    'prefix': 'sP'
+    'body'  : "sortProperties"
+
+  'sortAscending':
+    'prefix': 'sA'
+    'body'  : "sortAscending"

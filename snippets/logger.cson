@@ -1,0 +1,51 @@
+'.source.coffee':
+
+  'Ember Snippets: logging functions':
+    'prefix': 'logger--help'
+    'body':
+      """
+      ${1:
+        #   snippets for Ember.Logger class :
+        #   example : log.err<tab>
+        #   _______________________________________________________________
+        #  |  type these  -> or long version  ->   press tab to generate:  |
+        #  |  ----------- ->  --------------  ->  ------------------------ |
+        #  |   log.err    ->   logger.error   ->   Ember.Logger.error(...  |
+        #  |   log.deb    ->   logger.debug   ->   Ember.Logger.debug(...  |
+        #  |   log.log    ->   logger.log     ->   Ember.Logger.log(...    |
+        #  |   log.inf    ->   logger.info    ->   Ember.Logger.info(...   |
+        #  |   log.war    ->   logger.warn    ->   Ember.Logger.warn(...   |
+        #  |_______________________________________________________________|
+        #
+        #           *press <Backspace> to remove this quick guide.
+
+      }
+      """
+
+  'Ember Logger Debug':
+    'prefix': 'logger.debug'
+    'body': "Ember.Logger.debug('${1:message}')"
+
+
+
+  'Ember Logger Log':
+    'prefix': 'logger.log'
+    'body': "Ember.Logger.log('${1:message}')"
+
+
+
+  'Ember Logger Info':
+    'prefix': 'logger.info'
+    'body': "Ember.Logger.info('${1:message}')"
+
+
+
+  'Ember Logger Warn':
+    'prefix': 'logger.warn'
+    'body': "Ember.Logger.warn('${1:message}')"
+
+
+
+  'Ember Logger Error':
+    'prefix': 'logger.error'
+    'body': "Ember.Logger.error('${1:message}')"

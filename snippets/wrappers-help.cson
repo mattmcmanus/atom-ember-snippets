@@ -1,0 +1,42 @@
+'.source.coffee':
+
+  '1 es6':
+    'prefix': 'es6-h'
+    'body'  : "es6--help"
+
+  '2 view-h':
+    'prefix': 'view-h'
+    'body'  : "view--help"
+
+
+  '3 route-h':
+    'prefix': 'route-h'
+    'body'  : "route--help"
+
+
+  '4 model-h':
+    'prefix': 'model-h'
+    'body'  : "model--help"
+
+
+  '5 logger-h':
+    'prefix': 'logger-h'
+    'body'  : "logger--help"
+
+
+  '6 computed-h':
+    'prefix': 'computed-h'
+    'body'  : "computed--help"
+
+
+  '7 store-h':
+    'prefix': 'store-h'
+    'body'  : "store--help"
+
+  '8 arr-h':
+    'prefix': 'arr-h'
+    'body'  : "arrayControll--help"
+
+  '9 obj-h':
+    'prefix': 'obj-h'
+    'body'  : "objectControll--help"
