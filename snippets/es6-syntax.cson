@@ -1,0 +1,23 @@
+'.source.coffee':
+
+  'ES6 import Ember':
+    'prefix': 'im.emb'
+    'body':
+      """
+        ${1:`import Ember from "ember";`}
+      """
+      
+  'ES6 import DS':
+    'prefix': 'im.ds'
+    'body':
+      """
+        ${1:`import DS    from 'ember-data';`}
+      """
+
+
+  'ES6 export syntax':
+    'prefix': 'ex.def'
+    'body':
+      """
+        `export default ${1:_export};`
+      """
