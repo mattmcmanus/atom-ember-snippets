@@ -1,0 +1,36 @@
+'.source.js':
+
+  'Ember.$':
+    'prefix': 'im$'
+    'leftLabelHTML': '<span style="color:#E46651">Ember module</span>'
+    'body': 'import $ from "jquery";'
+
+  'Ember.Enumerable':
+    'prefix': 'imenum'
+    'leftLabelHTML': '<span style="color:#E46651">Ember module</span>'
+    'body': 'import Enumerable from "@ember/enumerable";'
+
+  'Ember.Error':
+    'prefix': 'imerr'
+    'leftLabelHTML': '<span style="color:#E46651">Ember module</span>'
+    'body': 'import EmberError from "@ember/error";'
+
+  'Ember.instrument':
+    'prefix': 'iminstrument'
+    'leftLabelHTML': '<span style="color:#E46651">Ember module</span>'
+    'body': 'import { instrument } from "@ember/instrumentation";'
+
+  'Ember.reset':
+    'prefix': 'imreset'
+    'leftLabelHTML': '<span style="color:#E46651">Ember module</span>'
+    'body': 'import { reset } from "@ember/instrumentation";'
+
+  'Ember.subscribe':
+    'prefix': 'imsubscribe'
+    'leftLabelHTML': '<span style="color:#E46651">Ember module</span>'
+    'body': 'import { subscribe } from "@ember/instrumentation";'
+
+  'Ember.unsubscribe':
+    'prefix': 'imunsubscribe'
+    'leftLabelHTML': '<span style="color:#E46651">Ember module</span>'
+    'body': 'import { unsubscribe } from "@ember/instrumentation";'

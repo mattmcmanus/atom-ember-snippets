@@ -1,0 +1,16 @@
+'.source.js':
+
+  'Ember.Engine':
+    'prefix': 'imengine'
+    'leftLabelHTML': '<span style="color:#E46651">Ember module</span>'
+    'body': 'import Engine from "@ember/engine";'
+
+  'Ember.EngineInstance':
+    'prefix': 'imengineInst'
+    'leftLabelHTML': '<span style="color:#E46651">Ember module</span>'
+    'body': 'import EngineInstance from "@ember/engine/instance";'
+
+  'Ember.getEngineParent':
+    'prefix': 'imgetEngineParent'
+    'leftLabelHTML': '<span style="color:#E46651">Ember module</span>'
+    'body': 'import { getEngineParent } from "@ember/engine";'

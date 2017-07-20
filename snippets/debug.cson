@@ -1,0 +1,48 @@
+'.source.js':
+
+  'Ember.assert':
+    'prefix': 'imassert'
+    'leftLabelHTML': '<span style="color:#E46651">Ember module</span>'
+    'body': 'import { assert } from "@ember/debug";'
+
+  'Ember.debug':
+    'prefix': 'imdebug'
+    'leftLabelHTML': '<span style="color:#E46651">Ember module</span>'
+    'body': 'import { debug } from "@ember/debug";'
+
+  'Ember.inspect':
+    'prefix': 'iminspect'
+    'leftLabelHTML': '<span style="color:#E46651">Ember module</span>'
+    'body': 'import { inspect } from "@ember/debug";'
+
+  'Ember.Debug.registerDeprecationHandler':
+    'prefix': 'imregisterDeprecationHandler'
+    'leftLabelHTML': '<span style="color:#E46651">Ember module</span>'
+    'body': 'import { registerDeprecationHandler } from "@ember/debug";'
+
+  'Ember.Debug.registerWarnHandler':
+    'prefix': 'imregisterWarnHandler'
+    'leftLabelHTML': '<span style="color:#E46651">Ember module</span>'
+    'body': 'import { registerWarnHandler } from "@ember/debug";'
+
+  'Ember.runInDebug':
+    'prefix': 'imrunInDebug'
+    'leftLabelHTML': '<span style="color:#E46651">Ember module</span>'
+    'body': 'import { runInDebug } from "@ember/debug";'
+
+  'Ember.warn':
+    'prefix': 'imwarn'
+    'leftLabelHTML': '<span style="color:#E46651">Ember module</span>'
+    'body': 'import { warn } from "@ember/debug";'
+
+  'Ember.ContainerDebugAdapter':
+    'prefix': 'imcontainerDebugAdapter'
+    'leftLabelHTML': '<span style="color:#E46651">Ember module</span>'
+    'body': """
+      import ContainerDebugAdapter from "@ember/debug/container-debug-adapter";
+    """
+
+  'Ember.DataAdapter':
+    'prefix': 'imdebugDataAdapter'
+    'leftLabelHTML': '<span style="color:#E46651">Ember module</span>'
+    'body': 'import DataAdapter from "@ember/debug/data-adapter";'

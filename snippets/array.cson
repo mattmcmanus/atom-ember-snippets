@@ -1,0 +1,31 @@
+'.source.js':
+
+  'Ember.Array':
+    'prefix': 'imarray'
+    'leftLabelHTML': '<span style="color:#E46651">Ember module</span>'
+    'body': 'import EmberArray from "@ember/array";'
+
+  'Ember.A':
+    'prefix': 'imemberArray'
+    'leftLabelHTML': '<span style="color:#E46651">Ember module</span>'
+    'body': 'import { A } from "@ember/array";'
+
+  'Ember.isArray':
+    'prefix': 'imisArray'
+    'leftLabelHTML': '<span style="color:#E46651">Ember module</span>'
+    'body': 'import { isArray } from "@ember/array";'
+
+  'Ember.makeArray':
+    'prefix': 'immakeArray'
+    'leftLabelHTML': '<span style="color:#E46651">Ember module</span>'
+    'body': 'import { makeArray } from "@ember/array";'
+
+  'Ember.MutableArray':
+    'prefix': 'immutArray'
+    'leftLabelHTML': '<span style="color:#E46651">Ember module</span>'
+    'body': 'import MutableArray from "@ember/array/mutable";'
+
+  'Ember.ArrayProxy':
+    'prefix': 'imarrayProxy'
+    'leftLabelHTML': '<span style="color:#E46651">Ember module</span>'
+    'body': 'import ArrayProxy from "@ember/array/proxy";'
