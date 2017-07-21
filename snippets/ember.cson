@@ -168,6 +168,26 @@
       },
     """
 
+  'Component: didUpdateAttrs() { ... }':
+    'prefix': 'didUpdateAttrs'
+    'leftLabel': 'Ember'
+    'body':"""
+      didUpdateAttrs() {
+      \tthis._super(...arguments);
+      \t${1}
+      },
+    """
+
+  'Component: willUpdate() { ... }':
+    'prefix': 'willUpdate'
+    'leftLabel': 'Ember'
+    'body':"""
+      willUpdate() {
+      \tthis._super(...arguments);
+      \t${1}
+      },
+    """
+
   'Component: didInsertElement() { ... }':
     'prefix': 'didInsertElement'
     'leftLabel': 'Ember'
@@ -187,6 +207,27 @@
       \t${1}
       },
     """
+
+  'Component: willClearElement() { ... }':
+    'prefix': 'willClearElement'
+    'leftLabel': 'Ember'
+    'body':"""
+      willClearElement() {
+      \tthis._super(...arguments);
+      \t${1}
+      },
+    """
+
+  'Component: didDestroyElement() { ... }':
+    'prefix': 'didDestroyElement'
+    'leftLabel': 'Ember'
+    'body':"""
+      didDestroyElement() {
+      \tthis._super(...arguments);
+      \t${1}
+      },
+    """
+
   #
   #
   # Enumerables
