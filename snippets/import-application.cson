@@ -1,0 +1,51 @@
+'.source.js':
+
+  'Ember.Application':
+    'prefix': 'imapp'
+    'leftLabelHTML': '<span style="color:#E46651">Ember module</span>'
+    'body': 'import Application from "@ember/application";'
+
+  'Ember.getOwner':
+    'prefix': 'imgetOwner'
+    'leftLabelHTML': '<span style="color:#E46651">Ember module</span>'
+    'body': 'import { getOwner } from "@ember/application";'
+
+  'Ember.onLoad':
+    'prefix': 'imonLoad'
+    'leftLabelHTML': '<span style="color:#E46651">Ember module</span>'
+    'body': 'import { onLoad } from "@ember/application";'
+
+  'Ember.runLoadHooks':
+    'prefix': 'imrunLoadHooks'
+    'leftLabelHTML': '<span style="color:#E46651">Ember module</span>'
+    'body': 'import { runLoadHooks } from "@ember/application";'
+
+  'Ember.setOwner':
+    'prefix': 'imsetOwner'
+    'leftLabelHTML': '<span style="color:#E46651">Ember module</span>'
+    'body': 'import { setOwner } from "@ember/application";'
+
+  'Ember.deprecate':
+    'prefix': 'imdeprecate'
+    'leftLabelHTML': '<span style="color:#E46651">Ember module</span>'
+    'body': 'import { deprecate } from "@ember/application/deprecations";'
+
+  'Ember.deprecateFunc':
+    'prefix': 'imdeprecateFunc'
+    'leftLabelHTML': '<span style="color:#E46651">Ember module</span>'
+    'body': 'import { deprecateFunc } from "@ember/application/deprecations";'
+
+  'Ember.DefaultResolver':
+    'prefix': 'imdefaultResolver'
+    'leftLabelHTML': '<span style="color:#E46651">Ember module</span>'
+    'body': 'import GlobalsResolver from "@ember/application/globals-resolver";'
+
+  'Ember.ApplicationInstance':
+    'prefix': 'imappInstance'
+    'leftLabelHTML': '<span style="color:#E46651">Ember module</span>'
+    'body': 'import ApplicationInstance from "@ember/application/instance";'
+
+  'Ember.Resolver':
+    'prefix': 'imresolver'
+    'leftLabelHTML': '<span style="color:#E46651">Ember module</span>'
+    'body': 'import Resolver from "@ember/application/resolver";'

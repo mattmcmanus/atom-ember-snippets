@@ -1,0 +1,26 @@
+'.source.js':
+
+  'Ember.assign':
+    'prefix': 'imassign'
+    'leftLabelHTML': '<span style="color:#E46651">Ember module</span>'
+    'body': 'import { assign } from "@ember/polyfills";'
+
+  'Ember.keys':
+    'prefix': 'imkeys'
+    'leftLabelHTML': '<span style="color:#E46651">Ember module</span>'
+    'body': 'import { keys } from "@ember/polyfills";'
+
+  'Ember.merge':
+    'prefix': 'immerge'
+    'leftLabelHTML': '<span style="color:#E46651">Ember module</span>'
+    'body': 'import { merge } from "@ember/polyfills";'
+
+  'Ember.create':
+    'prefix': 'imcreate'
+    'leftLabelHTML': '<span style="color:#E46651">Ember module</span>'
+    'body': 'import { create } from "@ember/polyfills";'
+
+  'Ember.platform.hasPropertyAccessors':
+    'prefix': 'imhasPropertyAccessors'
+    'leftLabelHTML': '<span style="color:#E46651">Ember module</span>'
+    'body': 'import { hasPropertyAccessors } from "@ember/polyfills";'

@@ -1,0 +1,56 @@
+'.source.js':
+
+  'Ember.String.camelize':
+    'prefix': 'imcamelize'
+    'leftLabelHTML': '<span style="color:#E46651">Ember module</span>'
+    'body': 'import { camelize } from "@ember/string";'
+
+  'Ember.String.capitalize':
+    'prefix': 'imcapitalize'
+    'leftLabelHTML': '<span style="color:#E46651">Ember module</span>'
+    'body': 'import { capitalize } from "@ember/string";'
+
+  'Ember.String.classify':
+    'prefix': 'imclassify'
+    'leftLabelHTML': '<span style="color:#E46651">Ember module</span>'
+    'body': 'import { classify } from "@ember/string";'
+
+  'Ember.String.dasherize':
+    'prefix': 'imdasherize'
+    'leftLabelHTML': '<span style="color:#E46651">Ember module</span>'
+    'body': 'import { dasherize } from "@ember/string";'
+
+  'Ember.String.decamelize':
+    'prefix': 'imdecamelize'
+    'leftLabelHTML': '<span style="color:#E46651">Ember module</span>'
+    'body': 'import { decamelize } from "@ember/string";'
+
+  'Ember.String.fmt':
+    'prefix': 'imfmt'
+    'leftLabelHTML': '<span style="color:#E46651">Ember module</span>'
+    'body': 'import { fmt } from "@ember/string";'
+
+  'Ember.String.htmlSafe':
+    'prefix': 'imhtmlSafe'
+    'leftLabelHTML': '<span style="color:#E46651">Ember module</span>'
+    'body': 'import { htmlSafe } from "@ember/string";'
+
+  'Ember.String.isHtmlSafe':
+    'prefix': 'imisHtmlSafe'
+    'leftLabelHTML': '<span style="color:#E46651">Ember module</span>'
+    'body': 'import { isHtmlSafe } from "@ember/string";'
+
+  'Ember.String.loc':
+    'prefix': 'imloc'
+    'leftLabelHTML': '<span style="color:#E46651">Ember module</span>'
+    'body': 'import { loc } from "@ember/string";'
+
+  'Ember.String.underscore':
+    'prefix': 'imunderscore'
+    'leftLabelHTML': '<span style="color:#E46651">Ember module</span>'
+    'body': 'import { underscore } from "@ember/string";'
+
+  'Ember.String.w':
+    'prefix': 'imw'
+    'leftLabelHTML': '<span style="color:#E46651">Ember module</span>'
+    'body': 'import { w } from "@ember/string";'

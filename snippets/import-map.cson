@@ -1,0 +1,11 @@
+'.source.js':
+
+  'Ember.Map':
+    'prefix': 'immap'
+    'leftLabelHTML': '<span style="color:#E46651">Ember module</span>'
+    'body': 'import EmberMap from "@ember/map";'
+
+  'Ember.MapWithDefault':
+    'prefix': 'immapWDefault'
+    'leftLabelHTML': '<span style="color:#E46651">Ember module</span>'
+    'body': 'import MapWithDefault from "@ember/map/with-default";'
