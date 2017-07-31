@@ -17,13 +17,33 @@ apm install ember-snippets
 Rather than listing everything out here, check out the snippet files themselves:
 
 * [ember core snippets](snippets/ember.cson) for:
-  * Importing & module shorthands
   * Ember Objects
   * Routes
   * Components
   * Enumerables
   * Logger
   * Test
+* ember rfc176 compliant imports*
+  * *Note*: These imports require `ember-cli-babel@6.6.0` or higher
+  * [application](snippets/import-application.cson)
+  * [array](snippets/import-array.cson)
+  * [base](snippets/import-base.cson)
+  * [component](snippets/import-component.cson)
+  * [controller](snippets/import-controller.cson)
+  * [debug](snippets/import-debug.cson)
+  * [engine](snippets/import-engine.cson)
+  * [map](snippets/import-map.cson)
+  * [object](snippets/import-object.cson)
+  * [polyfills](snippets/import-polyfills.cson)
+  * [routing](snippets/import-routing.cson)
+  * [rsvp](snippets/import-rsvp.cson)
+  * [runloop](snippets/import-runloop.cson)
+  * [service](snippets/import-service.cson)
+  * [string](snippets/import-string.cson)
+  * [test](snippets/import-test.cson)
+  * [utils](snippets/import-utils.cson)
+* [New file stubs](snippets/file-skeletons.cson) for:
+  * Routers, Components, Helpers & more
 * [ember-data snippets](snippets/ember-data.cson) for:
   * Store
   * Models
@@ -33,8 +53,7 @@ Rather than listing everything out here, check out the snippet files themselves:
 * [Mirage](snippets/mirage.cson) for:
   * Factories
   * Routes
-* [New file stubs](snippets/file-stubs.cson) for:
-  * Routers, Components, Helpers & more
+
 
 ## Recommended Packages
 * https://atom.io/packages/atom-handlebars
