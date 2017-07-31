@@ -1,5 +1,5 @@
 ## 2.1.0
-* Ember rfc176 compliant import snippets. #24 @jbailey4
+* Ember rfc176 compliant import snippets. #26 @jbailey4
 * More component lifecycle hooks #25 @jakenewby
 
 ## 2.0.4
