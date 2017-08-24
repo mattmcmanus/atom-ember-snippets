@@ -17,7 +17,7 @@
 ## 2.0.0
 * Deprecate coffee script snippets
 * Introduce mirage snippets
-* Introduce ember specific handlebars snipets
+* Introduce ember specific handlebars snippets
 * Reorganize snippet files
 * Introduce lots of new ember snippets
 
