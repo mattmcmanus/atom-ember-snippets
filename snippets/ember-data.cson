@@ -1,6 +1,6 @@
 # Ember Data Snippets
 
-'.source.js':
+'.source.js, .source.ts':
   'store.findAll(...)':
     'prefix': 'find-all'
     'leftLabel': 'Ember Data'

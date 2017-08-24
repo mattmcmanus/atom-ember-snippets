@@ -5,7 +5,7 @@
 #  `ember<tab>`
 #
 
-'.source.js':
+'.source.js, .source.ts':
   'import Ember':
     'prefix': 'imE'
     'leftLabel': 'Ember'
