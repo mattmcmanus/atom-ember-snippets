@@ -1,4 +1,4 @@
-## 2.1.1
+## 2.1.2
 * Support for typescript files #28 @bartocc
 
 ## 2.1.0
