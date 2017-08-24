@@ -1,3 +1,6 @@
+## 2.1.1
+* Support for typescript files #28 @bartocc
+
 ## 2.1.0
 * Ember rfc176 compliant import snippets. #26 @jbailey4
 * More component lifecycle hooks #25 @jakenewby
