@@ -1,6 +1,6 @@
 # ember-cli-mirage snippets
 
-'.source.js':
+'.source.js, .source.ts':
   'Factory: afterCreate':
     'prefix': 'afterCreate'
     'leftLabel': 'Mirage'
