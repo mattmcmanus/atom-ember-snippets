@@ -53,7 +53,10 @@ Rather than listing everything out here, check out the snippet files themselves:
 * [Mirage](snippets/mirage.cson) for:
   * Factories
   * Routes
-
+* [Factory Guy](snippets/factory-guy.cson) for:
+  * Various Imports
+  * Entity Creation
+  * Scenario Skeleton
 
 ## Recommended Packages
 * https://atom.io/packages/atom-handlebars
