@@ -3,7 +3,7 @@
 export default {
 
   activate(state) {
-    require('atom-package-deps').install('atom-handlebars');
+    require('atom-package-deps').install('ember-snippets', true);
   }
 
 };

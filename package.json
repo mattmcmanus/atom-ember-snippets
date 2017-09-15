@@ -18,6 +18,9 @@
   "dependencies": {
     "atom-package-deps": "^4.6.0"
   },
+  "package-deps": [
+    "atom-handlebars"
+  ],
   "readmeFilename": "README.md",
   "bugs": {
     "url": "https://github.com/mattmcmanus/atom-ember-snippets/issues"
