@@ -1,0 +1,145 @@
+# ember-data-factory-guy snippets
+
+'.source.js, .source.ts':
+  # Integration Tests
+  'FactoryGuy.manualSetup':
+    'prefix': 'manualSetup'
+    'leftLabel': 'FactoryGuy'
+    'body': 'manualSetup(this.container);'
+
+  'FactoryGuy.beforeEach':
+    'prefix': 'beforeEach'
+    'leftLabel': 'FactoryGuy'
+    'body': """
+    beforeEach() {
+    \tmanualSetup(this.container);
+    }
+    """
+
+  # Imports -- Entity Creation
+  'Import FactoryGuy.make':
+    'prefix': 'imMake'
+    'leftLabel': 'FactoryGuy'
+    'body': 'import { make } from \'ember-data-factory-guy\';'
+
+  'Import FactoryGuy.makeNew':
+    'prefix': 'imMakeNew'
+    'leftLabel': 'FactoryGuy'
+    'body': 'import { makeNew } from \'ember-data-factory-guy\';'
+
+  'Import FactoryGuy.makeList':
+    'prefix': 'imMakeList'
+    'leftLabel': 'FactoryGuy'
+    'body': 'import { makeList } from \'ember-data-factory-guy\';'
+
+  'Import FactoryGuy.build':
+    'prefix': 'imBuild'
+    'leftLabel': 'FactoryGuy'
+    'body': 'import { build } from \'ember-data-factory-guy\';'
+
+  'Import FactoryGuy.buildList':
+    'prefix': 'imBuildList'
+    'leftLabel': 'FactoryGuy'
+    'body': 'import { buildList } from \'ember-data-factory-guy\';'
+
+  # Imports -- Mocking
+  'Import FactoryGuy.mockFindRecord':
+    'prefix': 'imMockFindRecord'
+    'leftLabel': 'FactoryGuy'
+    'body': 'import { mockFindRecord } from \'ember-data-factory-guy\';'
+
+  'Import FactoryGuy.mockFindAll':
+    'prefix': 'imMockFindAll'
+    'leftLabel': 'FactoryGuy'
+    'body': 'import { mockFindAll } from \'ember-data-factory-guy\';'
+
+  'Import FactoryGuy.mockReload':
+    'prefix': 'imMockReload'
+    'leftLabel': 'FactoryGuy'
+    'body': 'import { mockReload } from \'ember-data-factory-guy\';'
+
+  'Import FactoryGuy.mockQuery':
+    'prefix': 'imMockQuery'
+    'leftLabel': 'FactoryGuy'
+    'body': 'import { mockQuery } from \'ember-data-factory-guy\';'
+
+  'Import FactoryGuy.mockQueryRecord':
+    'prefix': 'imMockQueryRecord'
+    'leftLabel': 'FactoryGuy'
+    'body': 'import { mockQueryRecord } from \'ember-data-factory-guy\';'
+
+  'Import FactoryGuy.mockCreate':
+    'prefix': 'imMockCreate'
+    'leftLabel': 'FactoryGuy'
+    'body': 'import { mockCreate } from \'ember-data-factory-guy\';'
+
+  'Import FactoryGuy.mockUpdate':
+    'prefix': 'imMockUpdate'
+    'leftLabel': 'FactoryGuy'
+    'body': 'import { mockUpdate } from \'ember-data-factory-guy\';'
+
+  'Import FactoryGuy.mockDelete':
+    'prefix': 'imMockDelete'
+    'leftLabel': 'FactoryGuy'
+    'body': 'import { mockDelete } from \'ember-data-factory-guy\';'
+
+  # Imports -- Miscellaneous
+  'Import FactoryGuy.mockSetup':
+    'prefix': 'imMockSetup'
+    'leftLabel': 'FactoryGuy'
+    'body': 'import { mockSetup } from \'ember-data-factory-guy\';'
+
+  'Import FactoryGuy.mockTeardown':
+    'prefix': 'imMockTeardown'
+    'leftLabel': 'FactoryGuy'
+    'body': 'import { mockTeardown } from \'ember-data-factory-guy\';'
+
+  'Import FactoryGuy.manualSetup':
+    'prefix': 'imManualSetup'
+    'leftLabel': 'FactoryGuy'
+    'body': 'import { manualSetup } from \'ember-data-factory-guy\';'
+
+  'Import FactoryGuy.Scenario':
+    'prefix': 'imScenario'
+    'leftLabel': 'FactoryGuy'
+    'body': 'import { Scenario } from \'ember-data-factory-guy\';'
+
+  # Snippets - Entity Creation
+  'FactoryGuy.make':
+    'prefix': 'make'
+    'leftLabel': 'FactoryGuy'
+    'body': 'let $1 = make(\'$1\'${2:, \'${3:trait}\'});'
+
+  'FactoryGuy.makeNew':
+    'prefix': 'makeNew'
+    'leftLabel': 'FactoryGuy'
+    'body': 'let $1 = makeNew(\'$1\'${2:, \'${3:trait}\'});'
+
+  'FactoryGuy.makeList':
+    'prefix': 'makeList'
+    'leftLabel': 'FactoryGuy'
+    'body': 'let $1s = makeList(\'$1\', ${2:3}${3:, \'${4:trait}\'});'
+
+  'FactoryGuy.build':
+    'prefix': 'build'
+    'leftLabel': 'FactoryGuy'
+    'body': 'let $1 = build(\'$1\'${2:, \'${3:trait}\'});'
+
+  'FactoryGuy.buildList':
+    'prefix': 'buildList'
+    'leftLabel': 'FactoryGuy'
+    'body': 'let $1s = buildList(\'$1\', ${2:3}${3:, \'${4:trait}\'});'
+
+  # Snippets - Skeletons
+  'FactoryGuy Scenario Skeleton':
+    'prefix': 'scenario'
+    'leftLabel': 'FactoryGuy'
+    'body': """
+    import { Scenario } from 'ember-data-factory-guy';
+
+    export default class extends Scenario {
+    \trun() {
+    \t\t$1
+    \t}
+    }
+    """
