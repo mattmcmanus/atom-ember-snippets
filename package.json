@@ -1,5 +1,6 @@
 {
   "name": "ember-snippets",
+  "main": "./src/main",
   "version": "2.1.2",
   "description": "Ember.js ES6 Snippets for Atom",
   "repository": "https://github.com/mattmcmanus/atom-ember-snippets",
@@ -13,6 +14,12 @@
     "javascript",
     "snippets",
     "snippet"
+  ],
+  "dependencies": {
+    "atom-package-deps": "^4.6.0"
+  },
+  "package-deps": [
+    "atom-handlebars"
   ],
   "readmeFilename": "README.md",
   "bugs": {
