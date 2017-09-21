@@ -34,17 +34,17 @@
   'attr(...)':
     'prefix': 'attr'
     'leftLabel': 'Ember Data'
-    'body': "attr('${1:string}');"
+    'body': "attr('${1:string}'),"
 
   'belongsTo(...)':
     'prefix': 'belongsTo'
     'leftLabel': 'Ember Data'
-    'body': "belongsTo('${1:name}');"
+    'body': "belongsTo('${1:name}'),"
 
   'hasMany(...)':
     'prefix': 'hasMany'
     'leftLabel': 'Ember Data'
-    'body': "hasMany('${1:string}');"
+    'body': "hasMany('${1:string}'),"
 
 #############################
 # DEPRECATED
