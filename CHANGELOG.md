@@ -1,3 +1,6 @@
+## 2.1.3
+* Removes third-party snippets (Mirage)
+
 ## 2.1.2
 * Support for typescript files #28 @bartocc
 
