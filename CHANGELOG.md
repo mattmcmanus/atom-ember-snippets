@@ -1,4 +1,5 @@
 ## 2.1.3
+* Removes third-party snippets (Mirage)
 * Ember skeleton snippets are now RFC176 compliant
 
 ## 2.1.2
