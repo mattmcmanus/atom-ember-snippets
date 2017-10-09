@@ -1,3 +1,6 @@
+## 2.1.3
+* Ember skeleton snippets are now RFC176 compliant
+
 ## 2.1.2
 * Support for typescript files #28 @bartocc
 
