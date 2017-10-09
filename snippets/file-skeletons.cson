@@ -11,8 +11,7 @@
     'prefix': 'route'
     'leftLabel': 'Ember'
     'body': """
-      import Ember from 'ember';
-      const { Route } = Ember;
+      import Route from '@ember/routing/route';
 
       export default Route.extend({
       \tmodel: function() {
@@ -25,8 +24,7 @@
     'prefix': 'controller'
     'leftLabel': 'Ember'
     'body': """
-      import Ember from 'ember';
-      const { Controller } = Ember;
+      import Controller from '@ember/controller';
 
       export default Controller.extend({
       \t${1:// body}
@@ -37,8 +35,7 @@
     'prefix': 'service'
     'leftLabel': 'Ember'
     'body': """
-      import Ember from 'ember';
-      const { Service } = Ember;
+      import Service from '@ember/service';
 
       export default Service.extend({
       \t${1:// body}
@@ -49,8 +46,7 @@
     'prefix': 'component'
     'leftLabel': 'Ember'
     'body': """
-      import Ember from 'ember';
-      const { Component } = Ember;
+      import Component from '@ember/component';
 
       export default Component.extend({
       \t${1:// body}
@@ -61,9 +57,9 @@
     'prefix': 'mixin'
     'leftLabel': 'Ember'
     'body': """
-      import Ember from 'ember';
+      import Mixin from '@ember/object/mixin';
 
-      export default Ember.Mixin.create({
+      export default Mixin.create({
       \t${1:// body}
       });
     """
@@ -72,10 +68,9 @@
     'prefix': 'object'
     'leftLabel': 'Ember'
     'body': """
-      import Ember from 'ember';
-      const { Object } = Ember;
+      import EmberObject from '@ember/object';
 
-      export default Object.extend({
+      export default EmberObject.extend({
       \t${1:// body}
       });
     """
@@ -95,8 +90,7 @@
     'prefix': 'helper'
     'leftLabel': 'Ember'
     'body': """
-      import Ember from 'ember';
-      const { Helper } = Ember;
+      import Helper from '@ember/component/helper';
 
       export default Helper.extend({
       \tcompute: function() {
