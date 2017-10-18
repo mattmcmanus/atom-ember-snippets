@@ -8,4 +8,4 @@
   'Ember.inject.service':
     'prefix': 'iminjectService'
     'leftLabelHTML': '<span style="color:#E46651">Ember module</span>'
-    'body': 'import { inject } from "@ember/service";'
+    'body': 'import { inject as service } from "@ember/service";'
