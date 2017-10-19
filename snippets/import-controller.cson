@@ -8,4 +8,4 @@
   'Ember.inject.controller':
     'prefix': 'iminjectController'
     'leftLabelHTML': '<span style="color:#E46651">Ember module</span>'
-    'body': 'import { inject } from "@ember/controller";'
+    'body': 'import { inject as controller } from "@ember/controller";'
