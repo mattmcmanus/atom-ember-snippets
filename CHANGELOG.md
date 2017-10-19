@@ -1,4 +1,7 @@
 ## 2.1.3
+* Fixes imports for controller/service injection #34 @caseywatts
+
+## 2.1.3
 * Removes third-party snippets (Mirage)
 * Ember skeleton snippets are now RFC176 compliant
 
