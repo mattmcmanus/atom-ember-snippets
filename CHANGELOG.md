@@ -1,4 +1,4 @@
-## 2.1.3
+## 2.1.4
 * Fixes imports for controller/service injection #34 @caseywatts
 
 ## 2.1.3
