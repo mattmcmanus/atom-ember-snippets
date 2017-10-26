@@ -3,29 +3,29 @@
   'Ember.Test.Adapter':
     'prefix': 'imtestAdapter'
     'leftLabelHTML': '<span style="color:#E46651">Ember module</span>'
-    'body': 'import Test.Adapter from "@ember/test/adapter";'
+    'body': "import Test.Adapter from '@ember/test/adapter';"
 
   'Ember.Test.registerAsyncHelper':
     'prefix': 'imregisterAsyncHelper'
     'leftLabelHTML': '<span style="color:#E46651">Ember module</span>'
-    'body': 'import { registerAsyncHelper } from "@ember/test";'
+    'body': "import { registerAsyncHelper } from '@ember/test';"
 
   'Ember.Test.registerHelper':
     'prefix': 'imregisterHelper'
     'leftLabelHTML': '<span style="color:#E46651">Ember module</span>'
-    'body': 'import { registerHelper } from "@ember/test";'
+    'body': "import { registerHelper } from '@ember/test';"
 
   'Ember.Test.registerWaiter':
     'prefix': 'imregisterWaiter'
     'leftLabelHTML': '<span style="color:#E46651">Ember module</span>'
-    'body': 'import { registerWaiter } from "@ember/test";'
+    'body': "import { registerWaiter } from '@ember/test';"
 
   'Ember.Test.unregisterHelper':
     'prefix': 'imunregisterHelper'
     'leftLabelHTML': '<span style="color:#E46651">Ember module</span>'
-    'body': 'import { unregisterHelper } from "@ember/test";'
+    'body': "import { unregisterHelper } from '@ember/test';"
 
   'Ember.Test.unregisterWaiter':
     'prefix': 'imunregisterWaiter'
     'leftLabelHTML': '<span style="color:#E46651">Ember module</span>'
-    'body': 'import { unregisterWaiter } from "@ember/test";'
+    'body': "import { unregisterWaiter } from '@ember/test';"

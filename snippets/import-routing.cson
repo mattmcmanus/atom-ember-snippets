@@ -3,39 +3,39 @@
   'Ember.AutoLocation':
     'prefix': 'imautoLocation'
     'leftLabelHTML': '<span style="color:#E46651">Ember module</span>'
-    'body': 'import AutoLocation from "@ember/routing/auto-location";'
+    'body': "import AutoLocation from '@ember/routing/auto-location';"
 
   'Ember.HashLocation':
     'prefix': 'imroutingHash'
     'leftLabelHTML': '<span style="color:#E46651">Ember module</span>'
-    'body': 'import HashLocation from "@ember/routing/hash-location";'
+    'body': "import HashLocation from '@ember/routing/hash-location';"
 
   'Ember.HistoryLocation':
     'prefix': 'imroutingHistory'
     'leftLabelHTML': '<span style="color:#E46651">Ember module</span>'
-    'body': 'import HistoryLocation from "@ember/routing/history-location";'
+    'body': "import HistoryLocation from '@ember/routing/history-location';"
 
   'Ember.LinkComponent':
     'prefix': 'imlinkComponent'
     'leftLabelHTML': '<span style="color:#E46651">Ember module</span>'
-    'body': 'import LinkComponent from "@ember/routing/link-component";'
+    'body': "import LinkComponent from '@ember/routing/link-component';"
 
   'Ember.Location':
     'prefix': 'imlocation'
     'leftLabelHTML': '<span style="color:#E46651">Ember module</span>'
-    'body': 'import Location from "@ember/routing/location";'
+    'body': "import Location from '@ember/routing/location';"
 
   'Ember.NoneLocation':
     'prefix': 'imnoneLocation'
     'leftLabelHTML': '<span style="color:#E46651">Ember module</span>'
-    'body': 'import NoneLocation from "@ember/routing/none-location";'
+    'body': "import NoneLocation from '@ember/routing/none-location';"
 
   'Ember.Route':
     'prefix': 'imroute'
     'leftLabelHTML': '<span style="color:#E46651">Ember module</span>'
-    'body': 'import Route from "@ember/routing/route";'
+    'body': "import Route from '@ember/routing/route';"
 
   'Ember.Router':
     'prefix': 'imrouter'
     'leftLabelHTML': '<span style="color:#E46651">Ember module</span>'
-    'body': 'import Router from "@ember/routing/router";'
+    'body': "import Router from '@ember/routing/router';"

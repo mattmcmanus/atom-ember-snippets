@@ -3,9 +3,9 @@
   'Ember.Controller':
     'prefix': 'imcontroller'
     'leftLabelHTML': '<span style="color:#E46651">Ember module</span>'
-    'body': 'import Controller from "@ember/controller";'
+    'body': "import Controller from '@ember/controller';"
 
   'Ember.inject.controller':
     'prefix': 'iminjectController'
     'leftLabelHTML': '<span style="color:#E46651">Ember module</span>'
-    'body': 'import { inject as controller } from "@ember/controller";'
+    'body': "import { inject as controller } from '@ember/controller';"

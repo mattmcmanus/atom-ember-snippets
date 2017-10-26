@@ -3,29 +3,29 @@
   'Ember.Component':
     'prefix': 'imcomponent'
     'leftLabelHTML': '<span style="color:#E46651">Ember module</span>'
-    'body': 'import Component from "@ember/component";'
+    'body': "import Component from '@ember/component';"
 
   'Ember.Checkbox':
     'prefix': 'imcheckbox'
     'leftLabelHTML': '<span style="color:#E46651">Ember module</span>'
-    'body': 'import Checkbox from "@ember/component/checkbox";'
+    'body': "import Checkbox from '@ember/component/checkbox';"
 
   'Ember.Helper':
     'prefix': 'imhelper'
     'leftLabelHTML': '<span style="color:#E46651">Ember module</span>'
-    'body': 'import Helper from "@ember/component/helper";'
+    'body': "import Helper from '@ember/component/helper';"
 
   'Ember.Helper.helper':
     'prefix': 'imhelperHelper'
     'leftLabelHTML': '<span style="color:#E46651">Ember module</span>'
-    'body': 'import { helper } from "@ember/component/helper";'
+    'body': "import { helper } from '@ember/component/helper';"
 
   'Ember.TextArea':
     'prefix': 'imtextArea'
     'leftLabelHTML': '<span style="color:#E46651">Ember module</span>'
-    'body': 'import TextArea from "@ember/component/text-area";'
+    'body': "import TextArea from '@ember/component/text-area';"
 
   'Ember.TextField':
     'prefix': 'imtextField'
     'leftLabelHTML': '<span style="color:#E46651">Ember module</span>'
-    'body': 'import TextField from "@ember/component/text-field";'
+    'body': "import TextField from '@ember/component/text-field';"

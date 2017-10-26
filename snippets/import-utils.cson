@@ -3,39 +3,39 @@
   'Ember.compare':
     'prefix': 'imcompare'
     'leftLabelHTML': '<span style="color:#E46651">Ember module</span>'
-    'body': 'import { compare } from "@ember/utils";'
+    'body': "import { compare } from '@ember/utils';"
 
   'Ember.isBlank':
     'prefix': 'imisBlank'
     'leftLabelHTML': '<span style="color:#E46651">Ember module</span>'
-    'body': 'import { isBlank } from "@ember/utils";'
+    'body': "import { isBlank } from '@ember/utils';"
 
   'Ember.isEmpty':
     'prefix': 'imisEmpty'
     'leftLabelHTML': '<span style="color:#E46651">Ember module</span>'
-    'body': 'import { isEmpty } from "@ember/utils";'
+    'body': "import { isEmpty } from '@ember/utils';"
 
   'Ember.isEqual':
     'prefix': 'imisEqual'
     'leftLabelHTML': '<span style="color:#E46651">Ember module</span>'
-    'body': 'import { isEqual } from "@ember/utils";'
+    'body': "import { isEqual } from '@ember/utils';"
 
   'Ember.isNone':
     'prefix': 'imisNone'
     'leftLabelHTML': '<span style="color:#E46651">Ember module</span>'
-    'body': 'import { isNone } from "@ember/utils";'
+    'body': "import { isNone } from '@ember/utils';"
 
   'Ember.isPresent':
     'prefix': 'imisPresent'
     'leftLabelHTML': '<span style="color:#E46651">Ember module</span>'
-    'body': 'import { isPresent } from "@ember/utils";'
+    'body': "import { isPresent } from '@ember/utils';"
 
   'Ember.tryInvoke':
     'prefix': 'imtryInvoke'
     'leftLabelHTML': '<span style="color:#E46651">Ember module</span>'
-    'body': 'import { tryInvoke } from "@ember/utils";'
+    'body': "import { tryInvoke } from '@ember/utils';"
 
   'Ember.typeOf':
     'prefix': 'imtypeOf'
     'leftLabelHTML': '<span style="color:#E46651">Ember module</span>'
-    'body': 'import { typeOf } from "@ember/utils";'
+    'body': "import { typeOf } from '@ember/utils';"
