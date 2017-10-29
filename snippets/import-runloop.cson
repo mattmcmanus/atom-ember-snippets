@@ -3,64 +3,64 @@
   'Ember.run':
     'prefix': 'imrun'
     'leftLabelHTML': '<span style="color:#E46651">Ember module</span>'
-    'body': 'import { run } from "@ember/runloop";'
+    'body': "import { run } from '@ember/runloop';"
 
   'Ember.run.begin':
     'prefix': 'imbegin'
     'leftLabelHTML': '<span style="color:#E46651">Ember module</span>'
-    'body': 'import { begin } from "@ember/runloop";'
+    'body': "import { begin } from '@ember/runloop';"
 
   'Ember.run.bind':
     'prefix': 'imbind'
     'leftLabelHTML': '<span style="color:#E46651">Ember module</span>'
-    'body': 'import { bind } from "@ember/runloop";'
+    'body': "import { bind } from '@ember/runloop';"
 
   'Ember.run.cancel':
     'prefix': 'imcancel'
     'leftLabelHTML': '<span style="color:#E46651">Ember module</span>'
-    'body': 'import { cancel } from "@ember/runloop";'
+    'body': "import { cancel } from '@ember/runloop';"
 
   'Ember.run.debounce':
     'prefix': 'imdebounce'
     'leftLabelHTML': '<span style="color:#E46651">Ember module</span>'
-    'body': 'import { debounce } from "@ember/runloop";'
+    'body': "import { debounce } from '@ember/runloop';"
 
   'Ember.run.end':
     'prefix': 'imend'
     'leftLabelHTML': '<span style="color:#E46651">Ember module</span>'
-    'body': 'import { end } from "@ember/runloop";'
+    'body': "import { end } from '@ember/runloop';"
 
   'Ember.run.join':
     'prefix': 'imjoin'
     'leftLabelHTML': '<span style="color:#E46651">Ember module</span>'
-    'body': 'import { join } from "@ember/runloop";'
+    'body': "import { join } from '@ember/runloop';"
 
   'Ember.run.later':
     'prefix': 'imlater'
     'leftLabelHTML': '<span style="color:#E46651">Ember module</span>'
-    'body': 'import { later } from "@ember/runloop";'
+    'body': "import { later } from '@ember/runloop';"
 
   'Ember.run.next':
     'prefix': 'imnext'
     'leftLabelHTML': '<span style="color:#E46651">Ember module</span>'
-    'body': 'import { next } from "@ember/runloop";'
+    'body': "import { next } from '@ember/runloop';"
 
   'Ember.run.once':
     'prefix': 'imonce'
     'leftLabelHTML': '<span style="color:#E46651">Ember module</span>'
-    'body': 'import { once } from "@ember/runloop";'
+    'body': "import { once } from '@ember/runloop';"
 
   'Ember.run.schedule':
     'prefix': 'imschedule'
     'leftLabelHTML': '<span style="color:#E46651">Ember module</span>'
-    'body': 'import { schedule } from "@ember/runloop";'
+    'body': "import { schedule } from '@ember/runloop';"
 
   'Ember.run.scheduleOnce':
     'prefix': 'imscheduleOnce'
     'leftLabelHTML': '<span style="color:#E46651">Ember module</span>'
-    'body': 'import { scheduleOnce } from "@ember/runloop";'
+    'body': "import { scheduleOnce } from '@ember/runloop';"
 
   'Ember.run.throttle':
     'prefix': 'imthrottle'
     'leftLabelHTML': '<span style="color:#E46651">Ember module</span>'
-    'body': 'import { throttle } from "@ember/runloop";'
+    'body': "import { throttle } from '@ember/runloop';"
