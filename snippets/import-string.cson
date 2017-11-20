@@ -35,10 +35,10 @@
     'leftLabelHTML': '<span style="color:#E46651">Ember module</span>'
     'body': "import { htmlSafe } from '@ember/string';"
 
-  'Ember.String.isHtmlSafe':
-    'prefix': 'imisHtmlSafe'
+  'Ember.String.isHTMLSafe':
+    'prefix': 'isHTMLSafe'
     'leftLabelHTML': '<span style="color:#E46651">Ember module</span>'
-    'body': "import { isHtmlSafe } from '@ember/string';"
+    'body': "import { isHTMLSafe } from '@ember/string';"
 
   'Ember.String.loc':
     'prefix': 'imloc'
