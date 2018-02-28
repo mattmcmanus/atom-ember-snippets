@@ -14,9 +14,11 @@
       import Route from '@ember/routing/route';
 
       export default Route.extend({
-      \tmodel: function() {
+
+      \tmodel() {
       \t\t${1:// body}
-      \t},
+      \t}
+
       });
     """
 
