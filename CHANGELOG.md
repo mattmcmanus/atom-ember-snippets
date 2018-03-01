@@ -1,3 +1,8 @@
+## 2.1.6
+* Update route skeleton #37 @samselikoff
+* Update helper skeleton
+* Add beforeModel route hook
+
 ## 2.1.4
 * Fixes imports for controller/service injection #34 @caseywatts
 
