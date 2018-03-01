@@ -95,7 +95,7 @@
       import Helper from '@ember/component/helper';
 
       export default Helper.extend({
-      \tcompute: function() {
+      \tcompute() {
       \t\t${1:// body}
       \t}
       });
