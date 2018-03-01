@@ -133,11 +133,23 @@
 
     """
 
+  'Route: beforeModel(...) { ... }':
+    'prefix': 'beforeModel'
+    'leftLabel': 'Ember'
+    'body':"""
+      beforeModel(transition) {
+      \tthis._super(controller, model);
+      \t${1}
+      },
+
+    """
+
   'Route: afterModel(...) { ... }':
     'prefix': 'afterModel'
     'leftLabel': 'Ember'
     'body':"""
       afterModel(model, transition) {
+      \tthis._super(controller, model);
       \t${1}
       },
 
