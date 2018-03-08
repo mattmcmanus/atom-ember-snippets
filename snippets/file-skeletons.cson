@@ -77,7 +77,7 @@
       });
     """
 
-  'Helper Skeleton':
+  'Bound Helper Skeleton':
     'prefix': 'bound-helper'
     'leftLabel': 'Ember'
     'body': """
