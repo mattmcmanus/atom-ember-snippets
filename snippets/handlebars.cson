@@ -10,7 +10,7 @@
   'Ember: let':
     'prefix': 'let'
     'body': """
-      {{#let ${1} as |${2}|}
+      {{#let ${1} as |${2}|}}
       \t${3}
       {{/let}}
     """
