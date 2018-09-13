@@ -7,6 +7,14 @@
     'prefix': 'get'
     'body': "{{get '${1}'}}"
 
+  'Ember: let':
+    'prefix': 'let'
+    'body': """
+      {{#let ${1} as |${2}|}
+      \t${3}
+      {{/let}}
+    """
+
   'Ember: helper':
     'prefix': 'helper'
     'body': "{{${1:get} '${2}'}}"
