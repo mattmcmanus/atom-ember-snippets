@@ -1,0 +1,36 @@
+'.source.js, .source.ts':
+
+  'Ember.Data.model':
+    'prefix': 'immodel'
+    'leftLabelHTML': '<span style="color:#E46651">Ember module</span>'
+    'body': "import Model from 'ember-data/model';"
+
+  'Ember.Data.adapter':
+    'prefix': 'imadapter'
+    'leftLabelHTML': '<span style="color:#E46651">Ember module</span>'
+    'body': "import Adapter from 'ember-data/adapter';"
+
+  'Ember.Data.transform':
+    'prefix': 'imtransform'
+    'leftLabelHTML': '<span style="color:#E46651">Ember module</span>'
+    'body': "import Transform from 'ember-data/transform';"
+
+  'Ember.Data.serializer':
+    'prefix': 'imserializer'
+    'leftLabelHTML': '<span style="color:#E46651">Ember module</span>'
+    'body': "import Serializer from 'ember-data/serializer';"
+
+  'Ember.Data.attr':
+    'prefix': 'imattr'
+    'leftLabelHTML': '<span style="color:#E46651">Ember module</span>'
+    'body': "import attr from 'ember-data/attr';"
+
+  'Ember.Data.hasMany':
+    'prefix': 'imhasMany'
+    'leftLabelHTML': '<span style="color:#E46651">Ember module</span>'
+    'body': "import { hasMany } from 'ember-data/relationships';"
+
+  'Ember.Data.belongsTo':
+    'prefix': 'imbelongsTo'
+    'leftLabelHTML': '<span style="color:#E46651">Ember module</span>'
+    'body': "import { belongsTo } from 'ember-data/relationships';"

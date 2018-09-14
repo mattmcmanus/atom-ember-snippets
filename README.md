@@ -31,6 +31,7 @@ Rather than listing everything out here, check out the snippet files themselves:
   * [component](snippets/import-component.cson)
   * [controller](snippets/import-controller.cson)
   * [debug](snippets/import-debug.cson)
+  * [ember-data](snippets/import-ember-data.cson)
   * [engine](snippets/import-engine.cson)
   * [map](snippets/import-map.cson)
   * [object](snippets/import-object.cson)
