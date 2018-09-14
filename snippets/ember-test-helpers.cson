@@ -1,0 +1,152 @@
+'.source.js, .source.ts':
+#
+#      DOM Interaction Helpers
+#
+  'await click(...)':
+    'prefix': 'click'
+    'leftLabel': 'Ember Test'
+    'body': "await click('${1:selector}');"
+
+  'await doubleClick(...)':
+    'prefix': 'doubleClick'
+    'leftLabel': 'Ember Test'
+    'body': "await doubleClick('${1:selector}');"
+
+  'await tap(...)':
+    'prefix': 'tap'
+    'leftLabel': 'Ember Test'
+    'body': "await tap('${1:selector}');"
+
+  'await focus(...)':
+    'prefix': 'focus'
+    'leftLabel': 'Ember Test'
+    'body': "await focus('${1:selector}');"
+
+  'await blur(...)':
+    'prefix': 'blur'
+    'leftLabel': 'Ember Test'
+    'body': "await blur('${1:selector}');"
+
+  'await triggerKeyEvent(...)':
+    'prefix': 'triggerKeyEvent'
+    'leftLabel': 'Ember Test'
+    'body': """
+      await triggerKeyEvent('${1:sel}', '${2:type}', '${3:key}', '${4:mods}');
+    """
+
+  'await triggerEvent(...)':
+    'prefix': 'triggerEvent'
+    'leftLabel': 'Ember Test'
+    'body': "await triggerEvent('${1:selector}', '${2:type}', '${3:options}');"
+
+  'await fillIn(...)':
+    'prefix': 'fillIn'
+    'leftLabel': 'Ember Test'
+    'body': "await fillIn('${1:selector}', '${2:text}');"
+
+  #
+  #      DOM Query Helpers
+  #
+  'await find(...)':
+    'prefix': 'find'
+    'leftLabel': 'Ember Test'
+    'body': "find('${1:selector}');"
+
+  'await findAll(...)':
+    'prefix': 'findAll'
+    'leftLabel': 'Ember Test'
+    'body': "findAll('${1:selector}');"
+
+  'getRootElement()':
+    'prefix': 'getRootElement'
+    'leftLabel': 'Ember Test'
+    'body': "getRootElement();"
+
+  #
+  #      Routing Helpers
+  #
+
+  'await visit(...)':
+    'prefix': 'visit'
+    'leftLabel': 'Ember Test'
+    'body': "await visit('${1:url}');"
+
+  'currentRouteName()':
+    'prefix': 'currentRouteName'
+    'leftLabel': 'Ember Test'
+    'body': "currentRouteName();"
+
+  'currentURL(...)':
+    'prefix': 'currentURL'
+    'leftLabel': 'Ember Test'
+    'body': "currentURL();"
+
+  #
+  #      Rendering Helpers
+  #
+  'await render(...)':
+    'prefix': 'render'
+    'leftLabel': 'Ember Test'
+    'body': "await render(hbs`$1`);"
+
+  'await clearRender()':
+    'prefix': 'render'
+    'leftLabel': 'Ember Test'
+    'body': "await clearRender();"
+
+  #
+  #      Wait Helpers
+  #
+  'await waitFor(...)':
+    'prefix': 'waitFor'
+    'leftLabel': 'Ember Test'
+    'body': "await waitFor('${1:selector}'${2:, { timeout: 1000, count: 1 \\}});"
+
+  'await waitUntil(...)':
+    'prefix': 'waitUntil'
+    'leftLabel': 'Ember Test'
+    'body': """
+      await waitUntil(() => { $1; }${2:, { timeout: 1000 \\}});
+    """
+
+  'await settled()':
+    'prefix': 'settled'
+    'leftLabel': 'Ember Test'
+    'body': "await settled();"
+
+  'isSettled()':
+    'prefix': 'isSettled'
+    'leftLabel': 'Ember Test'
+    'body': "isSettled();"
+
+  'getSettledState()':
+    'prefix': 'getSettledState'
+    'leftLabel': 'Ember Test'
+    'body': "getSettledState();"
+
+#
+#      Pause Helpers
+#
+  'await this.pauseTest(...)':
+    'prefix': 'pauseTest'
+    'leftLabel': 'Ember Test'
+    'body':"""
+      await this.pauseTest();
+    """
+#
+#      Test Framework APIs
+#
+
+# Seems like we don't need this
+
+#
+#      Legacy
+#
+  'andThen(...)':
+    'prefix': 'and'
+    'leftLabel': 'Ember Test'
+    'body':"""
+      andThen(() => {
+      \t${1}
+      });
+    """
