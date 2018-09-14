@@ -63,10 +63,10 @@
       },
     """
 
-  'inject.service(...)':
-    'prefix': 'inject'
+  'service(...)':
+    'prefix': 'service'
     'leftLabel': 'Ember'
-    'body': 'inject.service(${1}),'
+    'body': 'service(${1}),'
 
   'computed(...)':
     'prefix': 'computed'
