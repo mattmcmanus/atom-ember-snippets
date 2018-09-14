@@ -68,6 +68,11 @@
     'leftLabel': 'Ember'
     'body': 'service(${1}),'
 
+  'service(...)':
+    'prefix': 'service'
+    'leftLabel': 'Ember'
+    'body': 'service(${1}),'
+
   'computed(...)':
     'prefix': 'computed'
     'leftLabel': 'Ember'
