@@ -6,21 +6,6 @@
 #
 
 '.source.js, .source.ts':
-  'import Ember':
-    'prefix': 'imE'
-    'leftLabel': 'Ember'
-    'body': """
-      import Ember from 'ember';
-      const { ${1} } = Ember;
-    """
-
-  'const {} = Ember':
-    'prefix': 'cE'
-    'leftLabel': 'Ember'
-    'body': """
-      const { ${1} } = Ember;
-    """
-
   'run(() => { ... })':
     'prefix': 'run'
     'leftLabel': 'Ember'
@@ -68,15 +53,6 @@
     'leftLabel': 'Ember'
     'body': 'service(${1}),'
 
-  'computed(...)':
-    'prefix': 'computed'
-    'leftLabel': 'Ember'
-    'body': """
-      computed('${1:property}', function() {
-      \t${2:// body}
-      }),
-    """
-
   'observer(...)':
     'prefix': 'observer'
     'leftLabel': 'Ember'
@@ -104,10 +80,183 @@
       }
     """
 
-  'computed.alias(...)':
+  #
+  # Computeds!
+  #
+  'computed(...)':
+    'prefix': 'computed'
+    'leftLabel': 'Ember'
+    'body': """
+      computed('${1:property}', function() {
+      \t${2:// body}
+      }),
+    """
+
+  'alias(...)':
     'prefix': 'alias'
     'leftLabel': 'Ember'
-    'body': 'computed.alias(\'${2:property}\')',
+    'body': "alias(${1});"
+
+  'and(...)':
+    'prefix': 'and'
+    'leftLabel': 'Ember'
+    'body': "and(${1});"
+
+  'bool(...)':
+    'prefix': 'bool'
+    'leftLabel': 'Ember'
+    'body': "bool(${1});"
+
+  'collect(...)':
+    'prefix': 'collect'
+    'leftLabel': 'Ember'
+    'body': "collect(${1});"
+
+  'deprecatingAlias(...)':
+    'prefix': 'deprecatingAlias'
+    'leftLabel': 'Ember'
+    'body': "deprecatingAlias(${1});"
+
+  'empty(...)':
+    'prefix': 'empty'
+    'leftLabel': 'Ember'
+    'body': "empty(${1});"
+
+  'equal(...)':
+    'prefix': 'equal'
+    'leftLabel': 'Ember'
+    'body': "equal(${1});"
+
+  'expandProperties(...)':
+    'prefix': 'expandProperties'
+    'leftLabel': 'Ember'
+    'body': "expandProperties(${1});"
+
+  'filter(...)':
+    'prefix': 'filter'
+    'leftLabel': 'Ember'
+    'body': "filter(${1});"
+
+  'filterBy(...)':
+    'prefix': 'filterBy'
+    'leftLabel': 'Ember'
+    'body': "filterBy(${1});"
+
+  'gt(...)':
+    'prefix': 'gt'
+    'leftLabel': 'Ember'
+    'body': "gt(${1});"
+
+  'gte(...)':
+    'prefix': 'gte'
+    'leftLabel': 'Ember'
+    'body': "gte(${1});"
+
+  'intersect(...)':
+    'prefix': 'intersect'
+    'leftLabel': 'Ember'
+    'body': "intersect(${1});"
+
+  'lt(...)':
+    'prefix': 'lt'
+    'leftLabel': 'Ember'
+    'body': "lt(${1});"
+
+  'lte(...)':
+    'prefix': 'lte'
+    'leftLabel': 'Ember'
+    'body': "lte(${1});"
+
+  'map(...)':
+    'prefix': 'map'
+    'leftLabel': 'Ember'
+    'body': "map(${1});"
+
+  'mapBy(...)':
+    'prefix': 'mapBy'
+    'leftLabel': 'Ember'
+    'body': "mapBy(${1});"
+
+  'match(...)':
+    'prefix': 'match'
+    'leftLabel': 'Ember'
+    'body': "match(${1});"
+
+  'max(...)':
+    'prefix': 'max'
+    'leftLabel': 'Ember'
+    'body': "max(${1});"
+
+  'min(...)':
+    'prefix': 'min'
+    'leftLabel': 'Ember'
+    'body': "min(${1});"
+
+  'none(...)':
+    'prefix': 'none'
+    'leftLabel': 'Ember'
+    'body': "none(${1});"
+
+  'not(...)':
+    'prefix': 'not'
+    'leftLabel': 'Ember'
+    'body': "not(${1});"
+
+  'notEmpty(...)':
+    'prefix': 'notEmpty'
+    'leftLabel': 'Ember'
+    'body': "notEmpty(${1});"
+
+  'oneWay(...)':
+    'prefix': 'oneWay'
+    'leftLabel': 'Ember'
+    'body': "oneWay(${1});"
+
+  'or(...)':
+    'prefix': 'or'
+    'leftLabel': 'Ember'
+    'body': "or(${1});"
+
+  'readOnly(...)':
+    'prefix': 'readOnly'
+    'leftLabel': 'Ember'
+    'body': "readOnly(${1});"
+
+  'reads(...)':
+    'prefix': 'reads'
+    'leftLabel': 'Ember'
+    'body': "reads(${1});"
+
+  'setDiff(...)':
+    'prefix': 'setDiff'
+    'leftLabel': 'Ember'
+    'body': "setDiff(${1});"
+
+  'sort(...)':
+    'prefix': 'sort'
+    'leftLabel': 'Ember'
+    'body': "sort(${1});"
+
+  'sum(...)':
+    'prefix': 'sum'
+    'leftLabel': 'Ember'
+    'body': "sum(${1});"
+
+  'union(...)':
+    'prefix': 'union'
+    'leftLabel': 'Ember'
+    'body': "union(${1});"
+
+  'uniq(...)':
+    'prefix': 'uniq'
+    'leftLabel': 'Ember'
+    'body': "uniq(${1});"
+
+  'uniqBy(...)':
+    'prefix': 'uniqBy'
+    'leftLabel': 'Ember'
+    'body': "uniqBy(${1});"
+
 
   #
   #
