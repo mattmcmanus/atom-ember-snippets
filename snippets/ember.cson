@@ -93,38 +93,38 @@
     """
 
   'alias(...)':
-    'prefix': 'alias'
-    'leftLabel': 'Ember'
+    'prefix': 'calias'
+    'leftLabel': 'Ember Computed'
     'body': "alias('${1:key}');"
 
   'and(...)':
-    'prefix': 'and'
-    'leftLabel': 'Ember'
+    'prefix': 'cand'
+    'leftLabel': 'Ember Computed'
     'body': "and('${1:key1}', '${2:key2}');"
 
   'bool(...)':
-    'prefix': 'bool'
-    'leftLabel': 'Ember'
+    'prefix': 'cbool'
+    'leftLabel': 'Ember Computed'
     'body': "bool(${1:key});"
 
   'collect(...)':
-    'prefix': 'collect'
-    'leftLabel': 'Ember'
+    'prefix': 'ccollect'
+    'leftLabel': 'Ember Computed'
     'body': "collect(${1:keys});"
 
   'empty(...)':
-    'prefix': 'empty'
-    'leftLabel': 'Ember'
+    'prefix': 'cempty'
+    'leftLabel': 'Ember Computed'
     'body': "empty('${1:key}');"
 
   'equal(...)':
-    'prefix': 'equal'
-    'leftLabel': 'Ember'
+    'prefix': 'cequal'
+    'leftLabel': 'Ember Computed'
     'body': "equal('${1:key}', ${2:value});"
 
   'filter(...)':
-    'prefix': 'filter'
-    'leftLabel': 'Ember'
+    'prefix': 'cfilter'
+    'leftLabel': 'Ember Computed'
     'body': """
       filter(${1:key}, function(${2:item}${3:, index}) {
         return ${2:item};
@@ -132,38 +132,38 @@
     """
 
   'filterBy(...)':
-    'prefix': 'filterBy'
-    'leftLabel': 'Ember'
+    'prefix': 'cfilterBy'
+    'leftLabel': 'Ember Computed'
     'body': "filterBy('${1:key}', ${2:propertyKey}, ${3:value});"
 
   'gt(...)':
-    'prefix': 'gt'
-    'leftLabel': 'Ember'
+    'prefix': 'cgt'
+    'leftLabel': 'Ember Computed'
     'body': "gt('${1:key}', ${2:value});"
 
   'gte(...)':
-    'prefix': 'gte'
-    'leftLabel': 'Ember'
+    'prefix': 'cgte'
+    'leftLabel': 'Ember Computed'
     'body': "gte('${1:key}', ${2:value});"
 
   'intersect(...)':
     'prefix': 'intersect'
-    'leftLabel': 'Ember'
+    'leftLabel': 'Ember Computed'
     'body': "intersect('${1:key1}', '${2:key2}');"
 
   'lt(...)':
-    'prefix': 'lt'
-    'leftLabel': 'Ember'
+    'prefix': 'clt'
+    'leftLabel': 'Ember Computed'
     'body': "lt('${1:key}', ${2:value});"
 
   'lte(...)':
-    'prefix': 'lte'
-    'leftLabel': 'Ember'
+    'prefix': 'clte'
+    'leftLabel': 'Ember Computed'
     'body': "lte('${1:key}', ${2:value});"
 
   'map(...)':
-    'prefix': 'map'
-    'leftLabel': 'Ember'
+    'prefix': 'cmap'
+    'leftLabel': 'Ember Computed'
     'body': """
       map(${1:key}, function(${2:item}${3:, index}) {
         return ${2:item};
@@ -171,88 +171,88 @@
     """
 
   'mapBy(...)':
-    'prefix': 'mapBy'
-    'leftLabel': 'Ember'
-    'body': "mapBy('${1:key}', ${2:propertyKey});"
+    'prefix': 'cmapBy'
+    'leftLabel': 'Ember Computed'
+    'body': "mapBy('${1:key}', '${2:propertyKey}');"
 
   'match(...)':
-    'prefix': 'match'
-    'leftLabel': 'Ember'
+    'prefix': 'cmatch'
+    'leftLabel': 'Ember Computed'
     'body': "match('${1:key}', ${2:regEx});"
 
   'max(...)':
-    'prefix': 'max'
-    'leftLabel': 'Ember'
+    'prefix': 'cmax'
+    'leftLabel': 'Ember Computed'
     'body': "max('${1:key}');"
 
   'min(...)':
-    'prefix': 'min'
-    'leftLabel': 'Ember'
+    'prefix': 'cmin'
+    'leftLabel': 'Ember Computed'
     'body': "min('${1:key}');"
 
   'none(...)':
-    'prefix': 'none'
-    'leftLabel': 'Ember'
+    'prefix': 'cnone'
+    'leftLabel': 'Ember Computed'
     'body': "none('${1:key}');"
 
   'not(...)':
-    'prefix': 'not'
-    'leftLabel': 'Ember'
+    'prefix': 'cnot'
+    'leftLabel': 'Ember Computed'
     'body': "not('${1:key}');"
 
   'notEmpty(...)':
-    'prefix': 'notEmpty'
-    'leftLabel': 'Ember'
+    'prefix': 'cnotEmpty'
+    'leftLabel': 'Ember Computed'
     'body': "notEmpty('${1:key}');"
 
   'oneWay(...)':
-    'prefix': 'oneWay'
-    'leftLabel': 'Ember'
+    'prefix': 'coneWay'
+    'leftLabel': 'Ember Computed'
     'body': "oneWay('${1:key}');"
 
   'or(...)':
-    'prefix': 'or'
-    'leftLabel': 'Ember'
+    'prefix': 'cor'
+    'leftLabel': 'Ember Computed'
     'body': "or('${1:key1}', '${2:key2}');"
 
   'readOnly(...)':
-    'prefix': 'readOnly'
-    'leftLabel': 'Ember'
+    'prefix': 'creadOnly'
+    'leftLabel': 'Ember Computed'
     'body': "readOnly('${1:key}');"
 
   'reads(...)':
-    'prefix': 'reads'
-    'leftLabel': 'Ember'
+    'prefix': 'creads'
+    'leftLabel': 'Ember Computed'
     'body': "reads('${1:key}');"
 
   'setDiff(...)':
-    'prefix': 'setDiff'
-    'leftLabel': 'Ember'
+    'prefix': 'csetDiff'
+    'leftLabel': 'Ember Computed'
     'body': "setDiff('${1:key1}', '${2:key2}');"
 
   'sort(...)':
-    'prefix': 'sort'
-    'leftLabel': 'Ember'
+    'prefix': 'csort'
+    'leftLabel': 'Ember Computed'
     'body': "sort('${1:itemsKey}', '${2:sortDefinition}');"
 
   'sum(...)':
-    'prefix': 'sum'
-    'leftLabel': 'Ember'
+    'prefix': 'csum'
+    'leftLabel': 'Ember Computed'
     'body': "sum('${1:key}');"
 
   'union(...)':
-    'prefix': 'union'
-    'leftLabel': 'Ember'
+    'prefix': 'cunion'
+    'leftLabel': 'Ember Computed'
     'body': "union('${1:key1}', '${2:key2}');"
 
   'uniq(...)':
-    'prefix': 'uniq'
-    'leftLabel': 'Ember'
+    'prefix': 'cuniq'
+    'leftLabel': 'Ember Computed'
     'body': "uniq('${1:key}', '${2:propertyKey}');"
 
   'uniqBy(...)':
-    'prefix': 'uniqBy'
-    'leftLabel': 'Ember'
+    'prefix': 'cuniqBy'
+    'leftLabel': 'Ember Computed'
     'body': "uniqBy('${1:key}');"
 
   #
@@ -446,18 +446,18 @@
   # Enumerables
   #
   '.filterBy(...)':
-    'prefix': 'filter-by'
-    'leftLabel': 'Ember'
+    'prefix': 'filterBy'
+    'leftLabel': 'Ember Enumerable'
     'body': "${1:enumerable}.filterBy('${2:property}', ${3:value});"
 
   '.mapBy(...)':
-    'prefix': 'map-by'
-    'leftLabel': 'Ember'
+    'prefix': 'mapBy'
+    'leftLabel': 'Ember Enumerable'
     'body': "${1:enumerable}.mapBy('${2:property}');"
 
   '.every(...)':
     'prefix': 'every'
-    'leftLabel': 'Ember'
+    'leftLabel': 'Ember Enumerable'
     'body': """
       ${1:enumerable}.every(function(${2:item}) {
       \t${3}
@@ -466,12 +466,12 @@
 
   '.isEvery(...)':
     'prefix': 'is-every'
-    'leftLabel': 'Ember'
+    'leftLabel': 'Ember Enumerable'
     'body': "${1:enumerable}.isEvery('${2:property}', ${3:bool});"
 
   '.some(...)':
     'prefix': 'some'
-    'leftLabel': 'Ember'
+    'leftLabel': 'Ember Enumerable'
     'body': """
       ${1:enumerable}.some(function(${2:item}) {
       \t${3}
@@ -480,20 +480,20 @@
 
   '.isAny(...)':
     'prefix': 'is-any'
-    'leftLabel': 'Ember'
+    'leftLabel': 'Ember Enumerable'
     'body': "${1:enumerable}.isAny('${2:property}', ${3:bool});"
 
   '.toArray(...)':
     'prefix': 'to-array'
-    'leftLabel': 'Ember'
+    'leftLabel': 'Ember Enumerable'
     'body': '${1:enumerable}.toArray();'
 
   '.get(\'firstObject\')':
     'prefix': 'first-object'
-    'leftLabel': 'Ember'
+    'leftLabel': 'Ember Enumerable'
     'body': "${1:enumerable}.get('firstObject');"
 
   '.get(\'lastObject\')':
     'prefix': 'last-object'
-    'leftLabel': 'Ember'
+    'leftLabel': 'Ember Enumerable'
     'body': "${1:enumerable}.get('lastObject');"
