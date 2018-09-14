@@ -126,8 +126,8 @@
     'prefix': 'filter'
     'leftLabel': 'Ember'
     'body': """
-      filter(${1:key}, function(#{2:item}${3:, index}) {
-        return #{2:item};
+      filter(${1:key}, function(${2:item}${3:, index}) {
+        return ${2:item};
       }));
     """
 
@@ -165,8 +165,8 @@
     'prefix': 'map'
     'leftLabel': 'Ember'
     'body': """
-      map(${1:key}, function(#{2:item}${3:, index}) {
-        return #{2:item};
+      map(${1:key}, function(${2:item}${3:, index}) {
+        return ${2:item};
       }));
     """
 
