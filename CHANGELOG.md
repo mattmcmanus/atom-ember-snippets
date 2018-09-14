@@ -1,3 +1,13 @@
+## 3.0.0
+* Ember runloop snippets
+* Add snippets for most of ember-test-helpers #50
+* More ember computed snippets
+* Remove logger snippets. Closes #40
+* Update service snippet. Closes #43 and #48
+* Bump atom-package-deps
+* Ember data import snippets #47 from @jrock2004
+* Handlebars #let #49 from @jrock2004
+
 ## 2.1.6
 * Update route skeleton #37 @samselikoff
 * Update helper skeleton
