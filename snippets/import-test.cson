@@ -29,3 +29,193 @@
     'prefix': 'imunregisterWaiter'
     'leftLabelHTML': '<span style="color:#E46651">Ember module</span>'
     'body': "import { unregisterWaiter } from '@ember/test';"
+
+  "click from '@ember/test-helpers'":
+    'prefix': 'imclick'
+    'leftLabelHTML': '<span style="color:#E46651">Ember module</span>'
+    'body': "import { click } from '@ember/test-helpers';"
+
+  "doubleClick from '@ember/test-helpers'":
+    'prefix': 'imdoubleClick'
+    'leftLabelHTML': '<span style="color:#E46651">Ember module</span>'
+    'body': "import { doubleClick } from '@ember/test-helpers';"
+
+  "tap from '@ember/test-helpers'":
+    'prefix': 'imtap'
+    'leftLabelHTML': '<span style="color:#E46651">Ember module</span>'
+    'body': "import { tap } from '@ember/test-helpers';"
+
+  "focus from '@ember/test-helpers'":
+    'prefix': 'imfocus'
+    'leftLabelHTML': '<span style="color:#E46651">Ember module</span>'
+    'body': "import { focus } from '@ember/test-helpers';"
+
+  "blur from '@ember/test-helpers'":
+    'prefix': 'imblur'
+    'leftLabelHTML': '<span style="color:#E46651">Ember module</span>'
+    'body': "import { blur } from '@ember/test-helpers';"
+
+  "triggerEvent from '@ember/test-helpers'":
+    'prefix': 'imtriggerEvent'
+    'leftLabelHTML': '<span style="color:#E46651">Ember module</span>'
+    'body': "import { triggerEvent } from '@ember/test-helpers';"
+
+  "triggerKeyEvent from '@ember/test-helpers'":
+    'prefix': 'imtriggerKeyEvent'
+    'leftLabelHTML': '<span style="color:#E46651">Ember module</span>'
+    'body': "import { triggerKeyEvent } from '@ember/test-helpers';"
+
+  "fillIn from '@ember/test-helpers'":
+    'prefix': 'imfillIn'
+    'leftLabelHTML': '<span style="color:#E46651">Ember module</span>'
+    'body': "import { fillIn } from '@ember/test-helpers';"
+
+  "find from '@ember/test-helpers'":
+    'prefix': 'imfind'
+    'leftLabelHTML': '<span style="color:#E46651">Ember module</span>'
+    'body': "import { find } from '@ember/test-helpers';"
+
+  "findAll from '@ember/test-helpers'":
+    'prefix': 'imfindAll'
+    'leftLabelHTML': '<span style="color:#E46651">Ember module</span>'
+    'body': "import { findAll } from '@ember/test-helpers';"
+
+  "getRootElement from '@ember/test-helpers'":
+    'prefix': 'imgetRootElement'
+    'leftLabelHTML': '<span style="color:#E46651">Ember module</span>'
+    'body': "import { getRootElement } from '@ember/test-helpers';"
+
+  "visit from '@ember/test-helpers'":
+    'prefix': 'imvisit'
+    'leftLabelHTML': '<span style="color:#E46651">Ember module</span>'
+    'body': "import { visit } from '@ember/test-helpers';"
+
+  "currentRouteName from '@ember/test-helpers'":
+    'prefix': 'imcurrentRouteName'
+    'leftLabelHTML': '<span style="color:#E46651">Ember module</span>'
+    'body': "import { currentRouteName } from '@ember/test-helpers';"
+
+  "currentURL from '@ember/test-helpers'":
+    'prefix': 'imcurrentURL'
+    'leftLabelHTML': '<span style="color:#E46651">Ember module</span>'
+    'body': "import { currentURL } from '@ember/test-helpers';"
+
+  "render from '@ember/test-helpers'":
+    'prefix': 'imrender'
+    'leftLabelHTML': '<span style="color:#E46651">Ember module</span>'
+    'body': "import { render } from '@ember/test-helpers';"
+
+  "clearRender from '@ember/test-helpers'":
+    'prefix': 'imclearRender'
+    'leftLabelHTML': '<span style="color:#E46651">Ember module</span>'
+    'body': "import { clearRender } from '@ember/test-helpers';"
+
+  "Wait from '@ember/test-helpers'":
+    'prefix': 'imWait'
+    'leftLabelHTML': '<span style="color:#E46651">Ember module</span>'
+    'body': "import { Wait } from '@ember/test-helpers';"
+
+  "waitFor from '@ember/test-helpers'":
+    'prefix': 'imwaitFor'
+    'leftLabelHTML': '<span style="color:#E46651">Ember module</span>'
+    'body': "import { waitFor } from '@ember/test-helpers';"
+
+  "waitUntil from '@ember/test-helpers'":
+    'prefix': 'imwaitUntil'
+    'leftLabelHTML': '<span style="color:#E46651">Ember module</span>'
+    'body': "import { waitUntil } from '@ember/test-helpers';"
+
+  "settled from '@ember/test-helpers'":
+    'prefix': 'imsettled'
+    'leftLabelHTML': '<span style="color:#E46651">Ember module</span>'
+    'body': "import { settled } from '@ember/test-helpers';"
+
+  "isSettled from '@ember/test-helpers'":
+    'prefix': 'imisSettled'
+    'leftLabelHTML': '<span style="color:#E46651">Ember module</span>'
+    'body': "import { isSettled } from '@ember/test-helpers';"
+
+  "getSettledState from '@ember/test-helpers'":
+    'prefix': 'imgetSettledState'
+    'leftLabelHTML': '<span style="color:#E46651">Ember module</span>'
+    'body': "import { getSettledState } from '@ember/test-helpers';"
+
+  "pauseTest from '@ember/test-helpers'":
+    'prefix': 'impauseTest'
+    'leftLabelHTML': '<span style="color:#E46651">Ember module</span>'
+    'body': "import { pauseTest } from '@ember/test-helpers';"
+
+  "resumeTest from '@ember/test-helpers'":
+    'prefix': 'imresumeTest'
+    'leftLabelHTML': '<span style="color:#E46651">Ember module</span>'
+    'body': "import { resumeTest } from '@ember/test-helpers';"
+
+  "setResolver from '@ember/test-helpers'":
+    'prefix': 'imsetResolver'
+    'leftLabelHTML': '<span style="color:#E46651">Ember module</span>'
+    'body': "import { setResolver } from '@ember/test-helpers';"
+
+  "getResolver from '@ember/test-helpers'":
+    'prefix': 'imgetResolver'
+    'leftLabelHTML': '<span style="color:#E46651">Ember module</span>'
+    'body': "import { getResolver } from '@ember/test-helpers';"
+
+  "setupContext from '@ember/test-helpers'":
+    'prefix': 'imsetupContext'
+    'leftLabelHTML': '<span style="color:#E46651">Ember module</span>'
+    'body': "import { setupContext } from '@ember/test-helpers';"
+
+  "getContext from '@ember/test-helpers'":
+    'prefix': 'imgetContext'
+    'leftLabelHTML': '<span style="color:#E46651">Ember module</span>'
+    'body': "import { getContext } from '@ember/test-helpers';"
+
+  "setContext from '@ember/test-helpers'":
+    'prefix': 'imsetContext'
+    'leftLabelHTML': '<span style="color:#E46651">Ember module</span>'
+    'body': "import { setContext } from '@ember/test-helpers';"
+
+  "unsetContext from '@ember/test-helpers'":
+    'prefix': 'imunsetContext'
+    'leftLabelHTML': '<span style="color:#E46651">Ember module</span>'
+    'body': "import { unsetContext } from '@ember/test-helpers';"
+
+  "teardownContext from '@ember/test-helpers'":
+    'prefix': 'imteardownContext'
+    'leftLabelHTML': '<span style="color:#E46651">Ember module</span>'
+    'body': "import { teardownContext } from '@ember/test-helpers';"
+
+  "setupRenderingContext from '@ember/test-helpers'":
+    'prefix': 'imsetupRenderingContext'
+    'leftLabelHTML': '<span style="color:#E46651">Ember module</span>'
+    'body': "import { setupRenderingContext } from '@ember/test-helpers';"
+
+  "teardownRenderingContext from '@ember/test-helpers'":
+    'prefix': 'imteardownRenderingContext'
+    'leftLabelHTML': '<span style="color:#E46651">Ember module</span>'
+    'body': "import { teardownRenderingContext } from '@ember/test-helpers';"
+
+  "getApplication from '@ember/test-helpers'":
+    'prefix': 'imgetApplication'
+    'leftLabelHTML': '<span style="color:#E46651">Ember module</span>'
+    'body': "import { getApplication } from '@ember/test-helpers';"
+
+  "setApplication from '@ember/test-helpers'":
+    'prefix': 'imsetApplication'
+    'leftLabelHTML': '<span style="color:#E46651">Ember module</span>'
+    'body': "import { setApplication } from '@ember/test-helpers';"
+
+  "setupApplicationContext from '@ember/test-helpers'":
+    'prefix': 'imsetupApplicationContext'
+    'leftLabelHTML': '<span style="color:#E46651">Ember module</span>'
+    'body': "import { setupApplicationContext } from '@ember/test-helpers';"
+
+  "teardownApplicationContext from '@ember/test-helpers'":
+    'prefix': 'imteardownApplicationContext'
+    'leftLabelHTML': '<span style="color:#E46651">Ember module</span>'
+    'body': "import { teardownApplicationContext } from '@ember/test-helpers';"
+
+  "validateErrorHandler from '@ember/test-helpers'":
+    'prefix': 'imvalidateErrorHandler'
+    'leftLabelHTML': '<span style="color:#E46651">Ember module</span>'
+    'body': "import { validateErrorHandler } from '@ember/test-helpers';"
