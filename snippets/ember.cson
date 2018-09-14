@@ -95,167 +95,165 @@
   'alias(...)':
     'prefix': 'alias'
     'leftLabel': 'Ember'
-    'body': "alias(${1});"
+    'body': "alias('${1:key}');"
 
   'and(...)':
     'prefix': 'and'
     'leftLabel': 'Ember'
-    'body': "and(${1});"
+    'body': "and('${1:key1}', '${2:key2}');"
 
   'bool(...)':
     'prefix': 'bool'
     'leftLabel': 'Ember'
-    'body': "bool(${1});"
+    'body': "bool(${1:key});"
 
   'collect(...)':
     'prefix': 'collect'
     'leftLabel': 'Ember'
-    'body': "collect(${1});"
-
-  'deprecatingAlias(...)':
-    'prefix': 'deprecatingAlias'
-    'leftLabel': 'Ember'
-    'body': "deprecatingAlias(${1});"
+    'body': "collect(${1:keys});"
 
   'empty(...)':
     'prefix': 'empty'
     'leftLabel': 'Ember'
-    'body': "empty(${1});"
+    'body': "empty('${1:key}');"
 
   'equal(...)':
     'prefix': 'equal'
     'leftLabel': 'Ember'
-    'body': "equal(${1});"
-
-  'expandProperties(...)':
-    'prefix': 'expandProperties'
-    'leftLabel': 'Ember'
-    'body': "expandProperties(${1});"
+    'body': "equal('${1:key}', ${2:value});"
 
   'filter(...)':
     'prefix': 'filter'
     'leftLabel': 'Ember'
-    'body': "filter(${1});"
+    'body': """
+      filter(${1:key}, function(#{2:item}${3:, index}) {
+        return #{2:item};
+      }));
+    """
 
   'filterBy(...)':
     'prefix': 'filterBy'
     'leftLabel': 'Ember'
-    'body': "filterBy(${1});"
+    'body': "filterBy('${1:key}', ${2:propertyKey}, ${3:value});"
 
   'gt(...)':
     'prefix': 'gt'
     'leftLabel': 'Ember'
-    'body': "gt(${1});"
+    'body': "gt('${1:key}', ${2:value});"
 
   'gte(...)':
     'prefix': 'gte'
     'leftLabel': 'Ember'
-    'body': "gte(${1});"
+    'body': "gte('${1:key}', ${2:value});"
 
   'intersect(...)':
     'prefix': 'intersect'
     'leftLabel': 'Ember'
-    'body': "intersect(${1});"
+    'body': "intersect('${1:key1}', '${2:key2}');"
 
   'lt(...)':
     'prefix': 'lt'
     'leftLabel': 'Ember'
-    'body': "lt(${1});"
+    'body': "lt('${1:key}', ${2:value});"
 
   'lte(...)':
     'prefix': 'lte'
     'leftLabel': 'Ember'
-    'body': "lte(${1});"
+    'body': "lte('${1:key}', ${2:value});"
 
   'map(...)':
     'prefix': 'map'
     'leftLabel': 'Ember'
-    'body': "map(${1});"
+    'body': """
+      map(${1:key}, function(#{2:item}${3:, index}) {
+        return #{2:item};
+      }));
+    """
 
   'mapBy(...)':
     'prefix': 'mapBy'
     'leftLabel': 'Ember'
-    'body': "mapBy(${1});"
+    'body': "mapBy('${1:key}', ${2:propertyKey});"
 
   'match(...)':
     'prefix': 'match'
     'leftLabel': 'Ember'
-    'body': "match(${1});"
+    'body': "match('${1:key}', ${2:regEx});"
 
   'max(...)':
     'prefix': 'max'
     'leftLabel': 'Ember'
-    'body': "max(${1});"
+    'body': "max('${1:key}');"
 
   'min(...)':
     'prefix': 'min'
     'leftLabel': 'Ember'
-    'body': "min(${1});"
+    'body': "min('${1:key}');"
 
   'none(...)':
     'prefix': 'none'
     'leftLabel': 'Ember'
-    'body': "none(${1});"
+    'body': "none('${1:key}');"
 
   'not(...)':
     'prefix': 'not'
     'leftLabel': 'Ember'
-    'body': "not(${1});"
+    'body': "not('${1:key}');"
 
   'notEmpty(...)':
     'prefix': 'notEmpty'
     'leftLabel': 'Ember'
-    'body': "notEmpty(${1});"
+    'body': "notEmpty('${1:key}');"
 
   'oneWay(...)':
     'prefix': 'oneWay'
     'leftLabel': 'Ember'
-    'body': "oneWay(${1});"
+    'body': "oneWay('${1:key}');"
 
   'or(...)':
     'prefix': 'or'
     'leftLabel': 'Ember'
-    'body': "or(${1});"
+    'body': "or('${1:key1}', '${2:key2}');"
 
   'readOnly(...)':
     'prefix': 'readOnly'
     'leftLabel': 'Ember'
-    'body': "readOnly(${1});"
+    'body': "readOnly('${1:key}');"
 
   'reads(...)':
     'prefix': 'reads'
     'leftLabel': 'Ember'
-    'body': "reads(${1});"
+    'body': "reads('${1:key}');"
 
   'setDiff(...)':
     'prefix': 'setDiff'
     'leftLabel': 'Ember'
-    'body': "setDiff(${1});"
+    'body': "setDiff('${1:key1}', '${2:key2}');"
 
   'sort(...)':
     'prefix': 'sort'
     'leftLabel': 'Ember'
-    'body': "sort(${1});"
+    'body': "sort('${1:itemsKey}', '${2:sortDefinition}');"
 
   'sum(...)':
     'prefix': 'sum'
     'leftLabel': 'Ember'
-    'body': "sum(${1});"
+    'body': "sum('${1:key}');"
 
   'union(...)':
     'prefix': 'union'
     'leftLabel': 'Ember'
-    'body': "union(${1});"
+    'body': "union('${1:key1}', '${2:key2}');"
 
   'uniq(...)':
     'prefix': 'uniq'
     'leftLabel': 'Ember'
-    'body': "uniq(${1});"
+    'body': "uniq('${1:key}', '${2:propertyKey}');"
 
   'uniqBy(...)':
     'prefix': 'uniqBy'
     'leftLabel': 'Ember'
-    'body': "uniqBy(${1});"
+    'body': "uniqBy('${1:key}');"
 
   #
   #
@@ -269,7 +267,7 @@
   'cancel(...)':
     'prefix': 'cancel'
     'leftLabel': 'Ember'
-    'body': "cancel(${1});"
+    'body': "cancel('${1:key}');"
 
   'debounce(...)':
     'prefix': 'debounce'
