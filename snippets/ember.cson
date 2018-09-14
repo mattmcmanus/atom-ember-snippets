@@ -255,7 +255,6 @@
     'leftLabel': 'Ember'
     'body': "uniqBy('${1:key}');"
 
-<<<<<<< HEAD
   #
   #
   # runloop
