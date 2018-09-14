@@ -255,6 +255,7 @@
     'leftLabel': 'Ember'
     'body': "uniqBy('${1:key}');"
 
+<<<<<<< HEAD
   #
   #
   # runloop
@@ -268,6 +269,60 @@
     'prefix': 'cancel'
     'leftLabel': 'Ember'
     'body': "cancel('${1:key}');"
+
+  'debounce(...)':
+    'prefix': 'debounce'
+    'leftLabel': 'Ember'
+    'body': "debounce(${1:this}, '${2:methodName}', ${3:500});"
+
+  'later(...)':
+    'prefix': 'later'
+    'leftLabel': 'Ember'
+    'body': "later(${1:this}, () => { ${2}\\}, ${3:500});"
+
+  'next(...)':
+    'prefix': 'next'
+    'leftLabel': 'Ember'
+    'body': "next(${1:this}, () => { ${2}\\});"
+
+  'once(...)':
+    'prefix': 'once'
+    'leftLabel': 'Ember'
+    'body': "once(${1:this}, () => { ${2}\\});"
+
+  'run(...)':
+    'prefix': 'run'
+    'leftLabel': 'Ember'
+    'body': "run(() => { ${1}\\});"
+
+  'schedule(...)':
+    'prefix': 'schedule'
+    'leftLabel': 'Ember'
+    'body': "schedule('${1:queue}', ${2:this}, () => { ${3}\\}, );"
+
+  'scheduleOnce(...)':
+    'prefix': 'scheduleOnce'
+    'leftLabel': 'Ember'
+    'body': "scheduleOnce('${1:queue}', ${2:this}, () => { ${3}\\}, );"
+
+  'throttle(...)':
+    'prefix': 'throttle'
+    'leftLabel': 'Ember'
+    'body': "throttle(${1:this}, '${2:methodName}', ${3:500});"
+
+  #
+  #
+  # runloop
+  #
+  'bind(...)':
+    'prefix': 'bind'
+    'leftLabel': 'Ember'
+    'body': "bind(${1:this}, ${2:this.methodName});"
+
+  'cancel(...)':
+    'prefix': 'cancel'
+    'leftLabel': 'Ember'
+    'body': "cancel(${1});"
 
   'debounce(...)':
     'prefix': 'debounce'
