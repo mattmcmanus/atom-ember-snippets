@@ -298,34 +298,6 @@
     'body': "${1:enumerable}.get('lastObject');"
 
   #
-  # Logger
-  #
-  'Logger.debug(...)':
-    'prefix': 'logger-debug'
-    'leftLabel': 'Ember'
-    'body': "Logger.debug('${1:message}');"
-
-  'Logger.log(...)':
-    'prefix': 'logger-log'
-    'leftLabel': 'Ember'
-    'body': "Ember.Logger.log('${1:message}');"
-
-  'Logger.info(...)':
-    'prefix': 'logger-info'
-    'leftLabel': 'Ember'
-    'body': "Ember.Logger.info('${1:message}');"
-
-  'Logger.warn(...)':
-    'prefix': 'logger-warn'
-    'leftLabel': 'Ember'
-    'body': "Ember.Logger.warn('${1:message}');"
-
-  'Logger.error(...)':
-    'prefix': 'logger-error'
-    'leftLabel': 'Ember'
-    'body': "Ember.Logger.error('${1:message}');"
-
-  #
   # Test Helpers
   #
 
