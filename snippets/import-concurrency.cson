@@ -1,0 +1,6 @@
+'.source.js, .source.ts':
+
+  'Ember Concurrency Task':
+    'prefix': 'imtask'
+    'leftLabelHTML': '<span style="color:#E46651">Ember Concurrency module</span>'
+    'body': "import { task } from 'ember-concurrency';"
