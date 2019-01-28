@@ -1,0 +1,26 @@
+'.source.js, .source.ts':
+
+  'Ember.component.attribute':
+    'prefix': 'imdecattribute',
+    'leftLabelHTML': '<span style="color:#EDAE49">Ember Decorators module</span>',
+    'body': "import { attribute } from '@ember-decorators/component;'"
+
+  'Ember.component.className':
+    'prefix': 'imdecclassName',
+    'leftLabelHTML': '<span style="color:#EDAE49">Ember Decorators module</span>',
+    'body': "import { className } from '@ember-decorators/component;'"
+
+  'Ember.component.classNames':
+    'prefix': 'imdecclassNames',
+    'leftLabelHTML': '<span style="color:#EDAE49">Ember Decorators module</span>',
+    'body': "import { classNames } from '@ember-decorators/component;'"
+
+  'Ember.component.layout':
+    'prefix': 'imdeclayout',
+    'leftLabelHTML': '<span style="color:#EDAE49">Ember Decorators module</span>',
+    'body': "import { layout } from '@ember-decorators/component;'"
+
+  'Ember.component.tagName':
+    'prefix': 'imdectagName',
+    'leftLabelHTML': '<span style="color:#EDAE49">Ember Decorators module</span>',
+    'body': "import { tagName } from '@ember-decorators/component;'"

@@ -1,0 +1,6 @@
+'.source.js, .source.ts':
+
+  'Ember.inject.controller':
+    'prefix': 'imdecinjectController'
+    'leftLabelHTML': '<span style="color:#EDAE49">Ember Decorators module</span>'
+    'body': "import { inject as controller } from '@ember-decorators/controller';"
