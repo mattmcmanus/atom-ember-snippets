@@ -1,0 +1,6 @@
+'.source.js, .source.ts':
+
+  'Ember.inject.service':
+    'prefix': 'imdecinjectService'
+    'leftLabelHTML': '<span style="color:#EDAE49">Ember Decorators module</span>'
+    'body': "import { inject as service } from '@ember-decorators/service';"

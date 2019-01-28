@@ -1,0 +1,16 @@
+'.source.js, .source.ts':
+
+  'Ember.data.attr':
+    'prefix': 'imdecattr',
+    'leftLabelHTML': '<span style="color:#EDAE49">Ember Decorators module</span>',
+    'body': "import { attribute } from '@ember-decorators/data;'"
+
+  'Ember.data.belongsTo':
+    'prefix': 'imdecbelongsTo',
+    'leftLabelHTML': '<span style="color:#EDAE49">Ember Decorators module</span>',
+    'body': "import { className } from '@ember-decorators/data;'"
+
+  'Ember.data.hasMany':
+    'prefix': 'imdechasMany',
+    'leftLabelHTML': '<span style="color:#EDAE49">Ember Decorators module</span>',
+    'body': "import { classNames } from '@ember-decorators/data;'"

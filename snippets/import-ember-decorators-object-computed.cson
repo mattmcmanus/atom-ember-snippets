@@ -1,0 +1,161 @@
+'.source.js, .source.ts':
+
+  'Ember.computed.alias':
+    'prefix': 'imdecalias',
+    'leftLabelHTML': '<span style="color:#EDAE49">Ember Decorators module</span>',
+    'body': "import { alias } from '@ember-decorators/object/computed;'"
+
+  'Ember.computed.and':
+    'prefix': 'imdecand',
+    'leftLabelHTML': '<span style="color:#EDAE49">Ember Decorators module</span>',
+    'body': "import { and } from '@ember-decorators/object/computed;'"
+
+  'Ember.computed.bool':
+    'prefix': 'imdecbool',
+    'leftLabelHTML': '<span style="color:#EDAE49">Ember Decorators module</span>',
+    'body': "import { bool } from '@ember-decorators/object/computed;'"
+
+  'Ember.computed.collect':
+    'prefix': 'imdeccollect',
+    'leftLabelHTML': '<span style="color:#EDAE49">Ember Decorators module</span>',
+    'body': "import { collect } from '@ember-decorators/object/computed;'"
+
+  'Ember.computed.deprecatingAlias':
+    'prefix': 'imdecdeprecatin',
+    'leftLabelHTML': '<span style="color:#EDAE49">Ember Decorators module</span>',
+    'body': "import { deprecatingAlias } from '@ember-decorators/object/computed;'"
+
+  'Ember.computed.empty':
+    'prefix': 'imdecempty',
+    'leftLabelHTML': '<span style="color:#EDAE49">Ember Decorators module</span>',
+    'body': "import { empty } from '@ember-decorators/object/computed;'"
+
+  'Ember.computed.equal':
+    'prefix': 'imdecequal',
+    'leftLabelHTML': '<span style="color:#EDAE49">Ember Decorators module</span>',
+    'body': "import { equal } from '@ember-decorators/object/computed;'"
+
+  'Ember.computed.filter':
+    'prefix': 'imdecfilter',
+    'leftLabelHTML': '<span style="color:#EDAE49">Ember Decorators module</span>',
+    'body': "import { filter } from '@ember-decorators/object/computed;'"
+
+  'Ember.computed.filterBy':
+    'prefix': 'imdecfilterBy',
+    'leftLabelHTML': '<span style="color:#EDAE49">Ember Decorators module</span>',
+    'body': "import { filterBy } from '@ember-decorators/object/computed;'"
+
+  'Ember.computed.gt':
+    'prefix': 'imdecgt',
+    'leftLabelHTML': '<span style="color:#EDAE49">Ember Decorators module</span>',
+    'body': "import { gt } from '@ember-decorators/object/computed;'"
+
+  'Ember.computed.gte':
+    'prefix': 'imdecgte',
+    'leftLabelHTML': '<span style="color:#EDAE49">Ember Decorators module</span>',
+    'body': "import { gte } from '@ember-decorators/object/computed;'"
+
+  'Ember.computed.intersect':
+    'prefix': 'imdecintersect',
+    'leftLabelHTML': '<span style="color:#EDAE49">Ember Decorators module</span>',
+    'body': "import { intersect } from '@ember-decorators/object/computed;'"
+
+  'Ember.computed.lt':
+    'prefix': 'imdeclt',
+    'leftLabelHTML': '<span style="color:#EDAE49">Ember Decorators module</span>',
+    'body': "import { lt } from '@ember-decorators/object/computed;'"
+
+  'Ember.computed.lte':
+    'prefix': 'imdeclte',
+    'leftLabelHTML': '<span style="color:#EDAE49">Ember Decorators module</span>',
+    'body': "import { lte } from '@ember-decorators/object/computed;'"
+
+  'Ember.computed.map':
+    'prefix': 'imdecmap',
+    'leftLabelHTML': '<span style="color:#EDAE49">Ember Decorators module</span>',
+    'body': "import { map } from '@ember-decorators/object/computed;'"
+
+  'Ember.computed.mapBy':
+    'prefix': 'imdecmapBy',
+    'leftLabelHTML': '<span style="color:#EDAE49">Ember Decorators module</span>',
+    'body': "import { mapBy } from '@ember-decorators/object/computed;'"
+
+  'Ember.computed.match':
+    'prefix': 'imdecmatch',
+    'leftLabelHTML': '<span style="color:#EDAE49">Ember Decorators module</span>',
+    'body': "import { match } from '@ember-decorators/object/computed;'"
+
+  'Ember.computed.max':
+    'prefix': 'imdecmax',
+    'leftLabelHTML': '<span style="color:#EDAE49">Ember Decorators module</span>',
+    'body': "import { max } from '@ember-decorators/object/computed;'"
+
+  'Ember.computed.min':
+    'prefix': 'imdecmin',
+    'leftLabelHTML': '<span style="color:#EDAE49">Ember Decorators module</span>',
+    'body': "import { min } from '@ember-decorators/object/computed;'"
+
+  'Ember.computed.none':
+    'prefix': 'imdecnone',
+    'leftLabelHTML': '<span style="color:#EDAE49">Ember Decorators module</span>',
+    'body': "import { none } from '@ember-decorators/object/computed;'"
+
+  'Ember.computed.not':
+    'prefix': 'imdecnot',
+    'leftLabelHTML': '<span style="color:#EDAE49">Ember Decorators module</span>',
+    'body': "import { not } from '@ember-decorators/object/computed;'"
+
+  'Ember.computed.notEmpty':
+    'prefix': 'imdecnotEmpty',
+    'leftLabelHTML': '<span style="color:#EDAE49">Ember Decorators module</span>',
+    'body': "import { notEmpty } from '@ember-decorators/object/computed;'"
+
+  'Ember.computed.oneWay':
+    'prefix': 'imdeconeWay',
+    'leftLabelHTML': '<span style="color:#EDAE49">Ember Decorators module</span>',
+    'body': "import { oneWay } from '@ember-decorators/object/computed;'"
+
+  'Ember.computed.or':
+    'prefix': 'imdecor',
+    'leftLabelHTML': '<span style="color:#EDAE49">Ember Decorators module</span>',
+    'body': "import { or } from '@ember-decorators/object/computed;'"
+
+  'Ember.computed.readOnly':
+    'prefix': 'imdecreadOnly',
+    'leftLabelHTML': '<span style="color:#EDAE49">Ember Decorators module</span>',
+    'body': "import { readOnly } from '@ember-decorators/object/computed;'"
+
+  'Ember.computed.reads':
+    'prefix': 'imdecreads',
+    'leftLabelHTML': '<span style="color:#EDAE49">Ember Decorators module</span>',
+    'body': "import { reads } from '@ember-decorators/object/computed;'"
+
+  'Ember.computed.setDiff':
+    'prefix': 'imdecsetDiff',
+    'leftLabelHTML': '<span style="color:#EDAE49">Ember Decorators module</span>',
+    'body': "import { setDiff } from '@ember-decorators/object/computed;'"
+
+  'Ember.computed.sort':
+    'prefix': 'imdecsort',
+    'leftLabelHTML': '<span style="color:#EDAE49">Ember Decorators module</span>',
+    'body': "import { sort } from '@ember-decorators/object/computed;'"
+
+  'Ember.computed.sum':
+    'prefix': 'imdecsum',
+    'leftLabelHTML': '<span style="color:#EDAE49">Ember Decorators module</span>',
+    'body': "import { sum } from '@ember-decorators/object/computed;'"
+
+  'Ember.computed.union':
+    'prefix': 'imdecunion',
+    'leftLabelHTML': '<span style="color:#EDAE49">Ember Decorators module</span>',
+    'body': "import { union } from '@ember-decorators/object/computed;'"
+
+  'Ember.computed.uniq':
+    'prefix': 'imdecuniq',
+    'leftLabelHTML': '<span style="color:#EDAE49">Ember Decorators module</span>',
+    'body': "import { uniq } from '@ember-decorators/object/computed;'"
+
+  'Ember.computed.uniqBy':
+    'prefix': 'imdecuniqBy',
+    'leftLabelHTML': '<span style="color:#EDAE49">Ember Decorators module</span>',
+    'body': "import { uniqBy } from '@ember-decorators/object/computed;'"
